@@ -1,0 +1,89 @@
+Program.Sub.ScreenSU.Start
+Gui.FormWKHist..Create
+Gui.FormWKHist..Caption("Wood Kitting History Cleanup")
+Gui.FormWKHist..Size(5970,1875)
+Gui.FormWKHist..MinX(0)
+Gui.FormWKHist..MinY(0)
+Gui.FormWKHist..Position(0,0)
+Gui.FormWKHist..BackColor(-2147483633)
+Gui.FormWKHist..MousePointer(0)
+Gui.FormWKHist..Event(UnLoad,FormWKHist_UnLoad)
+Gui.FormWKHist.lblDate.Create(Label,"Select Date",True,1935,255,0,135,195,True,0,"Arial",8,-2147483633,0)
+Gui.FormWKHist.dtpWKHist.Create(DatePicker)
+Gui.FormWKHist.dtpWKHist.Size(1935,285)
+Gui.FormWKHist.dtpWKHist.Position(135,450)
+Gui.FormWKHist.cmdCleanup.Create(Button)
+Gui.FormWKHist.cmdCleanup.Size(1830,570)
+Gui.FormWKHist.cmdCleanup.Position(135,930)
+Gui.FormWKHist.cmdCleanup.Caption("Cleanup Wood Kitting History")
+Gui.FormWKHist.cmdCleanup.Event(Click,cmdCleanup_Click)
+Program.Sub.ScreenSU.End
+Program.Sub.Preflight.Start
+Program.Sub.Preflight.End
+
+Program.Sub.Main.Start
+F.Intrinsic.Control.SetErrorHandler("Main_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String,"")
+
+Gui.FormWKHist..Show
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Main_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	F.Intrinsic.String.Build("Project: GCG_4442_WK_Hist_Cleanup.g2u{0}Subroutine: {1}{0}Error Occurred {2} with description {3}",V.Ambient.NewlineV.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(FormWKHist_UnLoad)
+Function.Intrinsic.Control.EndIf
+Program.Sub.Main.End
+
+Program.Sub.FormWKHist_UnLoad.Start
+F.Intrinsic.Control.SetErrorHandler("FormWKHist_UnLoad_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String,"")
+
+F.Intrinsic.Control.End
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("FormWKHist_UnLoad_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	F.Intrinsic.String.Build("Project: GCG_4442_WK_Hist_Cleanup.g2u{0}Subroutine: {1}{0}Error Occurred {2} with description {3}",V.Ambient.NewlineV.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.End
+Function.Intrinsic.Control.EndIf
+Program.Sub.FormWKHist_UnLoad.End
+
+Program.Sub.cmdCleanup_Click.Start
+F.Intrinsic.Control.SetErrorHandler("cmdCleanup_Click_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String,"")
+V.Local.iRet.Declare(Long,0)
+V.Local.sMsg.Declare(String,"")
+V.Local.sSql.Declare(String,"")
+
+F.Intrinsic.String.Build("Are you sure you want to remove History Records older than {0}",V.Screen.FormWKHist!dtpWKHist.Value,V.Local.sMsg)
+
+F.Intrinsic.UI.Msgbox(V.Local.sMsg,"Attention",4,V.Local.iRet)
+
+F.Intrinsic.Control.If(V.Local.iRet,=,6)
+	F.Intrinsic.String.Build("Delete From GCG_4442_WProg_Hist Where Check_Out < '{0}'",V.Screen.FormWKHist!dtpWKHist.Value.PervasiveDate,V.Local.sSql)
+	
+	F.ODBC.Connection!Con.OpenCompanyConnection
+	F.ODBC.Connection!Con.Execute(V.Local.sSql)
+	F.ODBC.Connection!Con.Close
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("cmdCleanup_Click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	F.Intrinsic.String.Build("Project: GCG_4442_WK_Hist_Cleanup.g2u{0}Subroutine: {1}{0}Error Occurred {2} with description {3}",V.Ambient.NewlineV.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(FormWKHist_UnLoad)
+Function.Intrinsic.Control.EndIf
+Program.Sub.cmdCleanup_Click.End
