@@ -1,0 +1,2782 @@
+Program.Sub.ScreenSU.Start
+Gui.F_MetalKit..Create
+Gui.F_MetalKit..Size(24255,10230)
+Gui.F_MetalKit..MinX(0)
+Gui.F_MetalKit..MinY(0)
+Gui.F_MetalKit..Position(0,0)
+Gui.F_MetalKit..BackColor(-2147483633)
+Gui.F_MetalKit..MousePointer(0)
+Gui.F_MetalKit..Event(UnLoad,Form_UnLoad)
+Gui.F_MetalKit..Event(Resize,Resize)
+Gui.F_MetalKit..Caption("Metal Kitting")
+Gui.F_MetalKit..ContextMenuCreate("ctxOverride")
+Gui.F_MetalKit..ContextMenuAddItem("ctxOverride","Override",0,"Override")
+Gui.F_MetalKit..ContextMenuSetItemEventHandler("ctxOverride","Override","MenuClick")
+Gui.F_MetalKit..ContextMenuCreate("ctxOutside")
+Gui.F_MetalKit..ContextMenuAddItem("ctxOutside","Outside",0,"Create Outside PO")
+Gui.F_MetalKit..ContextMenuAddItem("ctxOutside","Remove",0,"Remove Part")
+Gui.F_MetalKit..ContextMenuAddItem("ctxOutside","Override",0,"Qty Override")
+Gui.F_MetalKit..ContextMenuAddItem("ctxOutside","RemoveJob",0,"Remove Job")
+Gui.F_MetalKit..ContextMenuSetItemEventHandler("ctxOutside","Outside","MenuClick")
+Gui.F_MetalKit..ContextMenuSetItemEventHandler("ctxOutside","Remove","MenuClick")
+Gui.F_MetalKit..ContextMenuSetItemEventHandler("ctxOutside","Override","MenuClick")
+Gui.F_MetalKit..ContextMenuSetItemEventHandler("ctxOutside","RemoveJob","MenuClick")
+Gui.F_MetalKit.txtWO.Create(TextBox,"",True,1500,300,0,75,9420,True,0,"Arial",8,-2147483643,1)
+Gui.F_MetalKit.txtWO.Event(KeyPressEnter,txtWO_KeyPressEnter)
+Gui.F_MetalKit.GsGridControlW11.Create(GsGridControl)
+Gui.F_MetalKit.GsGridControlW11.Size(1995,2385)
+Gui.F_MetalKit.GsGridControlW11.Position(20025,45)
+Gui.F_MetalKit.GsGridControlW11.Event(RowCellClick,GsGridControl_RowCellClick)
+Gui.F_MetalKit.GsGridControlW12.Create(GsGridControl)
+Gui.F_MetalKit.GsGridControlW12.Size(1995,2385)
+Gui.F_MetalKit.GsGridControlW12.Position(22020,45)
+Gui.F_MetalKit.GsGridControlW12.Event(RowCellClick,GsGridControl_RowCellClick)
+Gui.F_MetalKit.GsGridControlW10.Create(GsGridControl)
+Gui.F_MetalKit.GsGridControlW10.Size(1995,2385)
+Gui.F_MetalKit.GsGridControlW10.Position(18030,45)
+Gui.F_MetalKit.GsGridControlW10.Event(RowCellClick,GsGridControl_RowCellClick)
+Gui.F_MetalKit.GsGridControlW09.Create(GsGridControl)
+Gui.F_MetalKit.GsGridControlW09.Size(1995,2385)
+Gui.F_MetalKit.GsGridControlW09.Position(16035,45)
+Gui.F_MetalKit.GsGridControlW09.Event(RowCellClick,GsGridControl_RowCellClick)
+Gui.F_MetalKit.GsGridControlW08.Create(GsGridControl)
+Gui.F_MetalKit.GsGridControlW08.Size(1995,2385)
+Gui.F_MetalKit.GsGridControlW08.Position(14040,45)
+Gui.F_MetalKit.GsGridControlW08.Event(RowCellClick,GsGridControl_RowCellClick)
+Gui.F_MetalKit.GsGridControlW07.Create(GsGridControl)
+Gui.F_MetalKit.GsGridControlW07.Size(1995,2385)
+Gui.F_MetalKit.GsGridControlW07.Position(12045,45)
+Gui.F_MetalKit.GsGridControlW07.Event(RowCellClick,GsGridControl_RowCellClick)
+Gui.F_MetalKit.GsGridControlW06.Create(GsGridControl)
+Gui.F_MetalKit.GsGridControlW06.Size(1995,2385)
+Gui.F_MetalKit.GsGridControlW06.Position(10050,45)
+Gui.F_MetalKit.GsGridControlW06.Event(RowCellClick,GsGridControl_RowCellClick)
+Gui.F_MetalKit.GsGridControlW05.Create(GsGridControl)
+Gui.F_MetalKit.GsGridControlW05.Size(1995,2385)
+Gui.F_MetalKit.GsGridControlW05.Position(8055,45)
+Gui.F_MetalKit.GsGridControlW05.Event(RowCellClick,GsGridControl_RowCellClick)
+Gui.F_MetalKit.GsGridControlW04.Create(GsGridControl)
+Gui.F_MetalKit.GsGridControlW04.Size(1995,2385)
+Gui.F_MetalKit.GsGridControlW04.Position(6060,45)
+Gui.F_MetalKit.GsGridControlW04.Event(RowCellClick,GsGridControl_RowCellClick)
+Gui.F_MetalKit.GsGridControlW03.Create(GsGridControl)
+Gui.F_MetalKit.GsGridControlW03.Size(1995,2385)
+Gui.F_MetalKit.GsGridControlW03.Position(4065,45)
+Gui.F_MetalKit.GsGridControlW03.Event(RowCellClick,GsGridControl_RowCellClick)
+Gui.F_MetalKit.GsGridControlW02.Create(GsGridControl)
+Gui.F_MetalKit.GsGridControlW02.Size(1995,2385)
+Gui.F_MetalKit.GsGridControlW02.Position(2070,45)
+Gui.F_MetalKit.GsGridControlW02.Event(RowCellClick,GsGridControl_RowCellClick)
+Gui.F_MetalKit.GsGridControlW01.Create(GsGridControl)
+Gui.F_MetalKit.GsGridControlW01.Size(1995,2385)
+Gui.F_MetalKit.GsGridControlW01.Position(75,45)
+Gui.F_MetalKit.GsGridControlW01.Event(RowCellClick,GsGridControl_RowCellClick)
+Gui.F_MetalKit.GsGridControlW13.Create(GsGridControl)
+Gui.F_MetalKit.GsGridControlW13.Size(1995,2385)
+Gui.F_MetalKit.GsGridControlW13.Position(75,2925)
+Gui.F_MetalKit.GsGridControlW13.Event(RowCellClick,GsGridControl_RowCellClick)
+Gui.F_MetalKit.GsGridControlW14.Create(GsGridControl)
+Gui.F_MetalKit.GsGridControlW14.Size(1995,2385)
+Gui.F_MetalKit.GsGridControlW14.Position(2070,2925)
+Gui.F_MetalKit.GsGridControlW14.Event(RowCellClick,GsGridControl_RowCellClick)
+Gui.F_MetalKit.GsGridControlW15.Create(GsGridControl)
+Gui.F_MetalKit.GsGridControlW15.Size(1995,2385)
+Gui.F_MetalKit.GsGridControlW15.Position(4065,2925)
+Gui.F_MetalKit.GsGridControlW15.Event(RowCellClick,GsGridControl_RowCellClick)
+Gui.F_MetalKit.GsGridControlW16.Create(GsGridControl)
+Gui.F_MetalKit.GsGridControlW16.Size(1995,2385)
+Gui.F_MetalKit.GsGridControlW16.Position(6060,2925)
+Gui.F_MetalKit.GsGridControlW16.Event(RowCellClick,GsGridControl_RowCellClick)
+Gui.F_MetalKit.GsGridControlW17.Create(GsGridControl)
+Gui.F_MetalKit.GsGridControlW17.Size(1995,2385)
+Gui.F_MetalKit.GsGridControlW17.Position(8055,2925)
+Gui.F_MetalKit.GsGridControlW17.Event(RowCellClick,GsGridControl_RowCellClick)
+Gui.F_MetalKit.GsGridControlW18.Create(GsGridControl)
+Gui.F_MetalKit.GsGridControlW18.Size(1995,2385)
+Gui.F_MetalKit.GsGridControlW18.Position(10050,2925)
+Gui.F_MetalKit.GsGridControlW18.Event(RowCellClick,GsGridControl_RowCellClick)
+Gui.F_MetalKit.GsGridControlW19.Create(GsGridControl)
+Gui.F_MetalKit.GsGridControlW19.Size(1995,2385)
+Gui.F_MetalKit.GsGridControlW19.Position(12045,2925)
+Gui.F_MetalKit.GsGridControlW19.Event(RowCellClick,GsGridControl_RowCellClick)
+Gui.F_MetalKit.GsGridControlW20.Create(GsGridControl)
+Gui.F_MetalKit.GsGridControlW20.Size(1995,2385)
+Gui.F_MetalKit.GsGridControlW20.Position(14040,2925)
+Gui.F_MetalKit.GsGridControlW20.Event(RowCellClick,GsGridControl_RowCellClick)
+Gui.F_MetalKit.GsGridControlW21.Create(GsGridControl)
+Gui.F_MetalKit.GsGridControlW21.Size(1995,2385)
+Gui.F_MetalKit.GsGridControlW21.Position(16035,2925)
+Gui.F_MetalKit.GsGridControlW21.Event(RowCellClick,GsGridControl_RowCellClick)
+Gui.F_MetalKit.GsGridControlW22.Create(GsGridControl)
+Gui.F_MetalKit.GsGridControlW22.Size(1995,2385)
+Gui.F_MetalKit.GsGridControlW22.Position(18030,2925)
+Gui.F_MetalKit.GsGridControlW22.Event(RowCellClick,GsGridControl_RowCellClick)
+Gui.F_MetalKit.GsGridControlW23.Create(GsGridControl)
+Gui.F_MetalKit.GsGridControlW23.Size(1995,2385)
+Gui.F_MetalKit.GsGridControlW23.Position(20025,2925)
+Gui.F_MetalKit.GsGridControlW23.Event(RowCellClick,GsGridControl_RowCellClick)
+Gui.F_MetalKit.GsGridControlW24.Create(GsGridControl)
+Gui.F_MetalKit.GsGridControlW24.Size(1995,2385)
+Gui.F_MetalKit.GsGridControlW24.Position(22020,2925)
+Gui.F_MetalKit.GsGridControlW24.Event(RowCellClick,GsGridControl_RowCellClick)
+Gui.F_MetalKit.progressBarW01.Create(ProgressBar)
+Gui.F_MetalKit.progressBarW01.Size(1995,315)
+Gui.F_MetalKit.progressBarW01.Position(75,2475)
+Gui.F_MetalKit.progressBarW02.Create(ProgressBar)
+Gui.F_MetalKit.progressBarW02.Size(1995,315)
+Gui.F_MetalKit.progressBarW02.Position(2070,2475)
+Gui.F_MetalKit.progressBarW03.Create(ProgressBar)
+Gui.F_MetalKit.progressBarW03.Size(1995,315)
+Gui.F_MetalKit.progressBarW03.Position(4065,2475)
+Gui.F_MetalKit.progressBarW04.Create(ProgressBar)
+Gui.F_MetalKit.progressBarW04.Size(1995,315)
+Gui.F_MetalKit.progressBarW04.Position(6060,2475)
+Gui.F_MetalKit.progressBarW05.Create(ProgressBar)
+Gui.F_MetalKit.progressBarW05.Size(1995,315)
+Gui.F_MetalKit.progressBarW05.Position(8055,2475)
+Gui.F_MetalKit.progressBarW06.Create(ProgressBar)
+Gui.F_MetalKit.progressBarW06.Size(1995,315)
+Gui.F_MetalKit.progressBarW06.Position(10050,2475)
+Gui.F_MetalKit.progressBarW07.Create(ProgressBar)
+Gui.F_MetalKit.progressBarW07.Size(1995,315)
+Gui.F_MetalKit.progressBarW07.Position(12045,2475)
+Gui.F_MetalKit.progressBarW08.Create(ProgressBar)
+Gui.F_MetalKit.progressBarW08.Size(1995,315)
+Gui.F_MetalKit.progressBarW08.Position(14040,2475)
+Gui.F_MetalKit.progressBarW09.Create(ProgressBar)
+Gui.F_MetalKit.progressBarW09.Size(1995,315)
+Gui.F_MetalKit.progressBarW09.Position(16035,2475)
+Gui.F_MetalKit.progressBarW10.Create(ProgressBar)
+Gui.F_MetalKit.progressBarW10.Size(1995,315)
+Gui.F_MetalKit.progressBarW10.Position(18030,2475)
+Gui.F_MetalKit.progressBarW11.Create(ProgressBar)
+Gui.F_MetalKit.progressBarW11.Size(1995,315)
+Gui.F_MetalKit.progressBarW11.Position(20025,2475)
+Gui.F_MetalKit.progressBarW12.Create(ProgressBar)
+Gui.F_MetalKit.progressBarW12.Size(1995,315)
+Gui.F_MetalKit.progressBarW12.Position(22020,2475)
+Gui.F_MetalKit.progressBarW13.Create(ProgressBar)
+Gui.F_MetalKit.progressBarW13.Size(1995,315)
+Gui.F_MetalKit.progressBarW13.Position(75,5355)
+Gui.F_MetalKit.progressBarW14.Create(ProgressBar)
+Gui.F_MetalKit.progressBarW14.Size(1995,315)
+Gui.F_MetalKit.progressBarW14.Position(2070,5355)
+Gui.F_MetalKit.progressBarW15.Create(ProgressBar)
+Gui.F_MetalKit.progressBarW15.Size(1995,315)
+Gui.F_MetalKit.progressBarW15.Position(4065,5355)
+Gui.F_MetalKit.progressBarW16.Create(ProgressBar)
+Gui.F_MetalKit.progressBarW16.Size(1995,315)
+Gui.F_MetalKit.progressBarW16.Position(6060,5355)
+Gui.F_MetalKit.progressBarW17.Create(ProgressBar)
+Gui.F_MetalKit.progressBarW17.Size(1995,315)
+Gui.F_MetalKit.progressBarW17.Position(8055,5355)
+Gui.F_MetalKit.progressBarW18.Create(ProgressBar)
+Gui.F_MetalKit.progressBarW18.Size(1995,315)
+Gui.F_MetalKit.progressBarW18.Position(10050,5355)
+Gui.F_MetalKit.progressBarW19.Create(ProgressBar)
+Gui.F_MetalKit.progressBarW19.Size(1995,315)
+Gui.F_MetalKit.progressBarW19.Position(12045,5355)
+Gui.F_MetalKit.progressBarW20.Create(ProgressBar)
+Gui.F_MetalKit.progressBarW20.Size(1995,315)
+Gui.F_MetalKit.progressBarW20.Position(14040,5355)
+Gui.F_MetalKit.progressBarW21.Create(ProgressBar)
+Gui.F_MetalKit.progressBarW21.Size(1995,315)
+Gui.F_MetalKit.progressBarW21.Position(16035,5355)
+Gui.F_MetalKit.progressBarW22.Create(ProgressBar)
+Gui.F_MetalKit.progressBarW22.Size(1995,315)
+Gui.F_MetalKit.progressBarW22.Position(18030,5355)
+Gui.F_MetalKit.progressBarW23.Create(ProgressBar)
+Gui.F_MetalKit.progressBarW23.Size(1995,315)
+Gui.F_MetalKit.progressBarW23.Position(20025,5355)
+Gui.F_MetalKit.progressBarW24.Create(ProgressBar)
+Gui.F_MetalKit.progressBarW24.Size(1995,315)
+Gui.F_MetalKit.progressBarW24.Position(22020,5355)
+Gui.F_MetalKit.GsGridControlP01.Create(GsGridControl)
+Gui.F_MetalKit.GsGridControlP01.Size(1995,2385)
+Gui.F_MetalKit.GsGridControlP01.Position(75,5805)
+Gui.F_MetalKit.GsGridControlP01.Event(RowCellClick,GsGridControl_RowCellClick)
+Gui.F_MetalKit.GsGridControlP02.Create(GsGridControl)
+Gui.F_MetalKit.GsGridControlP02.Size(1995,2385)
+Gui.F_MetalKit.GsGridControlP02.Position(2070,5805)
+Gui.F_MetalKit.GsGridControlP02.Event(RowCellClick,GsGridControl_RowCellClick)
+Gui.F_MetalKit.GsGridControlP03.Create(GsGridControl)
+Gui.F_MetalKit.GsGridControlP03.Size(1995,2385)
+Gui.F_MetalKit.GsGridControlP03.Position(4065,5805)
+Gui.F_MetalKit.GsGridControlP03.Event(RowCellClick,GsGridControl_RowCellClick)
+Gui.F_MetalKit.GsGridControlP04.Create(GsGridControl)
+Gui.F_MetalKit.GsGridControlP04.Size(1995,2385)
+Gui.F_MetalKit.GsGridControlP04.Position(6060,5805)
+Gui.F_MetalKit.GsGridControlP04.Event(RowCellClick,GsGridControl_RowCellClick)
+Gui.F_MetalKit.GsGridControlP05.Create(GsGridControl)
+Gui.F_MetalKit.GsGridControlP05.Size(1995,2385)
+Gui.F_MetalKit.GsGridControlP05.Position(8055,5805)
+Gui.F_MetalKit.GsGridControlP05.Event(RowCellClick,GsGridControl_RowCellClick)
+Gui.F_MetalKit.GsGridControlP06.Create(GsGridControl)
+Gui.F_MetalKit.GsGridControlP06.Size(1995,2385)
+Gui.F_MetalKit.GsGridControlP06.Position(10050,5805)
+Gui.F_MetalKit.GsGridControlP06.Event(RowCellClick,GsGridControl_RowCellClick)
+Gui.F_MetalKit.GsGridControlP07.Create(GsGridControl)
+Gui.F_MetalKit.GsGridControlP07.Size(1995,2385)
+Gui.F_MetalKit.GsGridControlP07.Position(12045,5805)
+Gui.F_MetalKit.GsGridControlP07.Event(RowCellClick,GsGridControl_RowCellClick)
+Gui.F_MetalKit.GsGridControlP08.Create(GsGridControl)
+Gui.F_MetalKit.GsGridControlP08.Size(1995,2385)
+Gui.F_MetalKit.GsGridControlP08.Position(14040,5805)
+Gui.F_MetalKit.GsGridControlP08.Event(RowCellClick,GsGridControl_RowCellClick)
+Gui.F_MetalKit.GsGridControlP09.Create(GsGridControl)
+Gui.F_MetalKit.GsGridControlP09.Size(1995,2385)
+Gui.F_MetalKit.GsGridControlP09.Position(16035,5805)
+Gui.F_MetalKit.GsGridControlP09.Event(RowCellClick,GsGridControl_RowCellClick)
+Gui.F_MetalKit.GsGridControlP10.Create(GsGridControl)
+Gui.F_MetalKit.GsGridControlP10.Size(1995,2385)
+Gui.F_MetalKit.GsGridControlP10.Position(18030,5805)
+Gui.F_MetalKit.GsGridControlP10.Event(RowCellClick,GsGridControl_RowCellClick)
+Gui.F_MetalKit.GsGridControlP11.Create(GsGridControl)
+Gui.F_MetalKit.GsGridControlP11.Size(1995,2385)
+Gui.F_MetalKit.GsGridControlP11.Position(20025,5805)
+Gui.F_MetalKit.GsGridControlP11.Event(RowCellClick,GsGridControl_RowCellClick)
+Gui.F_MetalKit.GsGridControlP12.Create(GsGridControl)
+Gui.F_MetalKit.GsGridControlP12.Size(1995,2385)
+Gui.F_MetalKit.GsGridControlP12.Position(22020,5805)
+Gui.F_MetalKit.GsGridControlP12.Event(RowCellClick,GsGridControl_RowCellClick)
+Gui.F_MetalKit.progressBarP01.Create(ProgressBar)
+Gui.F_MetalKit.progressBarP01.Size(1995,315)
+Gui.F_MetalKit.progressBarP01.Position(75,8235)
+Gui.F_MetalKit.progressBarP02.Create(ProgressBar)
+Gui.F_MetalKit.progressBarP02.Size(1995,315)
+Gui.F_MetalKit.progressBarP02.Position(2070,8235)
+Gui.F_MetalKit.progressBarP03.Create(ProgressBar)
+Gui.F_MetalKit.progressBarP03.Size(1995,315)
+Gui.F_MetalKit.progressBarP03.Position(4065,8235)
+Gui.F_MetalKit.progressBarP04.Create(ProgressBar)
+Gui.F_MetalKit.progressBarP04.Size(1995,315)
+Gui.F_MetalKit.progressBarP04.Position(6060,8235)
+Gui.F_MetalKit.progressBarP05.Create(ProgressBar)
+Gui.F_MetalKit.progressBarP05.Size(1995,315)
+Gui.F_MetalKit.progressBarP05.Position(8055,8235)
+Gui.F_MetalKit.progressBarP06.Create(ProgressBar)
+Gui.F_MetalKit.progressBarP06.Size(1995,315)
+Gui.F_MetalKit.progressBarP06.Position(10050,8235)
+Gui.F_MetalKit.progressBarP07.Create(ProgressBar)
+Gui.F_MetalKit.progressBarP07.Size(1995,315)
+Gui.F_MetalKit.progressBarP07.Position(12045,8235)
+Gui.F_MetalKit.progressBarP08.Create(ProgressBar)
+Gui.F_MetalKit.progressBarP08.Size(1995,315)
+Gui.F_MetalKit.progressBarP08.Position(14040,8235)
+Gui.F_MetalKit.progressBarP09.Create(ProgressBar)
+Gui.F_MetalKit.progressBarP09.Size(1995,315)
+Gui.F_MetalKit.progressBarP09.Position(16035,8235)
+Gui.F_MetalKit.progressBarP10.Create(ProgressBar)
+Gui.F_MetalKit.progressBarP10.Size(1995,315)
+Gui.F_MetalKit.progressBarP10.Position(18030,8235)
+Gui.F_MetalKit.progressBarP11.Create(ProgressBar)
+Gui.F_MetalKit.progressBarP11.Size(1995,315)
+Gui.F_MetalKit.progressBarP11.Position(20025,8235)
+Gui.F_MetalKit.progressBarP12.Create(ProgressBar)
+Gui.F_MetalKit.progressBarP12.Size(1995,315)
+Gui.F_MetalKit.progressBarP12.Position(22020,8235)
+Gui.F_MetalKit.GsgcView.Create(GsGridControl)
+Gui.F_MetalKit.GsgcView.Size(13965,780)
+Gui.F_MetalKit.GsgcView.Position(75,8580)
+Gui.F_MetalKit.GsgcView.Event(RowCellClick,GsgcView_RowCellClick)
+Gui.F_MetalKit.cmdExpand.Create(Button)
+Gui.F_MetalKit.cmdExpand.Size(1080,375)
+Gui.F_MetalKit.cmdExpand.Position(21420,9420)
+Gui.F_MetalKit.cmdExpand.Caption("Expand All")
+Gui.F_MetalKit.cmdExpand.Event(Click,GridButtons)
+Gui.F_MetalKit.cmdCollapse.Create(Button)
+Gui.F_MetalKit.cmdCollapse.Size(1080,375)
+Gui.F_MetalKit.cmdCollapse.Position(22800,9420)
+Gui.F_MetalKit.cmdCollapse.Caption("Collapse All")
+Gui.F_MetalKit.cmdCollapse.Event(Click,GridButtons)
+Gui.F_MetalKit.ddlLablePrinter.Create(DropDownList)
+Gui.F_MetalKit.ddlLablePrinter.Size(2910,330)
+Gui.F_MetalKit.ddlLablePrinter.Position(18150,9435)
+Gui.F_MetalKit.lblLabelPrinter.Create(Label,"Label Printer:",True,1125,255,0,16920,9540,True,0,"Arial",8,-2147483633,0)
+Gui.F_MetalKit.GsGridControlReWork.Create(GsGridControl)
+Gui.F_MetalKit.GsGridControlReWork.Size(9960,780)
+Gui.F_MetalKit.GsGridControlReWork.Position(14055,8580)
+Gui.Form_QtyOverride..Create
+Gui.Form_QtyOverride..Caption("Qty Override")
+Gui.Form_QtyOverride..Size(5325,2265)
+Gui.Form_QtyOverride..MinX(0)
+Gui.Form_QtyOverride..MinY(0)
+Gui.Form_QtyOverride..Position(0,0)
+Gui.Form_QtyOverride..BackColor(-2147483633)
+Gui.Form_QtyOverride..MousePointer(0)
+Gui.Form_QtyOverride..Event(UnLoad,Form_QtyOverride_UnLoad)
+Gui.Form_QtyOverride.lblQtyNeeded.Create(Label,"Qty Needed",True,1245,255,0,1740,555,True,0,"Arial",8,-2147483633,0)
+Gui.Form_QtyOverride.lblQtytoAdd.Create(Label,"Qty To Add",True,1245,255,0,105,555,True,0,"Arial",8,-2147483633,0)
+Gui.Form_QtyOverride.lblJobSuffixPart.Create(Label,"JobSuffixPart",True,1935,255,0,105,165,True,0,"Arial",8,-2147483633,0)
+Gui.Form_QtyOverride.txtQtyNeeded.Create(TextBox,"",True,1215,300,0,1740,780,True,2,"Arial",8,-2147483643,1)
+Gui.Form_QtyOverride.txtQtyNeeded.Locked(True)
+Gui.Form_QtyOverride.txtQtyOpen.Create(TextBox,"0",True,1215,300,0,105,780,True,2,"Arial",8,-2147483643,1)
+Gui.Form_QtyOverride.txtQtyOpen.NumericOnly(2)
+Gui.Form_QtyOverride.txtQtyOpen.DefaultValue("0")
+Gui.Form_QtyOverride.txtQtyOpen.Event(LostFocus,txtQtyOpen_Change)
+Gui.Form_QtyOverride.txtQtyOpen.Event(KeyPressEnter,txtQtyOpen_KeyPressEnter)
+Gui.Form_QtyOverride.cmdSubmit.Create(Button)
+Gui.Form_QtyOverride.cmdSubmit.Size(855,375)
+Gui.Form_QtyOverride.cmdSubmit.Position(105,1425)
+Gui.Form_QtyOverride.cmdSubmit.Caption("Submit")
+Gui.Form_QtyOverride.cmdSubmit.Event(Click,cmdSubmit_Click)
+Program.Sub.ScreenSU.End
+
+Program.Sub.Preflight.Start
+v.Global.iWidth.Declare(Long)
+v.Global.iHeight.Declare(Long)
+v.Global.sPrev.Declare(String)
+v.Global.sGrid.Declare(String)
+v.Global.sControl.Declare(String)
+v.Global.sPrinter.Declare(String)
+v.Global.sLogFile.Declare(String)
+Variable.Global.sGoodScan.Declare(String,"")
+Variable.Global.sBadScan.Declare(String,"")
+Program.Sub.Preflight.End
+
+Program.Sub.Main.Start
+f.Intrinsic.Control.Try
+
+v.Local.sSQL.Declare(String)
+v.Local.bExist.Declare(Boolean)
+v.Local.sFile.Declare(String)
+v.Local.dDate.Declare(Date)
+v.Local.iDiff.Declare(Long)
+
+f.ODBC.Connection!Con.OpenConnection(v.Ambient.PDSN,v.Ambient.PUser,v.Ambient.PPass,999)
+F.ODBC.Connection!ConC.OpenConnection(V.Ambient.Ccon,V.Ambient.Cuser,V.Ambient.Cpass)
+
+'setting path for wav file
+F.Intrinsic.String.Build("{0}\GCG_4442_GoodScan.wav",V.Caller.GasDir,V.Global.sGoodScan)
+F.Intrinsic.String.Build("{0}\GCG_4442_BadScan.wav",V.Caller.GasDir,V.Global.sBadScan)
+
+F.Intrinsic.Control.If(V.Caller.User.Trim,<>,"MKTIN")
+	Gui.F_MetalKit.txtWO.Enabled(False)
+F.Intrinsic.Control.Else
+	Gui.F_MetalKit.GsgcView.ContextMenuAttach("ctxOutside")
+F.Intrinsic.Control.EndIf
+
+'creating datatable for sentinel enabled printers
+V.Local.sSql.Set("Select PrinterName, rtrim(Sentinelalias) From Server_Printers Where Sentinelenabled = 1 Order By Sentinelalias")
+F.Data.Dictionary.CreateFromSQL("Printer","ConC",V.Local.sSql)
+
+Gui.F_MetalKit.ddlLablePrinter.AddItem(" ",0)
+Gui.F_MetalKit.ddlLablePrinter.AddItems("Dictionary","Printer")
+
+F.Data.Dictionary.Close("Printer")
+
+F.ODBC.Connection!ConC.Close
+
+'f.Intrinsic.String.Build("{0}\GCG_4442_Metal_Log.txt",v.Caller.GasDir,v.Global.sLogFile)
+'f.Intrinsic.File.Exists(v.Global.sLogFile,v.Local.bExist)
+'f.Intrinsic.Control.If(v.Local.bExist,=,False)
+'	'Create the file
+'	f.Intrinsic.File.String2File(v.Global.sLogFile,v.Ambient.Date.FormatMMDDYYYY)
+'f.Intrinsic.Control.Else
+'	'File exists so grab the date it was created and compare it out today to see if we need to delete it.
+'	f.Intrinsic.File.File2String(v.Global.sLogFile,v.Local.sFile)
+'	f.Intrinsic.String.Split(v.Local.sFile,v.Ambient.NewLine,v.Local.sFile)
+'	v.Local.sFile.RedimPreserve(0,0)
+'	f.Intrinsic.Date.ConvertDString(v.Local.sFile,"MMDDYYYY",v.Local.dDate)
+'	f.Intrinsic.Date.DateDiff("d",v.Local.dDate,v.Ambient.Date,v.Local.iDiff)
+'	f.Intrinsic.Control.If(v.Local.iDiff,>,30)
+'		f.Intrinsic.File.String2File(v.Global.sLogFile,v.Ambient.Date.FormatMMDDYYYY)
+'	f.Intrinsic.Control.EndIf
+'f.Intrinsic.Control.EndIf
+
+'f.Intrinsic.File.Append2FileNewLine(v.Global.sLogFile,"Load Program")
+
+v.Global.iWidth.Set(v.Screen.F_MetalKit.Width)
+v.Global.iHeight.Set(v.Screen.F_MetalKit.Height)
+gui.F_MetalKit.txtWO.Anchor(6)
+Gui.F_MetalKit.cmdExpand.Anchor(10)
+Gui.F_MetalKit.cmdCollapse.Anchor(10)
+gui.F_MetalKit.GsgcView.Anchor(7)
+Gui.F_MetalKit.lblLabelPrinter.Anchor(6)
+Gui.F_MetalKit.ddlLablePrinter.Anchor(6)
+Gui.F_MetalKit.GsGridControlReWork.Anchor(15)
+
+'Get Label Printer
+'f.Intrinsic.Control.CallSub(PrinterLocation)
+'populate the DT's
+F.Intrinsic.Control.CallSub(buildemptydatatables)
+
+'f.Intrinsic.File.Append2FileNewLine(v.Global.sLogFile,"Show screen")
+
+gui.F_MetalKit.txtWO.SetFocus
+gui.F_MetalKit.txtWO.SelectAll
+
+gui.F_MetalKit..Show
+
+f.Intrinsic.Control.Catch
+	f.Intrinsic.Control.CallSub(TryCatch,"Sub",V.Ambient.CurrentSubroutine,"Error",V.Ambient.ErrorNumber,"Desc",V.Ambient.ErrorDescription)
+f.Intrinsic.Control.EndTry
+Program.Sub.Main.End
+
+Program.Sub.TryCatch.Start
+v.Local.sError.Declare(String)
+Function.Intrinsic.String.Concat("Project: GCG_4442_MetalKitting.g2u",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",v.Args.Sub,V.Ambient.NewLine,"Error Occurred ",V.Args.Error," with description ",v.Args.Desc,V.Local.sError)
+'f.Intrinsic.File.Append2FileNewLine(v.Global.sLogFile,v.Local.sError)
+F.Intrinsic.UI.Msgbox(V.Local.sError)
+f.Intrinsic.Control.CallSub(Form_UnLoad)
+Program.Sub.TryCatch.End
+
+Program.Sub.Form_UnLoad.Start
+F.Intrinsic.Control.Try
+	F.ODBC.Connection!con.Close
+	F.Intrinsic.Control.End
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.End
+F.Intrinsic.Control.EndTry
+Program.Sub.Form_UnLoad.End
+
+Program.Sub.BuildEmptyDatatables.Start
+f.Intrinsic.Control.Try
+
+V.Local.i.Declare(Long)
+V.Local.sDatatable.Declare(String)
+V.Local.iCount.Declare(Long)
+V.Local.sGrid.Declare(String)
+V.Local.iC.Declare(Long)
+V.Local.sSql.Declare(String)
+v.Local.sProg.Declare(String)
+v.Local.sSplit.Declare(String)
+v.Local.sType.Declare(String)
+v.Local.sForm.Declare(String)
+
+'Looping through the max amount of grids which is 24
+'in each loop we will try to populate A, B, and C grids
+'f.Intrinsic.String.Split("W*!*P","*!*",v.Local.sType)
+v.Local.sType.Set("W")
+F.Intrinsic.Control.For(V.Local.i,1,24,1)
+'	F.Intrinsic.String.Format(V.Local.i,"00",V.Local.sDatatable)
+	'We will do A first
+'	f.Intrinsic.Control.For(v.Local.iCount,v.Local.sType.UBound)
+'		'if type is P and > 12 then stop
+'		f.Intrinsic.Control.If(v.Local.sType(v.Local.iCount).Trim,=,"P","AND",v.Local.i,>,12)
+'			f.Intrinsic.Control.ExitFor(v.Local.iCount)
+'		f.Intrinsic.Control.EndIf
+		F.Intrinsic.String.Format(V.Local.i,"00",V.Local.sDatatable)
+		'Set form name depending on the screen
+		v.Local.sForm.Set("F_MetalKit")
+
+		'Build our DB string
+'		f.Intrinsic.String.Build("{0}{1}",v.Local.sType(v.Local.iCount),v.Local.sDatatable,v.Local.sDatatable)
+		f.Intrinsic.String.Build("{0}{1}",v.Local.sType,v.Local.sDatatable,v.Local.sDatatable)
+		'Load the data from the tables if it exists
+		F.Intrinsic.String.Build("Select * From GCG_4442_Metal_KIT Where Rec_ID = '{0}'",V.Local.sDatatable,V.Local.sSql)
+		F.ODBC.Connection!con.OpenLocalRecordsetRW("rst",V.Local.sSql)
+		'Create DT and create our only column
+		f.Intrinsic.Control.If(v.DataTable.[v.Local.sDatatable].Exists,=,True)
+			f.Data.DataTable.Close(v.Local.sDatatable)
+		f.Intrinsic.Control.EndIf
+		F.Data.DataTable.Create(V.Local.sDatatable,True)
+		F.Data.DataTable.AddColumn(V.Local.sDatatable,V.Local.sDatatable,"String")
+		v.Local.sSplit.Redim(0,0)
+		'If we have something then add the data to the DT if we don't then just populate all the rows with blanks
+		F.Intrinsic.Control.If(V.ODBC.con!rst.EOF,=,True)
+			F.Intrinsic.Control.For(V.Local.iC,0,4,1)
+				F.Data.DataTable.AddRow(V.Local.sDatatable,V.Local.sDatatable,"")
+			F.Intrinsic.Control.Next(V.Local.iC)
+			f.Intrinsic.Control.DoEvents
+			f.Intrinsic.String.Build("Kit Complete{0}Assemble{0}Next",v.Ambient.NewLine,v.Local.sSql)
+			F.Data.DataTable.AddRow(V.Local.sDatatable,V.Local.sDatatable,v.Local.sSql)
+		F.Intrinsic.Control.Else
+			'Add each row from the table. Job, SO, Part, Status, x of x, next button
+			F.Data.DataTable.AddRow(V.Local.sDatatable,V.Local.sDatatable,V.ODBC.con!rst.FieldValTrim!JOB)
+'			f.Intrinsic.File.Append2FileNewLine(v.Global.sLogFile,V.Local.sDatatable)
+'			f.Intrinsic.File.Append2FileNewLine(v.Global.sLogFile,V.ODBC.con!rst.FieldValTrim!JOB)
+			F.Data.DataTable.AddRow(V.Local.sDatatable,V.Local.sDatatable,V.ODBC.con!rst.FieldValTrim!ORDER_NO)
+			F.Data.DataTable.AddRow(V.Local.sDatatable,V.Local.sDatatable,V.ODBC.con!rst.FieldValTrim!Part)
+			F.Data.DataTable.AddRow(V.Local.sDatatable,V.Local.sDatatable,"KIT STATUS")
+			F.Data.DataTable.AddRow(V.Local.sDatatable,V.Local.sDatatable,V.ODBC.con!rst.FieldValTrim!Kitting_Status)
+'			f.Intrinsic.File.Append2FileNewLine(v.Global.sLogFile,V.ODBC.con!rst.FieldValTrim!Kitting_Status)
+			'split the status so we can set the progress bar max and value
+			f.Intrinsic.String.Split(V.ODBC.con!rst.FieldValTrim!Kitting_Status,"OF",v.Local.sSplit)
+			v.Local.sSplit.RedimPreserve(0,1)
+			F.Intrinsic.String.Build("ProgressBar{0}",v.Local.sDatatable,V.Local.sProg)
+			f.Intrinsic.Control.If(v.Local.sSplit(1).Long,<>,0)
+				Gui.[v.Local.sForm].[v.Local.sProg].Max(v.Local.sSplit(1).Long)
+			f.Intrinsic.Control.EndIf
+			Gui.[v.Local.sForm].[v.Local.sProg].Value(v.Local.sSplit(0).Long)
+			'Get the first open WC from the parent job and set it in the next button
+			f.Intrinsic.String.Build("SELECT TOP 1 RTRIM(PART) as Part FROM V_JOB_OPERATIONS WHERE JOB = '{0}' AND SUFFIX = '000' AND LMO = 'L' AND SEQ < '995000' AND DATE_COMPLETED = '1900-01-01' ORDER BY SEQ ASC",v.ODBC.Con!rst.FieldValTrim!JOB,v.Local.sSql)
+			f.ODBC.Connection!Con.OpenLocalRecordsetRO("rstWC",v.Local.sSql)
+			f.Intrinsic.Control.If(v.ODBC.Con!rstWC.EOF,=,False)
+				f.Intrinsic.String.Build("Kit Complete{0}{1} Next",v.Ambient.NewLine,v.ODBC.Con!rstWC.FieldValTrim!PART,v.Local.sSql)
+			f.Intrinsic.Control.Else
+				f.Intrinsic.String.Build("Kit Complete{0}Assemble{0}Next",v.Ambient.NewLine,v.Local.sSql)
+			f.Intrinsic.Control.EndIf
+			f.ODBC.Con!rstWC.Close
+			F.Data.DataTable.AddRow(V.Local.sDatatable,V.Local.sDatatable,v.Local.sSql)
+		F.Intrinsic.Control.EndIf
+		F.ODBC.con!rst.Close
+		'Start building the GV looks
+		F.Intrinsic.String.Build("GsGridControl{0}",V.Local.sDatatable,V.Local.sGrid)
+		Gui.[v.Local.sForm].[V.Local.sGrid].AddGridviewFromDatatable(V.Local.sDatatable,V.Local.sDatatable)
+		Gui.[v.Local.sForm].[V.Local.sGrid].SetColumnProperty(V.Local.sDatatable,V.Local.sDatatable,"readonly","True")
+		Gui.[v.Local.sForm].[V.Local.sGrid].SetColumnProperty(V.Local.sDatatable,V.Local.sDatatable,"AllowEdit","False")
+		
+		F.Intrinsic.String.Build("ProgressBar{0}",V.Local.i,V.Local.sProg)
+		'Gui.[v.Local.sForm].[v.Local.sProg].Min(0)
+		'If our x of x equal each other then we can show the button
+		f.Intrinsic.Control.If(v.Local.sSplit(0).Long,=,v.Local.sSplit(1).Long,"AND",v.Local.sSplit(1).Long,<>,0)
+			Gui.[v.Local.sForm].[V.Local.sGrid].HideRow(V.Local.sDatatable,5,False)
+		f.Intrinsic.Control.Else
+			Gui.[v.Local.sForm].[V.Local.sGrid].HideRow(V.Local.sDatatable,5,True)
+		f.Intrinsic.Control.EndIf
+		Gui.[v.Local.sForm].[V.Local.sGrid].SetCellAppearance(V.Local.sDatatable,0,5,"backcolor","Lime")
+		Gui.[v.Local.sForm].[V.Local.sGrid].SetCellAppearance(V.Local.sDatatable,0,5,"fontbold",True)
+		Gui.[v.Local.sForm].[V.Local.sGrid].SetCellAppearance(V.Local.sDatatable,0,5,"Halignment","Center")
+		Gui.[v.Local.sForm].[V.Local.sGrid].SetCellAppearance(V.Local.sDatatable,0,5,"valignment","Center")
+'		Gui.[v.Local.sForm].[V.Local.sGrid].SetCellAppearance(V.Local.sDatatable,0,2,"wordwrap","nowrap")
+		Gui.[v.Local.sForm].[v.Local.sGrid].SetGridViewProperty(v.Local.sDatatable,"OptionsViewRowAutoHeight",True)
+		Gui.[v.Local.sForm].[v.Local.sGrid].SetGridViewProperty(v.Local.sDatatable,"AllowSort",False)
+		Gui.[v.Local.sForm].[v.Local.sGrid].SetGridViewProperty(v.Local.sDatatable,"AllowFilter",False)
+		Gui.[v.Local.sForm].[v.Local.sGrid].SetGridViewProperty(v.Local.sDatatable,"AllowColumnMoving",False)
+		Gui.[v.Local.sForm].[V.Local.sGrid].SetColumnProperty(V.Local.sDatatable,V.Local.sDatatable,"CellWordWrap","wrap")
+		Gui.[v.Local.sForm].[v.Local.sGrid].SetColumnProperty(v.Local.sDatatable,v.Local.sDatatable,"CellHAlignment","center")
+		Gui.[v.Local.sForm].[v.Local.sGrid].SetColumnProperty(v.Local.sDatatable,v.Local.sDatatable,"CellVAlignment","center")
+		Gui.[v.Local.sForm].[v.Local.sGrid].SetColumnProperty(v.Local.sDatatable,v.Local.sDatatable,"CellFontBold",True)
+		Gui.[v.Local.sForm].[v.Local.sGrid].SetColumnProperty(v.Local.sDatatable,v.Local.sDatatable,"HeaderHAlignment","center")
+	'	Gui.[v.Local.sForm].[v.Local.sGrid].SetColumnProperty(v.Local.sDatatable,v.Local.sDatatable,"HeaderForeColor","Red")
+		Gui.[v.Local.sForm].[v.Local.sGrid].SetColumnProperty(v.Local.sDatatable,v.Local.sDatatable,"HeaderFontBold",True)
+		Gui.[v.Local.sForm].[v.Local.sGrid].SetColumnProperty(v.Local.sDatatable,v.Local.sDatatable,"headerbackcolor","#0000ff")
+		Gui.[v.Local.sForm].[v.Local.sGrid].SetColumnProperty(v.Local.sDatatable,v.Local.sDatatable,"headerforecolor","White")
+		Gui.[v.Local.sForm].[v.Local.sGrid].SetColumnProperty(v.Local.sDatatable,v.Local.sDatatable,"headerfontsize",15)
+	
+		Gui.[v.Local.sForm].[V.Local.sGrid].MainView(V.Local.sDatatable)
+'		f.Intrinsic.Control.DoEvents
+'	f.Intrinsic.Control.Next(v.Local.iCount)
+	f.Intrinsic.Control.DoEvents
+F.Intrinsic.Control.Next(v.Local.i)
+f.Intrinsic.Control.DoEvents
+
+'do the same thing again for Powder Coating
+v.Local.sType.Set("P")
+F.Intrinsic.Control.For(V.Local.i,1,12,1)
+		F.Intrinsic.String.Format(V.Local.i,"00",V.Local.sDatatable)
+		'Set form name depending on the screen
+		v.Local.sForm.Set("F_MetalKit")
+
+		'Build our DB string
+'		f.Intrinsic.String.Build("{0}{1}",v.Local.sType(v.Local.iCount),v.Local.sDatatable,v.Local.sDatatable)
+		f.Intrinsic.String.Build("{0}{1}",v.Local.sType,v.Local.sDatatable,v.Local.sDatatable)
+		'Load the data from the tables if it exists
+		F.Intrinsic.String.Build("Select * From GCG_4442_Metal_KIT Where Rec_ID = '{0}'",V.Local.sDatatable,V.Local.sSql)
+		F.ODBC.Connection!con.OpenLocalRecordsetRW("rst",V.Local.sSql)
+		'Create DT and create our only column
+		f.Intrinsic.Control.If(v.DataTable.[v.Local.sDatatable].Exists,=,True)
+			f.Data.DataTable.Close(v.Local.sDatatable)
+		f.Intrinsic.Control.EndIf
+		F.Data.DataTable.Create(V.Local.sDatatable,True)
+		F.Data.DataTable.AddColumn(V.Local.sDatatable,V.Local.sDatatable,"String")
+		v.Local.sSplit.Redim(0,0)
+		'If we have something then add the data to the DT if we don't then just populate all the rows with blanks
+		F.Intrinsic.Control.If(V.ODBC.con!rst.EOF,=,True)
+			F.Intrinsic.Control.For(V.Local.iC,0,2,1)
+				F.Data.DataTable.AddRow(V.Local.sDatatable,V.Local.sDatatable,"")
+			F.Intrinsic.Control.Next(V.Local.iC)
+			f.Intrinsic.Control.DoEvents
+			f.Intrinsic.String.Build("Kit Complete{0}Assemble{0}Next",v.Ambient.NewLine,v.Local.sSql)
+			F.Data.DataTable.AddRow(V.Local.sDatatable,V.Local.sDatatable,v.Local.sSql)
+		F.Intrinsic.Control.Else
+			'Add each row from the table. SO, Status, x of x, next button
+'			f.Intrinsic.File.Append2FileNewLine(v.Global.sLogFile,V.Local.sDatatable)
+			F.Data.DataTable.AddRow(V.Local.sDatatable,V.Local.sDatatable,V.ODBC.con!rst.FieldValTrim!ORDER_NO)
+'			f.Intrinsic.File.Append2FileNewLine(v.Global.sLogFile,V.ODBC.con!rst.FieldValTrim!ORDER_NO)
+			F.Data.DataTable.AddRow(V.Local.sDatatable,V.Local.sDatatable,"KIT STATUS")
+			F.Data.DataTable.AddRow(V.Local.sDatatable,V.Local.sDatatable,V.ODBC.con!rst.FieldValTrim!Kitting_Status)
+'			f.Intrinsic.File.Append2FileNewLine(v.Global.sLogFile,V.ODBC.con!rst.FieldValTrim!Kitting_Status)
+			'split the status so we can set the progress bar max and value
+			f.Intrinsic.String.Split(V.ODBC.con!rst.FieldValTrim!Kitting_Status,"OF",v.Local.sSplit)
+			v.Local.sSplit.RedimPreserve(0,1)
+			F.Intrinsic.String.Build("ProgressBar{0}",v.Local.sDatatable,V.Local.sProg)
+			f.Intrinsic.Control.If(v.Local.sSplit(1).Long,<>,0)
+				Gui.[v.Local.sForm].[v.Local.sProg].Max(v.Local.sSplit(1).Long)
+			f.Intrinsic.Control.EndIf
+			Gui.[v.Local.sForm].[v.Local.sProg].Value(v.Local.sSplit(0).Long)
+			'Get the first open WC from the parent job and set it in the next button
+'			f.Intrinsic.String.Build("SELECT TOP 1 RTRIM(PART) FROM V_JOB_OPERATIONS WHERE JOB = '{0}' AND SUFFIX = '000' AND LMO = 'L' AND SEQ < '995000' AND DATE_COMPLETED = '1900-01-01' ORDER BY SEQ ASC",v.ODBC.Con!rst.FieldValTrim!JOB,v.Local.sSql)
+'			f.ODBC.Connection!Con.OpenLocalRecordsetRO("rstWC",v.Local.sSql)
+'			f.Intrinsic.Control.If(v.ODBC.Con!rstWC.EOF,=,False)
+				f.Intrinsic.String.Build("Kit Complete{0}{1} Next",v.Ambient.NewLine,"*PC0",v.Local.sSql)
+'			f.Intrinsic.Control.Else
+'				f.Intrinsic.String.Build("Kit Complete{0}Assemble{0}Next",v.Ambient.NewLine,v.Local.sSql)
+'			f.Intrinsic.Control.EndIf
+'			f.ODBC.Con!rstWC.Close
+			F.Data.DataTable.AddRow(V.Local.sDatatable,V.Local.sDatatable,v.Local.sSql)
+		F.Intrinsic.Control.EndIf
+		F.ODBC.con!rst.Close
+		'Start building the GV looks
+		F.Intrinsic.String.Build("GsGridControl{0}",V.Local.sDatatable,V.Local.sGrid)
+		Gui.[v.Local.sForm].[V.Local.sGrid].AddGridviewFromDatatable(V.Local.sDatatable,V.Local.sDatatable)
+		Gui.[v.Local.sForm].[V.Local.sGrid].SetColumnProperty(V.Local.sDatatable,V.Local.sDatatable,"readonly","True")
+		Gui.[v.Local.sForm].[V.Local.sGrid].SetColumnProperty(V.Local.sDatatable,V.Local.sDatatable,"AllowEdit","False")
+		
+		F.Intrinsic.String.Build("ProgressBar{0}",V.Local.i,V.Local.sProg)
+		'Gui.[v.Local.sForm].[v.Local.sProg].Min(0)
+		'If our x of x equal each other then we can show the button
+		f.Intrinsic.Control.If(v.Local.sSplit(0).Long,=,v.Local.sSplit(1).Long,"AND",v.Local.sSplit(1).Long,<>,0)
+			Gui.[v.Local.sForm].[V.Local.sGrid].HideRow(V.Local.sDatatable,3,False)
+		f.Intrinsic.Control.Else
+			Gui.[v.Local.sForm].[V.Local.sGrid].HideRow(V.Local.sDatatable,3,True)
+		f.Intrinsic.Control.EndIf
+		Gui.[v.Local.sForm].[V.Local.sGrid].SetCellAppearance(V.Local.sDatatable,0,3,"backcolor","Lime")
+		Gui.[v.Local.sForm].[V.Local.sGrid].SetCellAppearance(V.Local.sDatatable,0,3,"fontbold",True)
+		Gui.[v.Local.sForm].[V.Local.sGrid].SetCellAppearance(V.Local.sDatatable,0,3,"Halignment","Center")
+		Gui.[v.Local.sForm].[V.Local.sGrid].SetCellAppearance(V.Local.sDatatable,0,3,"valignment","Center")
+'		Gui.[v.Local.sForm].[V.Local.sGrid].SetCellAppearance(V.Local.sDatatable,0,2,"wordwrap","nowrap")
+		Gui.[v.Local.sForm].[v.Local.sGrid].SetGridViewProperty(v.Local.sDatatable,"OptionsViewRowAutoHeight",True)
+		Gui.[v.Local.sForm].[v.Local.sGrid].SetGridViewProperty(v.Local.sDatatable,"AllowSort",False)
+		Gui.[v.Local.sForm].[v.Local.sGrid].SetGridViewProperty(v.Local.sDatatable,"AllowFilter",False)
+		Gui.[v.Local.sForm].[v.Local.sGrid].SetGridViewProperty(v.Local.sDatatable,"AllowColumnMoving",False)
+		Gui.[v.Local.sForm].[V.Local.sGrid].SetColumnProperty(V.Local.sDatatable,V.Local.sDatatable,"CellWordWrap","wrap")
+		Gui.[v.Local.sForm].[v.Local.sGrid].SetColumnProperty(v.Local.sDatatable,v.Local.sDatatable,"CellHAlignment","center")
+		Gui.[v.Local.sForm].[v.Local.sGrid].SetColumnProperty(v.Local.sDatatable,v.Local.sDatatable,"CellVAlignment","center")
+		Gui.[v.Local.sForm].[v.Local.sGrid].SetColumnProperty(v.Local.sDatatable,v.Local.sDatatable,"CellFontBold",True)
+		Gui.[v.Local.sForm].[v.Local.sGrid].SetColumnProperty(v.Local.sDatatable,v.Local.sDatatable,"HeaderHAlignment","center")
+	'	Gui.[v.Local.sForm].[v.Local.sGrid].SetColumnProperty(v.Local.sDatatable,v.Local.sDatatable,"HeaderForeColor","Red")
+		Gui.[v.Local.sForm].[v.Local.sGrid].SetColumnProperty(v.Local.sDatatable,v.Local.sDatatable,"HeaderFontBold",True)
+		Gui.[v.Local.sForm].[v.Local.sGrid].SetColumnProperty(v.Local.sDatatable,v.Local.sDatatable,"headerbackcolor","#0000ff")
+		Gui.[v.Local.sForm].[v.Local.sGrid].SetColumnProperty(v.Local.sDatatable,v.Local.sDatatable,"headerforecolor","White")
+		Gui.[v.Local.sForm].[v.Local.sGrid].SetColumnProperty(v.Local.sDatatable,v.Local.sDatatable,"headerfontsize",15)
+	
+		Gui.[v.Local.sForm].[V.Local.sGrid].MainView(V.Local.sDatatable)
+		
+	f.Intrinsic.Control.DoEvents
+F.Intrinsic.Control.Next(v.Local.i)
+f.Intrinsic.Control.DoEvents
+
+'Add the bottom Component grid
+f.Intrinsic.Control.If(v.DataTable.ComponentPartsParent.Exists,=,True)
+	f.Data.DataTable.Close("ComponentPartsParent")
+f.Intrinsic.Control.EndIf
+f.Data.DataTable.CreateFromSQL("ComponentPartsParent","Con","SELECT JOB, SUFFIX, RTRIM(PART) AS PART, RTRIM(DESCRIPTION) AS DESCRIPTION, QTY_ORDER, QTY_COMPLETED FROM V_JOB_HEADER WHERE SUFFIX > '000' AND JOB = 'ASDFFASDFASDF' ",True)
+f.Data.DataView.Create("ComponentPartsParent","ComponentParentView",22,"JOB = ''","")
+'Add all the children
+f.Intrinsic.Control.If(v.DataTable.ComponentPartsParent$Parts.Exists,=,True)
+	f.Data.DataTable.Close("ComponentPartsParent$Parts")
+f.Intrinsic.Control.EndIf
+f.Data.DataTable.CreateFromSQL("ComponentPartsParent$Parts","Con","SELECT JOB, SUFFIX, SEQ, RTRIM(PART) AS PART, RTRIM(DESCRIPTION) AS DESCRIPTION, HOURS_ESTIMATED, HOURS_ACTUAL FROM V_JOB_OPERATIONS WHERE LMO = 'L'  AND SEQ < '995000' AND SUFFIX > '000' AND JOB = 'ASDFADSFASDFSFA'  ORDER BY JOB, SEQ ASC ",True)
+f.Data.DataView.Create("ComponentPartsParent$Parts","ComponentPartsView",22)
+
+'Add relation on job and parent_Suffix
+f.Data.DataTable.AddRelation("ComponentPartsParent","JOB*!*SUFFIX","ComponentPartsParent$Parts","JOB*!*SUFFIX")
+
+Gui.F_MetalKit.GsgcView.AddGridviewFromDataview("ComponentParentGrid","ComponentPartsParent","ComponentParentView")
+Gui.F_MetalKit.GsgcView.AddGridviewFromDataview("ComponentPartsGrid","ComponentPartsParent","ComponentPartsView")
+
+Gui.F_MetalKit.GsgcView.SetColumnProperty("ComponentParentGrid","QTY_ORDER","Caption","Qty Needed")
+Gui.F_MetalKit.GsgcView.SetColumnProperty("ComponentParentGrid","QTY_COMPLETED","Caption","Qty Scanned")
+
+Gui.F_MetalKit.GsgcView.SetColumnProperty("ComponentParentGrid","JOB","MaxWidth","75")
+Gui.F_MetalKit.GsgcView.SetColumnProperty("ComponentParentGrid","SUFFIX","MaxWidth","75")
+Gui.F_MetalKit.GsgcView.SetColumnProperty("ComponentParentGrid","QTY_ORDER","MaxWidth","75")
+Gui.F_MetalKit.GsgcView.SetColumnProperty("ComponentParentGrid","QTY_COMPLETED","MaxWidth","75")
+
+'Set Header back color
+Gui.F_MetalKit.GsgcView.SetColumnProperty("ComponentParentGrid","JOB","HeaderBackColor","#0000ff")
+Gui.F_MetalKit.GsgcView.SetColumnProperty("ComponentParentGrid","SUFFIX","HeaderBackColor","#0000ff")
+Gui.F_MetalKit.GsgcView.SetColumnProperty("ComponentParentGrid","PART","HeaderBackColor","#0000ff")
+Gui.F_MetalKit.GsgcView.SetColumnProperty("ComponentParentGrid","DESCRIPTION","HeaderBackColor","#0000ff")
+Gui.F_MetalKit.GsgcView.SetColumnProperty("ComponentParentGrid","QTY_ORDER","HeaderBackColor","#0000ff")
+Gui.F_MetalKit.GsgcView.SetColumnProperty("ComponentParentGrid","QTY_COMPLETED","HeaderBackColor","#0000ff")
+'Set Header Fore color
+Gui.F_MetalKit.GsgcView.SetColumnProperty("ComponentParentGrid","JOB","HeaderForeColor","White")
+Gui.F_MetalKit.GsgcView.SetColumnProperty("ComponentParentGrid","SUFFIX","HeaderForeColor","White")
+Gui.F_MetalKit.GsgcView.SetColumnProperty("ComponentParentGrid","PART","HeaderForeColor","White")
+Gui.F_MetalKit.GsgcView.SetColumnProperty("ComponentParentGrid","DESCRIPTION","HeaderForeColor","White")
+Gui.F_MetalKit.GsgcView.SetColumnProperty("ComponentParentGrid","QTY_ORDER","HeaderForeColor","White")
+Gui.F_MetalKit.GsgcView.SetColumnProperty("ComponentParentGrid","QTY_COMPLETED","HeaderForeColor","White")
+
+Gui.F_MetalKit.GsgcView.SetColumnProperty("ComponentPartsGrid","HOURS_ESTIMATED","Caption","Estimated Hours")
+Gui.F_MetalKit.GsgcView.SetColumnProperty("ComponentPartsGrid","HOURS_ACTUAL","Caption","Actual Hours")
+
+Gui.F_MetalKit.GsgcView.SetGridviewProperty("ComponentParentGrid","readonly",True)
+Gui.F_MetalKit.GsgcView.SetGridviewProperty("ComponentPartsGrid","readonly",True)
+Gui.F_MetalKit.GsgcView.SetGridviewProperty("ComponentParentGrid","Editable",False)
+Gui.F_MetalKit.GsgcView.SetGridviewProperty("ComponentPartsGrid","Editable",False)
+
+Gui.F_MetalKit.GsgcView.MainView("ComponentParentGrid")
+
+f.Intrinsic.Control.If(v.DataTable.Empty.Exists,=,True)
+	f.Data.DataTable.Close("Empty")
+f.Intrinsic.Control.EndIf
+'Create an empty grid for not viewing anything
+f.Data.DataTable.CreateFromSQL("Empty","Con","SELECT JOB, SUFFIX, RTRIM(PART) AS PART, RTRIM(DESCRIPTION) AS DESCRIPTION, QTY_ORDER, QTY_COMPLETED FROM V_JOB_HEADER WHERE SUFFIX > '000' AND JOB = 'ASDFFASDFASDF' ",True)
+f.Data.DataView.Create("Empty","Empty",22,"JOB = ''","")
+Gui.F_MetalKit.GsgcView.AddGridviewFromDataview("Empty","Empty","Empty")
+
+Gui.F_MetalKit.GsgcView.SetColumnProperty("Empty","QTY_ORDER","Caption","Qty Needed")
+Gui.F_MetalKit.GsgcView.SetColumnProperty("Empty","QTY_COMPLETED","Caption","Qty Scanned")
+
+'Set Header back color
+Gui.F_MetalKit.GsgcView.SetColumnProperty("Empty","JOB","HeaderBackColor","#0000ff")
+Gui.F_MetalKit.GsgcView.SetColumnProperty("Empty","SUFFIX","HeaderBackColor","#0000ff")
+Gui.F_MetalKit.GsgcView.SetColumnProperty("Empty","PART","HeaderBackColor","#0000ff")
+Gui.F_MetalKit.GsgcView.SetColumnProperty("Empty","DESCRIPTION","HeaderBackColor","#0000ff")
+Gui.F_MetalKit.GsgcView.SetColumnProperty("Empty","QTY_ORDER","HeaderBackColor","#0000ff")
+Gui.F_MetalKit.GsgcView.SetColumnProperty("Empty","QTY_COMPLETED","HeaderBackColor","#0000ff")
+'Set Header Fore color
+Gui.F_MetalKit.GsgcView.SetColumnProperty("Empty","JOB","HeaderForeColor","White")
+Gui.F_MetalKit.GsgcView.SetColumnProperty("Empty","SUFFIX","HeaderForeColor","White")
+Gui.F_MetalKit.GsgcView.SetColumnProperty("Empty","PART","HeaderForeColor","White")
+Gui.F_MetalKit.GsgcView.SetColumnProperty("Empty","DESCRIPTION","HeaderForeColor","White")
+Gui.F_MetalKit.GsgcView.SetColumnProperty("Empty","QTY_ORDER","HeaderForeColor","White")
+Gui.F_MetalKit.GsgcView.SetColumnProperty("Empty","QTY_COMPLETED","HeaderForeColor","White")
+
+'Create the Metal Progress table
+f.Intrinsic.Control.If(v.DataTable.Progress.Exists,=,True)
+	f.Data.DataTable.Close("Progress")
+f.Intrinsic.Control.EndIf
+f.Data.DataTable.CreateFromSQL("Progress","Con","SELECT * FROM GCG_4442_Metal_PROG",True)
+f.Data.DataView.Create("Progress","ProgressView",22,"","PRIORITY ASC, JOB ASC, SUFFIX ASC")
+
+'Creae an empty grid for not viewing anything
+F.Intrinsic.Control.If(V.DataTable.EmptyRework.Exists,=,True)
+	F.Data.DataTable.Close("EmptyRework")
+F.Intrinsic.Control.EndIf
+F.Data.DataTable.CreateFromSQL("EmptyRework","con","SELECT JOB, SUFFIX, RTRIM(PART) AS PART, RTRIM(DESCRIPTION) AS DESCRIPTION, QTY_ORDER, RTRIM(COMMENTS_1) as COMMENTS_1,'' as STATUS, '' AS GRID FROM V_JOB_HEADER WHERE SUFFIX > '000' AND JOB = 'ASDFFASDFASDF' ",True)
+f.Data.DataView.Create("EmptyRework","EmptyRework",22,"JOB = ''","")
+Gui.F_MetalKit.GsGridControlReWork.AddGridviewFromDataview("EmptyRework","EmptyRework","EmptyRework")
+
+Gui.F_MetalKit.GsGridControlReWork.SetColumnProperty("EmptyRework","JOB","MaxWidth","75")
+Gui.F_MetalKit.GsGridControlReWork.SetColumnProperty("EmptyRework","Suffix","MaxWidth","75")
+Gui.F_MetalKit.GsGridControlReWork.SetColumnProperty("EmptyRework","Qty_Order","MaxWidth","75")
+Gui.F_MetalKit.GsGridControlReWork.SetColumnProperty("EmptyRework","Grid","MaxWidth","75")
+Gui.F_MetalKit.GsGridControlReWork.SetColumnProperty("EmptyRework","QTY_ORDER","Caption","Qty Needed")
+Gui.F_MetalKit.GsGridControlReWork.SetColumnProperty("EmptyRework","COMMENTS_1","Caption","Comment")
+	
+'Set Header back color
+Gui.F_MetalKit.GsGridControlReWork.SetColumnProperty("EmptyRework","JOB","HeaderBackColor","#0000ff")
+Gui.F_MetalKit.GsGridControlReWork.SetColumnProperty("EmptyRework","SUFFIX","HeaderBackColor","#0000ff")
+Gui.F_MetalKit.GsGridControlReWork.SetColumnProperty("EmptyRework","PART","HeaderBackColor","#0000ff")
+Gui.F_MetalKit.GsGridControlReWork.SetColumnProperty("EmptyRework","DESCRIPTION","HeaderBackColor","#0000ff")
+Gui.F_MetalKit.GsGridControlReWork.SetColumnProperty("EmptyRework","QTY_ORDER","HeaderBackColor","#0000ff")
+Gui.F_MetalKit.GsGridControlReWork.SetColumnProperty("EmptyRework","COMMENTS_1","HeaderBackColor","#0000ff")
+Gui.F_MetalKit.GsGridControlReWork.SetColumnProperty("EmptyRework","GRID","HeaderBackColor","#0000ff")
+Gui.F_MetalKit.GsGridControlReWork.SetColumnProperty("EmptyRework","STATUS","HeaderBackColor","#0000ff")
+
+'Set Header Fore color
+Gui.F_MetalKit.GsGridControlReWork.SetColumnProperty("EmptyRework","JOB","HeaderForeColor","White")
+Gui.F_MetalKit.GsGridControlReWork.SetColumnProperty("EmptyRework","SUFFIX","HeaderForeColor","White")
+Gui.F_MetalKit.GsGridControlReWork.SetColumnProperty("EmptyRework","PART","HeaderForeColor","White")
+Gui.F_MetalKit.GsGridControlReWork.SetColumnProperty("EmptyRework","DESCRIPTION","HeaderForeColor","White")
+Gui.F_MetalKit.GsGridControlReWork.SetColumnProperty("EmptyRework","QTY_ORDER","HeaderForeColor","White")
+Gui.F_MetalKit.GsGridControlReWork.SetColumnProperty("EmptyRework","COMMENTS_1","HeaderForeColor","White")
+Gui.F_MetalKit.GsGridControlReWork.SetColumnProperty("EmptyRework","GRID","HeaderForeColor","White")
+Gui.F_MetalKit.GsGridControlReWork.SetColumnProperty("EmptyRework","STATUS","HeaderForeColor","White")
+
+Gui.F_MetalKit.GsGridControlReWork.SetColumnProperty("EmptyRework","JOB","MaxWidth","75")
+Gui.F_MetalKit.GsGridControlReWork.SetColumnProperty("EmptyRework","Suffix","MaxWidth","75")
+Gui.F_MetalKit.GsGridControlReWork.SetColumnProperty("EmptyRework","Qty_Order","MaxWidth","75")
+Gui.F_MetalKit.GsGridControlReWork.SetColumnProperty("EmptyRework","Grid","MaxWidth","75")
+Gui.F_MetalKit.GsGridControlReWork.SetColumnProperty("EmptyRework","STATUS","MaxWidth","75")
+
+Gui.F_MetalKit.GsGridControlReWork.SetGridviewProperty("EmptyRework","Editable",False)
+Gui.F_MetalKit.GsGridControlReWork.SetGridviewProperty("EmptyRework","readonly",True)
+
+Gui.F_MetalKit.GsGridControlReWork.MainView("EmptyRework")
+
+f.Intrinsic.Control.Catch
+	f.Intrinsic.Control.CallSub(TryCatch,"Sub",V.Ambient.CurrentSubroutine,"Error",V.Ambient.ErrorNumber,"Desc",V.Ambient.ErrorDescription)
+f.Intrinsic.Control.EndTry
+Program.Sub.BuildEmptyDatatables.End
+
+Program.Sub.txtWO_KeyPressEnter.Start
+f.Intrinsic.Control.Try
+
+V.Local.sJob.Declare(String)
+V.Local.sSeq.Declare(String)
+V.Local.sSuffix.Declare(String)
+
+gui.F_MetalKit.txtWO.Enabled(False)
+'f.Intrinsic.File.Append2FileNewLine(v.Global.sLogFile,"Scanned")
+'f.Intrinsic.File.Append2FileNewLine(v.Global.sLogFile,V.Screen.F_MetalKit!txtWO.Text)
+F.Intrinsic.String.Split(V.Screen.F_MetalKit!txtWO.Text,"%",V.Local.sJob)
+v.Local.sJob.RedimPreserve(0,1)
+f.Intrinsic.Control.If(v.Local.sJob(1).Trim,=,"")
+	gui.F_MetalKit.txtWO.Enabled(True)
+	gui.F_MetalKit.txtWO.SetFocus
+	gui.F_MetalKit.txtWO.SelectAll
+	f.Intrinsic.Control.ExitSub
+f.Intrinsic.Control.EndIf
+
+f.Intrinsic.Control.BlockEvents
+
+F.Intrinsic.String.RPad(V.Local.sJob(1),"0",15,V.Local.sJob)
+v.Local.sJob.RedimPreserve(0,0)
+
+F.Intrinsic.String.Right(V.Local.sJob,6,V.Local.sSeq)
+F.Intrinsic.String.Mid(V.Local.sJob,7,3,V.Local.sSuffix)
+F.Intrinsic.String.Left(V.Local.sJob,6,V.Local.sJob)
+gui.F_MetalKit.txtWO.Text(V.Local.sJob.UCase)
+V.Local.sJob.Set(V.Local.sJob.UCase)
+
+'F.Intrinsic.UI.InvokeWaitDialog("Lookup................")
+f.Intrinsic.Control.CallSub(LookUp,"Job",v.Local.sJob,"Suffix",v.Local.sSuffix,"Seq",v.Local.sSeq)
+
+f.Intrinsic.Control.If(v.Args.Stop.Boolean,=,True)
+'f.Intrinsic.File.Append2FileNewLine(v.Global.sLogFile,"Stopped lookup")
+
+	'Wrong Part or doesn't belong so exit out of what we are doing
+	f.Intrinsic.Control.UnBlockEvents
+	gui.F_MetalKit.txtWO.Enabled(True)
+	gui.F_MetalKit.txtWO.SetFocus
+	gui.F_MetalKit.txtWO.SelectAll
+	f.Intrinsic.Control.ExitSub
+f.Intrinsic.Control.EndIf
+
+f.Intrinsic.Control.If(v.Args.Step,=,"Update")
+'	F.Intrinsic.UI.ChangeWaitStatus("Update.........")
+'f.Intrinsic.File.Append2FileNewLine(v.Global.sLogFile,"Update from lookup")
+	'We have the job on the screen already so we just need to update it.
+	f.Intrinsic.Control.CallSub(UpdateExisting,"DT",v.Args.DT,"Job",v.Local.sJob,"Suffix",v.Local.sSuffix,"Seq",v.Local.sSeq)
+f.Intrinsic.Control.Else
+'	F.Intrinsic.UI.ChangeWaitStatus("New Job.............")
+'f.Intrinsic.File.Append2FileNewLine(v.Global.sLogFile,"New from lookup")
+	'The job doesn't exist so we need to add it to the first open slot.
+	f.Intrinsic.Control.CallSub(NewJob,"Job",v.Local.sJob,"Suffix",v.Local.sSuffix,"Seq",v.Local.sSeq,"PC",v.Args.PC,"bParent",v.Args.bParent)
+f.Intrinsic.Control.EndIf
+
+'F.Intrinsic.UI.CloseWaitDialog
+
+f.Intrinsic.Control.UnBlockEvents
+
+gui.F_MetalKit.txtWO.Enabled(True)
+gui.F_MetalKit.txtWO.SetFocus
+gui.F_MetalKit.txtWO.SelectAll
+
+f.Intrinsic.Control.Catch
+	f.Intrinsic.Control.CallSub(TryCatch,"Sub",V.Ambient.CurrentSubroutine,"Error",V.Ambient.ErrorNumber,"Desc",V.Ambient.ErrorDescription)
+f.Intrinsic.Control.EndTry
+Program.Sub.txtWO_KeyPressEnter.End
+
+Program.Sub.GsGridControl_RowCellClick.Start
+f.Intrinsic.Control.Try
+
+V.Local.sRet.Declare(String)
+V.Local.sGrid.Declare(String)
+V.Local.sSql.Declare(String)
+v.Local.sProg.Declare(String)
+v.Local.sHold.Declare(String)
+v.Local.iCount.Declare(Long)
+v.Local.iRow.Declare(Long)
+v.Local.iSeq.Declare(Long)
+v.Local.sName.Declare(String)
+v.Local.bExist.Declare(Boolean)
+v.Local.sFilter.Declare(String)
+v.Local.iBIRunID.Declare(Long)
+v.Local.iRptID.Declare(Long)
+v.Local.iLogID.Declare(Long)
+v.Local.sPervasiveTable.Declare(String)
+
+f.Intrinsic.Control.BlockEvents
+'f.Intrinsic.File.Append2FileNewLine(v.Global.sLogFile,"Row Cell Click on small grids")
+f.Intrinsic.Control.If(v.Args.BUTTON,=,"Left")
+
+	'Kitting Complete button was pressed 
+	F.Intrinsic.Control.If(V.Args.RowIndex,=,5)
+		v.Local.sRet.Set(v.Args.Column)
+		
+		F.Intrinsic.Control.If(V.Caller.User.Trim,<>,"MKTIN")
+			F.Intrinsic.Control.ExitSub
+		F.Intrinsic.Control.EndIf
+
+		f.Intrinsic.Variable.ArgExists("Override",v.Local.bExist)
+		f.Intrinsic.Control.If(v.Local.bExist,=,True)
+			f.Intrinsic.UI.Msgbox("Do you want to Print a Label?","Attention",3,v.Local.iCount)
+		f.Intrinsic.Control.Else
+			v.Local.iCount.Set(6)
+		f.Intrinsic.Control.EndIf
+		
+		f.Intrinsic.Control.If(v.Local.iCount,=,6)
+'			f.Intrinsic.File.Append2FileNewLine(v.Global.sLogFile,"Move Job")
+'			f.Intrinsic.File.Append2FileNewLine(v.Global.sLogFile,v.Local.sRet)
+			
+			f.Intrinsic.Control.If(v.Local.sRet.Left1,=,"W")
+				f.Intrinsic.String.Build("Grid = '{0}' ",v.Local.sRet,v.Local.sFilter)
+				f.Data.DataView.Create("Progress","SuffixTemp",22,v.Local.sFilter,"")
+				'Create Label Info for Welding
+				f.Intrinsic.String.Build("SELECT * FROM GCG_4442_LABEL_DATA WHERE JOB = '{0}' AND SUFFIX = '{1}' ",v.DataTable.[v.Local.sRet](0).[v.Local.sRet]!FieldVal,v.DataView.Progress!SuffixTemp(0).Order_No!FieldValTrim,v.Local.sSql)
+				f.Intrinsic.Control.If(v.DataTable.GCGLabel.Exists,=,True)
+					f.Data.DataTable.Close("GCGLabel")
+				f.Intrinsic.Control.EndIf
+				V.Local.sPervasiveTable.Set("GCG_4442_LABEL_DATA")
+				f.Data.DataTable.CreateFromSQL("GCGLabel","Con",v.Local.sSql,True)
+				F.Intrinsic.Control.If(V.DataTable.GCGLabel.RowCount--,=,-1)
+					F.Data.DataTable.Close("GCGLabel")
+					f.Intrinsic.String.Build("SELECT * FROM GCG_4447_LABEL_DATA WHERE JOB = '{0}' AND SUFFIX = '{1}' ",v.DataTable.[v.Local.sRet](0).[v.Local.sRet]!FieldVal,v.DataView.Progress!SuffixTemp(0).Order_No!FieldValTrim,v.Local.sSql)
+					f.Data.DataTable.CreateFromSQL("GCGLabel","Con",v.Local.sSql,True)
+					V.Local.sPervasiveTable.Set("GCG_4447_LABEL_DATA")
+				F.Intrinsic.Control.EndIf
+				'Add the basic info I have to the row.
+				'Need to get our latest Instance if we have one.
+				f.Intrinsic.Control.If(v.DataTable.GCGLabel.RowCount,>,0)
+					f.Data.DataTable.Compute("GCGLabel","MAX([INSTANCE])","",v.Local.iCount)
+					f.Intrinsic.Math.Add(v.Local.iCount,1,v.Local.iCount)
+					f.Intrinsic.String.Format(v.Local.iCount,"00",v.Local.sHold)
+					'Add 1 more to count to get number so far
+					f.Intrinsic.Math.Add(v.Local.iCount,1,v.Local.iCount)
+				f.Intrinsic.Control.Else
+					v.Local.iCount.Set(1)
+					v.Local.sHold.Set("00")
+				f.Intrinsic.Control.EndIf
+				'We need to get the Part Descripiton, and the total amount of Parts for the Job.
+				f.Intrinsic.String.Build("SELECT RTRIM(DESCRIPTION) AS DESCRIPTION, QTY_ORDER FROM V_JOB_HEADER WHERE JOB = '{0}' AND SUFFIX = '{1}' ",v.DataTable.[v.Local.sRet](0).[v.Local.sRet]!FieldValTrim,v.DataView.Progress!SuffixTemp(0).Order_No!FieldValTrim,v.Local.sSql)
+				f.ODBC.Connection!Con.OpenLocalRecordSetRO("rstDesc",v.Local.sSql)
+				f.Intrinsic.Control.If(v.ODBC.Con!rstDesc.EOF,=,False)
+					v.Local.sGrid.Set(v.ODBC.Con!rstDesc.FieldValTrim!DESCRIPTION)
+					v.Local.sProg.Set(v.ODBC.Con!rstDesc.FieldValLong!QTY_ORDER)
+					v.Local.sSql.Set(v.ODBC.Con!rstDesc.FieldValLong!QTY_ORDER)
+				f.Intrinsic.Control.Else
+					v.Local.sProg.Set("0")
+					v.Local.sSql.Set("0")
+				f.Intrinsic.Control.EndIf
+				f.ODBC.Con!rstDesc.Close
+				
+				f.Data.DataTable.AddRow("GCGLabel","JOB",v.DataTable.[v.Local.sRet](0).[v.Local.sRet]!FieldValTrim,"SUFFIX",v.DataView.Progress!SuffixTemp(0).Order_No!FieldValTrim,"INSTANCE",v.Local.sHold,"PART",v.DataTable.[v.Local.sRet](2).[v.Local.sRet]!FieldValTrim,"PARENT_JOB",v.DataTable.[v.Local.sRet](0).[v.Local.sRet]!FieldValTrim,"PARENT_SUFFIX",v.DataView.Progress!SuffixTemp(0).Order_No!FieldValTrim,"PARENT_PART",v.DataTable.[v.Local.sRet](2).[v.Local.sRet]!FieldValTrim,"DESCRIPTION",v.Local.sGrid,"RUN_QTY",v.Local.iCount,"TOTAL_WO_QTY",v.Local.sSql.Long,"ORDER_NO",v.DataTable.[v.Local.sRet](1).[v.Local.sRet]!FieldValTrim)
+				'we need to get the Row we are on and do another loop for each Labor Sequence
+				v.Local.iRow.Set(v.DataTable.GCGLabel.RowCount--)
+				v.Local.iSeq.Set(1)
+				F.Intrinsic.String.Build("SELECT TOP 7 SEQ, LMO, RTRIM(PART) AS PART, '$%' + JOB + SUFFIX + SEQ AS SEQ_BC FROM V_JOB_OPERATIONS WHERE LMO = 'L' AND SEQ < '995000' AND JOB = '{0}' AND SUFFIX = '{1}' and PART NOT IN ('*PC1','*PC2','*PC3') ORDER BY SEQ ASC",v.DataTable.[v.Local.sRet](0).[v.Local.sRet]!FieldValTrim,v.DataView.Progress!SuffixTemp(0).Order_No!FieldValTrim,v.Local.sSQL)
+				f.ODBC.Connection!Con.OpenLocalRecordSetRO("rstSeq",v.Local.sSQL)
+				f.Intrinsic.Control.DoUntil(v.ODBC.Con!rstSeq.EOF,=,True)
+					f.Intrinsic.String.Build("SEQ{0}*!*LMO{0}*!*WKG{0}*!*SEQ{0}_BC",V.Local.iSeq,v.Local.sName)
+					f.Intrinsic.String.Split(v.Local.sName,"*!*",v.Local.sName)
+					f.Data.DataTable.SetValue("GCGLabel",v.Local.iRow,v.Local.sName(0),v.ODBC.Con!rstSeq.FieldValTrim!SEQ,v.Local.sName(1),v.ODBC.Con!rstSeq.FieldValTrim!LMO,v.Local.sName(2),v.ODBC.Con!rstSeq.FieldValTrim!PART,v.Local.sName(3),v.ODBC.Con!rstSeq.FieldValTrim!SEQ_BC)
+					f.Intrinsic.Math.Add(v.Local.iSeq,1,v.Local.iSeq)
+					f.ODBC.Con!rstSeq.MoveNext
+					f.Intrinsic.Control.DoEvents
+				f.Intrinsic.Control.Loop
+				f.Intrinsic.Control.DoEvents
+				f.ODBC.Con!rstSeq.Close
+				
+				'printing the codesoft label
+	            'creating temp datatable that only has the fields I need for the label
+	            F.Intrinsic.String.Build("JOB = '{0}' AND SUFFIX = '{2}' AND INSTANCE = '{1}'",v.DataTable.[v.Local.sRet](0).[v.Local.sRet]!FieldValTrim,v.Local.sHold,v.DataView.Progress!SuffixTemp(0).Order_No!FieldValTrim,V.Local.sFilter)
+	            F.Data.DataView.Create("GCGLabel","LabelTemp",22,V.Local.sFilter,"Job")
+	            F.Data.DataView.ToDataTable("GCGLabel","LabelTemp","LabelTemp")
+	            F.Data.DataView.Close("GCGLabel","LabelTemp")
+	            F.Data.DataTable.RemoveColumn("LabelTemp","PARENT_JOB")
+	            F.Data.DataTable.RemoveColumn("LabelTemp","PARENT_Suffix")
+	            F.Data.DataTable.RemoveColumn("LabelTemp","Run_Qty")
+	            F.Data.DataTable.RemoveColumn("LabelTemp","Order_Line")
+	            F.Data.DataTable.RemoveColumn("LabelTemp","Seq")
+	            F.Data.DataTable.RemoveColumn("LabelTemp","Lmo")
+	            F.Data.DataTable.RemoveColumn("LabelTemp","Material")
+	            F.Data.DataTable.RemoveColumn("LabelTemp","Material_Desc")
+	            F.Data.DataTable.RemoveColumn("LabelTemp","Material_Qty")
+	            F.Data.DataTable.RemoveColumn("LabelTemp","Material_Um")
+	            F.Data.DataTable.RemoveColumn("LabelTemp","TotalLength")
+	            F.Data.DataTable.RemoveColumn("LabelTemp","TotalWidth")
+	            F.Data.DataTable.RemoveColumn("LabelTemp","Graindir")
+	            F.Data.DataTable.RemoveColumn("LabelTemp","Ebtopside")
+	            F.Data.DataTable.RemoveColumn("LabelTemp","Ebbottomside")
+	            F.Data.DataTable.RemoveColumn("LabelTemp","Ebleftside")
+	            F.Data.DataTable.RemoveColumn("LabelTemp","Ebrightside")
+	            F.Data.DataTable.RemoveColumn("LabelTemp","Seq1")
+	            F.Data.DataTable.RemoveColumn("LabelTemp","Lmo1")
+	            F.Data.DataTable.RemoveColumn("LabelTemp","Seq2")
+	            F.Data.DataTable.RemoveColumn("LabelTemp","Lmo2")
+	            F.Data.DataTable.RemoveColumn("LabelTemp","Seq3")
+	            F.Data.DataTable.RemoveColumn("LabelTemp","Lmo3")
+	            F.Data.DataTable.RemoveColumn("LabelTemp","Seq4")
+	            F.Data.DataTable.RemoveColumn("LabelTemp","Lmo4")
+	            F.Data.DataTable.RemoveColumn("LabelTemp","Seq5")
+	            F.Data.DataTable.RemoveColumn("LabelTemp","Lmo5")
+	            F.Data.DataTable.RemoveColumn("LabelTemp","Wkg5")
+	            F.Data.DataTable.RemoveColumn("LabelTemp","Seq5_Bc")
+	            F.Data.DataTable.RemoveColumn("LabelTemp","Seq6")
+	            F.Data.DataTable.RemoveColumn("LabelTemp","Lmo6")
+	            F.Data.DataTable.RemoveColumn("LabelTemp","Wkg6")
+	            F.Data.DataTable.RemoveColumn("LabelTemp","Seq6_Bc")
+	            F.Data.DataTable.RemoveColumn("LabelTemp","Seq7")
+	            F.Data.DataTable.RemoveColumn("LabelTemp","Lmo7")
+	            F.Data.DataTable.RemoveColumn("LabelTemp","Wkg7")
+	            F.Data.DataTable.RemoveColumn("LabelTemp","Seq7_Bc")
+	            F.Data.DataTable.RemoveColumn("LabelTemp","Image_Path")
+	            
+	            F.Intrinsic.Control.If(V.DataTable.LabelTemp.Exists,=,True)
+	                F.Global.BI.GetIDFromName("GCG_4442_Kitting_Labels.lab",V.Local.iRptID)
+	                F.Global.BI.GetRunID(V.Local.iBIRunID)
+	                F.Global.BI.StartLogging(V.Local.iBIRunID,V.Local.iRptID,0,"",V.Local.iLogID)
+	                F.Global.BI.StopLogging(V.Local.iLogID)
+	                F.Global.BI.PrintCodesoftLabelFromDataTable(V.Local.iBIRunID,V.Local.iLogID,"LabelTemp",V.Screen.F_MetalKit!ddlLablePrinter.Text,True)
+	                F.Data.DataTable.Close("LabelTemp")
+	            F.Intrinsic.Control.EndIf
+	            
+	            f.Data.DataView.Close("Progress","SuffixTemp")
+	            
+				'Save to DB
+				f.Data.DataTable.SaveToDB("GCGLabel","Con",V.Local.sPervasiveTable,"JOB*!*SUFFIX*!*INSTANCE",1)
+				f.Data.DataTable.Close("GCGLabel")
+			f.Intrinsic.Control.Else
+				'We are working with PowderCoating
+				f.Intrinsic.Control.CallSub(FlexSchedule,"Order",v.DataTable.[v.Local.sRet](0).[v.Local.sRet]!FieldVal)
+				
+			f.Intrinsic.Control.EndIf
+		f.Intrinsic.Control.ElseIf(v.Local.iCount,=,2)
+			'Cancel was pressed so exit sub
+			f.Intrinsic.Control.UnBlockEvents
+			f.Intrinsic.Control.ExitSub
+		f.Intrinsic.Control.EndIf
+
+		
+		F.Intrinsic.String.Build("GsGridControl{0}",v.Local.sRet,V.Local.sGrid)
+		F.Intrinsic.String.Build("ProgressBar{0}",v.Local.sRet,V.Local.sProg)
+		'We are not setting it to the bottom grid anymore. When it is pressed it is moving to a different Bin.
+		'so for right now just delete the data.
+		F.Intrinsic.String.Build("Select * From GCG_4442_Metal_KIT Where Rec_ID = '{0}'",V.Local.sRet,V.Local.sSql)
+		f.ODBC.Connection!Con.OpenLocalRecordSetRW("rstKit",v.Local.sSql)
+		f.Intrinsic.Control.If(v.ODBC.Con!rstKit.EOF,=,False)
+			f.ODBC.Con!rstKit.Delete
+			f.ODBC.Con!rstKit.Update
+		f.Intrinsic.Control.EndIf
+		f.ODBC.Con!rstKit.Close
+		
+		'Remove from Progress DT
+		f.Intrinsic.String.Build("GRID = '{0}'",V.Local.sRet,V.Local.sSql)
+		f.Data.DataView.Create("Progress","ProgressTemp",22,V.Local.sSql,"")
+		f.Intrinsic.Control.For(v.Local.iCount,v.DataView.Progress!ProgressTemp.RowCount--,0,-1)
+			f.Data.DataTable.DeleteRow("Progress",v.DataView.Progress!ProgressTemp(v.Local.iCount).DataTableIndex)
+		f.Intrinsic.Control.Next(v.Local.iCount)
+		f.Intrinsic.Control.DoEvents
+		f.Data.DataView.Close("Progress","ProgressTemp")
+		
+		f.Data.DataTable.SaveToDB("Progress","Con","GCG_4442_Metal_PROG","JOB*!*SUFFIX*!*GRID*!*PRIORITY",4)
+		f.Data.DataTable.AcceptChanges("Progress")
+		
+		
+		'now delete DT
+		f.Intrinsic.Control.If(v.Args.Column.Left1,=,"W")
+			F.Data.DataTable.SetValue(V.Local.sRet,0,V.Local.sRet,"")
+			F.Data.DataTable.SetValue(V.Local.sRet,1,V.Local.sRet,"")
+			F.Data.DataTable.SetValue(V.Local.sRet,2,V.Local.sRet,"")
+			F.Data.DataTable.SetValue(V.Local.sRet,3,V.Local.sRet,"")
+			F.Data.DataTable.SetValue(V.Local.sRet,4,V.Local.sRet,"")
+			Gui.[v.Args.Screen].[V.Local.sGrid].HideRow(V.Local.sRet,5,True)
+		f.Intrinsic.Control.Else
+			F.Data.DataTable.SetValue(V.Local.sRet,0,V.Local.sRet,"")
+			F.Data.DataTable.SetValue(V.Local.sRet,1,V.Local.sRet,"")
+			F.Data.DataTable.SetValue(V.Local.sRet,2,V.Local.sRet,"")
+			Gui.[v.Args.Screen].[V.Local.sGrid].HideRow(V.Local.sRet,3,True)
+		f.Intrinsic.Control.EndIf
+		'set progress bar back to 0
+		Gui.[v.Args.Screen].[v.Local.sProg].Value(0)
+		
+		
+	f.Intrinsic.Control.Else
+		'Complete button wasn't pressed so populate the bottom grid.
+		f.Intrinsic.Control.CallSub(Selection,"Grid",v.Args.Column)
+	F.Intrinsic.Control.EndIf
+	Gui.F_MetalKit.txtWO.SetFocus
+	Gui.F_MetalKit.txtWO.SelectAll
+f.Intrinsic.Control.Else
+	F.Intrinsic.Control.If(V.Caller.User.Trim,<>,"MKTIN")
+		F.Intrinsic.Control.ExitSub
+	F.Intrinsic.Control.EndIf
+	
+	f.Intrinsic.Control.If(v.DataTable.[v.Args.Column](0).[v.Args.Column]!FieldVal,<>,"")
+		v.Local.X.Declare(Long)
+		v.Local.Y.Declare(Long)
+		v.Global.sGrid.Set(v.Args.Column)
+		v.Global.sControl.Set(v.Args.ControlName)
+		f.Intrinsic.API.GetMousePosition(v.Local.X,v.Local.Y)
+		Gui.[v.Args.Screen]..ContextMenuShow("ctxOverride",v.Local.X,v.Local.Y)
+	f.Intrinsic.Control.EndIf
+	
+f.Intrinsic.Control.EndIf
+
+f.Intrinsic.Control.UnBlockEvents
+
+f.Intrinsic.Control.Catch
+	f.Intrinsic.Control.CallSub(TryCatch,"Sub",V.Ambient.CurrentSubroutine,"Error",V.Ambient.ErrorNumber,"Desc",V.Ambient.ErrorDescription)
+f.Intrinsic.Control.EndTry
+Program.Sub.GsGridControl_RowCellClick.End
+
+Program.Sub.Resize.Start
+f.Intrinsic.Control.Try
+
+v.Local.iFWidthDiff.Declare(Long)
+v.Local.iFHeightDiff.Declare(Long)
+v.Local.iWorkWidth.Declare(Long)
+v.Local.iWorkHeight.Declare(Long)
+v.Local.iCount.Declare(Long)
+v.Local.sControl.Declare(String)
+v.Local.sPrevControl.Declare(String)
+v.Local.sPControl.Declare(String)
+v.Local.sPrevPControl.Declare(String)
+v.Local.iStart.Declare(Long)
+v.Local.iEnd.Declare(Long)
+v.Local.sType.Declare(String)
+v.Local.sCount.Declare(String)
+v.Local.iC.Declare(Long)
+v.Local.sNum.Declare(String)
+v.Local.iPrev.Declare(Long)
+
+'get the difference from the new and current 
+f.Intrinsic.Math.Sub(v.Screen.F_MetalKit.Width,v.Global.iWidth,v.Local.iFWidthDiff)
+f.Intrinsic.Math.Sub(v.Screen.F_MetalKit.Height,v.Global.iHeight,v.Local.iFHeightDiff)
+'set the global width and height to their current states for next time it is used.
+v.Global.iWidth.Set(v.Screen.F_MetalKit.Width)
+v.Global.iHeight.Set(v.Screen.F_MetalKit.Height)
+v.Local.iStart.Set(1)
+v.Local.iEnd.Set(24)
+
+
+'we need to resize Grids and progress bars
+'divide the width by the amount in the row
+f.Intrinsic.Math.Div(v.Local.iFWidthDiff,12,v.Local.iFWidthDiff)
+'divide the height by the amount in the column
+f.Intrinsic.Math.Div(v.Local.iFHeightDiff,3,v.Local.iFHeightDiff)
+
+f.Intrinsic.String.Split("W*!*P","*!*",v.Local.sType)
+f.Intrinsic.String.Format(v.Local.iStart,"00",v.Local.sNum)
+'Loop through each of the letters
+f.Intrinsic.Control.For(v.Local.iC,0,v.Local.sType.UBound,1)
+	v.Local.sPrevControl.Set("")
+	v.Local.sPrevPControl.Set("")
+	f.Intrinsic.Control.For(v.Local.iCount,v.Local.iStart,v.Local.iEnd,1)
+		'if we are in type P then we only go to 12
+		f.Intrinsic.Control.If(v.Local.sType(v.Local.iC).Trim,=,"P","AND",v.Local.iCount,>,12)
+			f.Intrinsic.Control.ExitFor(v.Local.iCount)
+		f.Intrinsic.Control.EndIf
+		v.Local.sCount.Set(v.Local.iCount)
+		f.Intrinsic.String.Format(v.Local.sCount.Long,"00",v.Local.sControl)
+		f.Intrinsic.String.Build("{0}{1}",v.Local.sType(v.Local.iC),v.Local.sControl,v.Local.sControl)
+		f.Intrinsic.String.Build("GsGridControl{0}",v.Local.sControl,v.Local.sControl)
+		f.Intrinsic.Math.Add(v.Screen.[v.Args.Screen]![v.Local.sControl].Width,v.Local.iFWidthDiff,v.Local.iWorkWidth)
+	'	f.Intrinsic.Math.Add(v.Screen.[v.Args.Screen]![v.Local.sControl].Height,v.Local.iFHeightDiff,v.Local.iWorkHeight)
+		v.Local.iWorkHeight.Set(v.Screen.[v.Args.Screen]![v.Local.sControl].Height)
+		Gui.[v.Args.Screen].[v.Local.sControl].Size(v.Local.iWorkWidth,v.Local.iWorkHeight)
+'		f.Intrinsic.Control.If(v.Local.iCount,>,1,"AND",v.Local.iCount,<,12)
+		f.Intrinsic.Control.If(v.Local.sType(v.Local.iC),=,"W","AND",v.Local.iCount,<>,1,v.Local.iCount,<>,13)
+			'we are on the top row so only change the x position
+			f.Intrinsic.Math.Add(v.Screen.[v.Args.Screen]![v.Local.sPrevControl].Left,v.Screen.[v.Args.Screen]![v.Local.sPrevControl].Width,v.Local.iWorkWidth)
+			v.Local.iWorkHeight.Set(v.Screen.[v.Args.Screen]![v.Local.sControl].Top)	
+			gui.[v.Args.Screen].[v.Local.sControl].Position(v.Local.iWorkWidth,v.Local.iWorkHeight)
+		f.Intrinsic.Control.ElseIf(v.Local.iCount,<>,1,"AND",v.Local.iCount,<>,13)
+			'we are on the other two rows so change both x and y position, but not for 11 and 21 because it is on the left.
+			f.Intrinsic.Math.Add(v.Screen.[v.Args.Screen]![v.Local.sPrevControl].Left,v.Screen.[v.Args.Screen]![v.Local.sPrevControl].Width,v.Local.iWorkWidth)
+			v.Local.iWorkHeight.Set(v.Screen.[v.Args.Screen]![v.Local.sPrevControl].Top)
+			gui.[v.Args.Screen].[v.Local.sControl].Position(v.Local.iWorkWidth,v.Local.iWorkHeight)
+		f.Intrinsic.Control.EndIf
+		
+		f.Intrinsic.Control.If(v.Local.iCount,=,1,"AND",v.Local.sType(v.Local.iC),<>,"W")
+			v.Local.iWorkWidth.Set(v.Screen.[v.Args.Screen]![v.Local.sControl].Left)
+			f.Intrinsic.Math.Sub(v.Local.iC,1,v.Local.iPrev)
+			f.Intrinsic.Math.Add(v.Screen.[v.Args.Screen]!GsGridControlW13.Top,v.Screen.[v.Args.Screen]!GsGridControlW13.Height,495,v.Local.iWorkHeight)
+			gui.[v.Args.Screen].[v.Local.sControl].Position(v.Local.iWorkWidth,v.Local.iWorkHeight)
+		f.Intrinsic.Control.ElseIf(v.Local.iCount,=,1,"AND",v.Local.sType(v.Local.iC),=,"W")
+			'we are on the top row so only change the x position
+'			f.Intrinsic.Math.Add(v.Screen.[v.Args.Screen]![v.Local.sPrevControl].Left,v.Screen.[v.Args.Screen]![v.Local.sPrevControl].Width,v.Local.iWorkWidth)
+			v.Local.iWorkWidth.Set(v.Screen.[v.Args.Screen]![v.Local.sControl].Left)
+			v.Local.iWorkHeight.Set(v.Screen.[v.Args.Screen]![v.Local.sControl].Top)	
+			gui.[v.Args.Screen].[v.Local.sControl].Position(v.Local.iWorkWidth,v.Local.iWorkHeight)
+		f.Intrinsic.Control.EndIf
+		
+		v.Local.sPrevControl.Set(v.Local.sControl)
+		
+		f.Intrinsic.String.Format(v.Local.sCount.Long,"00",v.Local.sPControl)
+		f.Intrinsic.String.Build("{0}{1}",v.Local.sType(v.Local.iC),v.Local.sPControl,v.Local.sPControl)
+		f.Intrinsic.String.Build("ProgressBar{0}",v.Local.sPControl,v.Local.sPControl)
+		f.Intrinsic.Math.Add(v.Screen.[v.Args.Screen]![v.Local.sPControl].Width,v.Local.iFWidthDiff,v.Local.iWorkWidth)
+		v.Local.iWorkHeight.Set(v.Screen.[v.Args.Screen]![v.Local.sPControl].Height)
+		gui.[v.Args.Screen].[v.Local.sPControl].Size(v.Local.iWorkWidth,v.Local.iWorkHeight)
+'		f.Intrinsic.Control.If(v.Local.iCount,<>,1,"AND",v.Local.iCount,<>,13,v.Local.iCount,<>,25)
+		f.Intrinsic.Control.If(v.Local.iCount,<>,1,"AND",v.Local.iCount,<>,13)
+			'we are on the other two rows so change both x and y position, but not for 13 and 25 because it is on the left.
+			f.Intrinsic.Math.Add(v.Screen.[v.Args.Screen]![v.Local.sPrevPControl].Left,v.Screen.[v.Args.Screen]![v.Local.sPrevPControl].Width,v.Local.iWorkWidth)
+			f.Intrinsic.Math.Add(v.Screen.[v.Args.Screen]![v.Local.sControl].Top,v.Screen.[v.Args.Screen]![v.Local.sControl].Height,45,v.Local.iWorkHeight)
+			gui.[v.Args.Screen].[v.Local.sPControl].Position(v.Local.iWorkWidth,v.Local.iWorkHeight)
+		f.Intrinsic.Control.Else
+			v.Local.iWorkWidth.Set(v.Screen.[v.Args.Screen]![v.Local.sPControl].Left)
+			f.Intrinsic.Math.Add(v.Screen.[v.Args.Screen]![v.Local.sControl].Top,v.Screen.[v.Args.Screen]![v.Local.sControl].Height,45,v.Local.iWorkHeight)
+			gui.[v.Args.Screen].[v.Local.sPControl].Position(v.Local.iWorkWidth,v.Local.iWorkHeight)
+		f.Intrinsic.Control.EndIf
+		
+		v.Local.sPrevPControl.Set(v.Local.sPControl)
+	
+		f.Intrinsic.Control.DoEvents
+	f.Intrinsic.Control.Next(v.Local.iCount)
+	f.Intrinsic.Control.DoEvents
+f.Intrinsic.Control.Next(v.Local.iC)
+		
+f.Intrinsic.Control.DoEvents
+
+f.Intrinsic.Control.Catch
+	f.Intrinsic.Control.CallSub(TryCatch,"Sub",V.Ambient.CurrentSubroutine,"Error",V.Ambient.ErrorNumber,"Desc",V.Ambient.ErrorDescription)
+f.Intrinsic.Control.EndTry
+Program.Sub.Resize.End
+
+Program.Sub.UpdateExisting.Start
+f.Intrinsic.Control.Try
+
+v.Local.sSQL.Declare(String)
+v.Local.sCount.Declare(String)
+v.Local.iCompleted.Declare(Long)
+v.Local.sProg.Declare(String)
+v.Local.sGrid.Declare(String)
+v.Local.sForm.Declare(String)
+V.Local.bGood.Declare(Boolean,False)
+
+'Set the form it is from
+v.Local.sForm.Set("F_MetalKit")
+
+
+F.Intrinsic.String.Build("Select * From GCG_4442_Metal_KIT Where Rec_ID = '{0}'",V.Args.DT,V.Local.sSQL)
+F.ODBC.Connection!con.OpenLocalRecordsetRW("rstKit",V.Local.sSQL)
+f.Intrinsic.Control.If(v.ODBC.Con!rstKit.EOF,=,False)
+'	f.Intrinsic.File.Append2FileNewLine(v.Global.sLogFile,"Update Existing")
+'	f.Intrinsic.File.Append2FileNewLine(v.Global.sLogFile,v.Args.DT)
+	f.Intrinsic.Control.If(v.Args.DT.Left1,=,"W")
+'		f.Intrinsic.File.Append2FileNewLine(v.Global.sLogFile,V.DataTable.[v.Args.DT](4).[v.Args.DT]!FieldValTrim)
+		F.Intrinsic.String.Split(V.DataTable.[v.Args.DT](4).[v.Args.DT]!FieldValTrim,"OF",V.Local.sCount)
+	f.Intrinsic.Control.Else
+'		f.Intrinsic.File.Append2FileNewLine(v.Global.sLogFile,V.DataTable.[v.Args.DT](2).[v.Args.DT]!FieldValTrim)
+		F.Intrinsic.String.Split(V.DataTable.[v.Args.DT](2).[v.Args.DT]!FieldValTrim,"OF",V.Local.sCount)
+	f.Intrinsic.Control.EndIf
+	v.Local.sCount.RedimPreserve(0,1)
+	F.Intrinsic.Math.Add(V.Local.sCount(0).Long,1,V.Local.iCompleted)
+	F.Intrinsic.String.Build("{0} OF {1}",V.Local.iCompleted,v.Local.sCount(1).Long,V.Local.sCount)
+'	f.Intrinsic.File.Append2FileNewLine(v.Global.sLogFile,V.Local.sCount)
+	v.Local.sCount.RedimPreserve(0,0)
+	F.Intrinsic.String.Build("ProgressBar{0}",V.Args.DT,V.Local.sProg)
+	f.Intrinsic.Control.If(v.Local.iCompleted,<=,v.Screen.[v.Local.sForm]![v.Local.sProg].Max)
+		gui.[v.Local.sForm].[v.Local.sProg].Value(v.Local.iCompleted)
+		f.Intrinsic.Control.If(v.Args.DT.Left1,=,"W")
+			F.Data.DataTable.SetValue(v.Args.DT,4,v.Args.DT,V.Local.sCount)
+		f.Intrinsic.Control.Else
+			F.Data.DataTable.SetValue(v.Args.DT,2,v.Args.DT,V.Local.sCount)
+		f.Intrinsic.Control.EndIf
+		F.ODBC.con!rstKit.Set!Kitting_Status(V.Local.sCount)		
+		f.Intrinsic.Control.If(v.Local.iCompleted,=,v.Screen.[v.Local.sForm]![v.Local.sProg].Max)
+			F.Intrinsic.String.Build("GsGridControl{0}",V.Args.DT,V.Local.sGrid)
+			f.Intrinsic.Control.If(v.Args.DT.Left1,=,"W")
+				gui.[v.Local.sForm].[V.Local.sGrid].HideRow(v.Args.DT,5,False)
+			f.Intrinsic.Control.Else
+				gui.[v.Local.sForm].[V.Local.sGrid].HideRow(v.Args.DT,3,False)
+			f.Intrinsic.Control.EndIf
+		f.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.EndIf
+	
+	'Add one to the qty completed for progress dt
+	f.Intrinsic.String.Build("GRID = '{0}' AND JOB = '{1}' AND SUFFIX = '{2}' ",v.Args.DT,v.Args.Job,v.Args.Suffix,v.Local.sSQL)
+	f.Data.DataView.Create("Progress","ProgressTemp","22",v.Local.sSQL,"")
+	f.Intrinsic.Control.If(v.DataView.Progress!ProgressTemp.RowCount,>,0)
+'		f.Data.DataTable.Compute("Progress","CONVERT([QTY_COMPLETED],'System.Int32') + 1",v.Local.sSQL,v.Local.iCompleted)
+		V.Local.bGood.Set(True)
+		f.Intrinsic.Math.Add(v.DataView.Progress!ProgressTemp(0).Qty_Completed!FieldVal,1,v.Local.iCompleted)
+		f.Data.DataView.SetValue("Progress","ProgressTemp",-1,"QTY_COMPLETED",v.Local.iCompleted)
+	f.Intrinsic.Control.EndIf
+	f.Data.DataView.Close("Progress","ProgressTemp")
+	
+	f.Data.DataTable.SaveToDB("Progress","Con","GCG_4442_Metal_PROG","JOB*!*SUFFIX*!*GRID*!*PRIORITY",2)
+	f.Data.DataTable.AcceptChanges("Progress")
+	
+	F.ODBC.con!rstKit.Update
+'	F.Intrinsic.UI.ChangeWaitStatus("Selection............")	
+	f.Intrinsic.Control.CallSub(Selection,"Grid",v.Args.DT)
+f.Intrinsic.Control.EndIf
+F.ODBC.con!rstKit.Close
+
+F.Intrinsic.Control.If(V.Local.bGood)
+	F.Intrinsic.UI.PlaySound(V.Global.sGoodScan)
+F.Intrinsic.Control.Else
+	F.Intrinsic.UI.PlaySound(V.Global.sBadScan)
+F.Intrinsic.Control.EndIf
+
+f.Intrinsic.Control.Catch
+	f.Intrinsic.Control.CallSub(TryCatch,"Sub",V.Ambient.CurrentSubroutine,"Error",V.Ambient.ErrorNumber,"Desc",V.Ambient.ErrorDescription)
+f.Intrinsic.Control.EndTry
+Program.Sub.UpdateExisting.End
+
+Program.Sub.NewJob.Start
+f.Intrinsic.Control.Try
+
+v.Local.sSQL.Declare(String)
+v.Local.iCount.Declare(Long)
+v.Local.sDataTable.Declare(String)
+v.Local.sProg.Declare(String)
+v.Local.iCompleted.Declare(Long)
+v.Local.sGrid.Declare(String)
+v.Local.sCount.Declare(String)
+v.Local.iStart.Declare(Long)
+v.Local.iEnd.Declare(Long)
+v.Local.iC.Declare(Long)
+v.Local.sForm.Declare(String)
+v.Local.sType.Declare(String)
+v.Local.sQty.Declare(String)
+v.Local.sPJob.Declare(String)
+v.Local.sPSuffix.Declare(String)
+v.Local.sPOrderNo.Declare(String)
+v.Local.sPPart.Declare(String)
+V.Local.bGood.Declare(Boolean,False)
+V.Local.sMsg.Declare(String)
+
+'f.Intrinsic.File.Append2FileNewLine(v.Global.sLogFile,"New Job")
+
+f.Intrinsic.String.Build("SELECT QTY_ORDER, RTRIM(SALES_ORDER) AS SALES_ORDER, RTRIM(PART) AS PART FROM V_JOB_HEADER WHERE JOB = '{0}' AND SUFFIX = '000'",V.Args.Job,v.Local.sSQL)
+f.ODBC.Connection!Con.ExecuteAndReturn(v.Local.sSQL,v.Local.sQty)
+'f.Intrinsic.String.Replace(v.Local.sQty,"*!*","",v.Local.sQty)
+f.Intrinsic.String.Replace(v.Local.sQty,"#$#","",v.Local.sQty)
+f.Intrinsic.String.Split(v.Local.sQty,"*!*",v.Local.sQty)
+v.Local.sQty.RedimPreserve(0,2)
+v.Local.sPOrderNo.Set(v.Local.sQty(1))
+v.Local.sPPart.Set(v.Local.sQty(2).Trim)
+v.Local.sQty.RedimPreserve(0,0)
+
+F.Intrinsic.Control.If(V.Local.sQty.Long,<=,0)
+	F.Intrinsic.String.Build("There was a problem with Job {0}, please contact your immediate supervisor or scheduling.",V.Args.Job,V.Local.sMsg)
+	F.Intrinsic.UI.Msgbox(V.Local.sMsg)
+	F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.If(V.Local.sPOrderNo,=,"0000000","OR",V.Local.sPOrderNo.Length,=,0)
+	V.Local.sPOrderNo.Set(V.Args.Job)
+F.Intrinsic.Control.EndIf
+
+'Get the Parent job and Suffix
+f.Intrinsic.String.Build("SELECT ISNULL(PARENT_WO,'{0}') AS PARENT_WO, ISNULL(PARENT_SUFFIX_PARENT,'000') AS PARENT_SUFFIX_PARENT FROM V_JOB_HEADER WHERE JOB = '{0}' AND SUFFIX = '{1}' ",v.Args.Job,v.Args.Suffix,v.Local.sSQL)
+f.ODBC.Connection!Con.OpenLocalRecordsetRO("rstParent",v.Local.sSQL)
+f.Intrinsic.Control.If(v.ODBC.Con!rstParent.EOF,=,False)
+	v.Local.sPJob.Set(v.ODBC.Con!rstParent.FieldValTrim!PARENT_WO)
+	v.Local.sPSuffix.Set(v.ODBC.Con!rstParent.FieldValTrim!PARENT_SUFFIX_PARENT)
+f.Intrinsic.Control.EndIf
+f.ODBC.Con!rstParent.Close
+
+'If this is a Parent then we need to get the correct Part
+f.Intrinsic.Control.If(v.Args.bParent.Boolean,=,True)
+	f.Intrinsic.String.Build("SELECT RTRIM(PART) AS PART FROM V_JOB_HEADER WHERE JOB = '{0}' AND SUFFIX = '{1}' ",v.Local.sPJob,v.Local.sPSuffix,v.Local.sSQL)
+	f.ODBC.Connection!Con.OpenLocalRecordsetRO("rstPart",v.Local.sSQL)
+	f.Intrinsic.Control.If(v.ODBC.Con!rstPart.EOF,=,False)
+		'Set the part to the actual parent
+		v.Local.sPPart.Set(v.ODBC.Con!rstPart.FieldValTrim!PART)
+	f.Intrinsic.Control.EndIf
+	f.ODBC.Con!rstPart.Close
+f.Intrinsic.Control.EndIf
+
+
+'Holds Parent Part, Qty of Order, and Sales Order Number
+f.Intrinsic.Control.If(v.Args.PC.Boolean,=,False)
+'	f.Intrinsic.String.Build("SELECT  SUM(QTY_ORDER / {1})  AS QTY_ORDER FROM V_JOB_HEADER AS A WHERE JOB = '{0}' AND SUFFIX IN (SELECT SUFFIX FROM V_JOB_OPERATIONS WHERE PART IN ('*WD0','WD01','WD02','WD03','WD04','WD05','WD06') AND JOB = A.JOB)",v.Local.sPJob,v.Local.sQty,v.Local.sSQL)
+	f.Intrinsic.Control.If(v.Args.bParent.Boolean,=,True)
+		f.Intrinsic.String.Build("SELECT  SUM(A.QTY_ORDER / {1})  AS QTY_ORDER FROM V_JOB_HEADER AS A WHERE A.JOB = '{0}' AND A.SUFFIX IN (SELECT B.SUFFIX FROM V_JOB_HEADER AS B WHERE RTRIM(B.PARENT_SUFFIX_PARENT) = '{2}' AND B.PARENT_WO = A.JOB)",v.Local.sPJob,v.Local.sQty.Long,v.Local.sPSuffix,v.Local.sSQL)
+	f.Intrinsic.Control.Else
+		f.Intrinsic.String.Build("SELECT  SUM(A.QTY_ORDER / {1})  AS QTY_ORDER FROM V_JOB_HEADER AS A WHERE A.JOB = '{0}' AND A.SUFFIX IN (SELECT B.SUFFIX FROM V_JOB_HEADER AS B WHERE (RTRIM(B.PARENT_SUFFIX_PARENT) = '{2}' OR B.SUFFIX = '{2}') AND B.JOB = A.JOB)",v.Args.Job,v.Local.sQty.Long,v.Args.Suffix,v.Local.sSQL)
+	f.Intrinsic.Control.EndIf
+'	f.Intrinsic.String.Build("SELECT  SUM(QTY_ORDER / {1})  AS QTY_ORDER FROM V_JOB_HEADER AS A WHERE JOB = '{0}' AND SUFFIX = '{2}'",v.Local.sPJob,v.Local.sQty,v.Local.sPSuffix,v.Local.sSQL)
+f.Intrinsic.Control.Else
+	F.Intrinsic.Control.If(V.Local.sPOrderNo.Length,=,7)
+		f.Intrinsic.String.Build("SELECT  SUM(A.QTY_ORDER)  AS QTY_ORDER FROM V_JOB_HEADER AS A WHERE (A.JOB IN (SELECT B.JOB FROM V_JOB_HEADER AS B WHERE B.SALES_ORDER = '{0}') AND A.SUFFIX IN (SELECT C.SUFFIX FROM V_JOB_OPERATIONS AS C WHERE C.PART IN ('*PC0','PC01','PC02','PC03','PC04','PC05','PC06','PC07') AND C.JOB = A.JOB))",v.Local.sPOrderNo,v.Local.sSQL)
+	F.Intrinsic.Control.Else
+		f.Intrinsic.String.Build("SELECT SUM(A.QTY_ORDER) AS QTY_ORDER FROM V_JOB_HEADER AS A WHERE A.JOB = '{0}' AND A.SUFFIX IN (SELECT C.SUFFIX FROM V_JOB_OPERATIONS AS C WHERE C.PART IN ('*PC0','PC01','PC02','PC03','PC04','PC05','PC06','PC07') AND C.JOB = A.JOB)",v.Local.sPOrderNo,v.Local.sSQL)
+	F.Intrinsic.Control.EndIf
+f.Intrinsic.Control.EndIf
+
+F.ODBC.Connection!con.OpenLocalRecordsetRO("rstHeader",V.Local.sSQL)
+F.Intrinsic.Control.If(V.ODBC.con!rstHeader.EOF,=,False)
+	f.Intrinsic.Control.If(v.Args.PC.Boolean,=,True)
+		'We are doing Powder coating
+		v.Local.iEnd.Set(12)
+		f.Intrinsic.String.Split("P","*!*",v.Local.sType)
+	f.Intrinsic.Control.Else
+		'we are doing Welding
+		v.Local.iEnd.Set(24)
+		f.Intrinsic.String.Split("W","*!*",v.Local.sType)
+	f.Intrinsic.Control.EndIf
+	'loop through each type
+	f.Intrinsic.Control.For(v.Local.iC,0,v.Local.sType.UBound,1)
+		'loop through each grid to see if we have a free spot
+		'we are priorising A over B
+		F.Intrinsic.Control.For(V.Local.iCount,1,v.Local.iEnd,1)
+			'Build the Grid name
+			f.Intrinsic.String.Format(v.Local.iCount,"00",v.Local.sDataTable)
+			f.Intrinsic.String.Build("{0}{1}",v.Local.sType(v.Local.iC),v.Local.sDataTable,v.Local.sDataTable)
+			'Not in use so we can use it
+			'Make sure there is no value in it, there shouldn't because it is not in the dictionary
+			F.Intrinsic.Control.If(V.DataTable.[V.Local.sDatatable](0).[V.Local.sDatatable]!FieldValTrim,=,"","AND",V.DataTable.[V.Local.sDatatable](1).[V.Local.sDatatable]!FieldValTrim,=,"")
+'				f.Intrinsic.File.Append2FileNewLine(v.Global.sLogFile,v.Local.sDataTable)
+				F.Intrinsic.String.Build("Select * From GCG_4442_Metal_KIT Where Rec_ID = '{0}'",V.Local.sDatatable,V.Local.sSQL)
+				F.ODBC.Connection!con.OpenLocalRecordsetRW("rstKit",V.Local.sSQL)
+				V.Local.bGood.Set(True)
+				F.ODBC.con!rstKit.AddNew
+				F.ODBC.con!rstKit.Set!REC_ID(V.Local.sDatatable)
+				f.Intrinsic.Control.If(v.Args.PC.Boolean,=,False)
+					'Setting Row 0 as Job
+					F.Data.DataTable.SetValue(V.Local.sDatatable,0,V.Local.sDatatable,V.Screen.F_MetalKit!txtWO.Text)
+					F.ODBC.con!rstKit.Set!Job(V.Screen.F_MetalKit!txtWO.Text)
+					'Setting row 1 as Sales Order
+					F.Data.DataTable.SetValue(V.Local.sDatatable,1,V.Local.sDatatable,v.Local.sPOrderNo)
+					F.ODBC.con!rstKit.Set!ORDER_NO(v.Local.sPOrderNo)
+					'Setting row 2 as Parent Part
+					F.Data.DataTable.SetValue(V.Local.sDatatable,2,V.Local.sDatatable,v.Local.sPPart)
+					F.ODBC.con!rstKit.Set!Part(v.Local.sPPart)
+					'Set Kit Status as Row 3
+					F.Data.DataTable.SetValue(V.Local.sDatatable,3,V.Local.sDatatable,"KIT STATUS")
+				f.Intrinsic.Control.Else
+					F.ODBC.con!rstKit.Set!Job(V.Screen.F_MetalKit!txtWO.Text)
+					'Setting row 0 as Sales Order
+					F.Data.DataTable.SetValue(V.Local.sDatatable,0,V.Local.sDatatable,v.Local.sPOrderNo)
+					F.ODBC.con!rstKit.Set!ORDER_NO(v.Local.sPOrderNo)
+					F.ODBC.con!rstKit.Set!Part(v.Local.sPPart)
+					'Set Kit Status as Row 1
+					F.Data.DataTable.SetValue(V.Local.sDatatable,1,V.Local.sDatatable,"KIT STATUS")
+				f.Intrinsic.Control.EndIf
+				'Set Row 4 as x of x if it is not more than the max
+'					F.Intrinsic.Math.Add(V.ODBC.con!rstHeader.FieldValLong!Qty_Completed,1,V.Local.iCompleted)
+				v.Local.iCompleted.Set(1)				
+				F.Intrinsic.String.Build("{0} OF {1}",V.Local.iCompleted,V.ODBC.con!rstHeader.FieldValLong!Qty_Order,V.Local.sCount)
+'				f.Intrinsic.File.Append2FileNewLine(v.Global.sLogFile,V.Local.sCount)
+				F.Intrinsic.String.Build("ProgressBar{0}",v.Local.sDataTable,V.Local.sProg)
+				'Set the form name based on the type we are using
+				v.Local.sForm.Set("F_MetalKit")
+
+				
+				'if our new count is less than or equal to our max then set it and update the progress bar
+				f.Intrinsic.Control.If(v.Local.iCompleted,<=,V.ODBC.con!rstHeader.FieldValLong!Qty_Order)
+					Gui.[v.Local.sForm].[v.Local.sProg].Value(v.Local.iCompleted)
+					f.Intrinsic.Control.If(v.Args.PC.Boolean,=,False)
+						F.Data.DataTable.SetValue(V.Local.sDatatable,4,V.Local.sDatatable,V.Local.sCount)
+					f.Intrinsic.Control.Else
+						F.Data.DataTable.SetValue(V.Local.sDatatable,2,V.Local.sDatatable,V.Local.sCount)
+					f.Intrinsic.Control.EndIf
+					F.ODBC.con!rstKit.Set!Kitting_Status(V.Local.sCount)
+					'if x of x is max then unhide the ready button on row 4
+					F.Intrinsic.Control.If(V.Local.iCompleted,=,V.ODBC.con!rstHeader.FieldValLong!Qty_Order)
+						F.Intrinsic.String.Build("GsGridControl{0}",V.Local.sDataTable,V.Local.sGrid)
+						'Set the button to the next labor step
+						f.Intrinsic.String.Build("SELECT TOP 1 RTRIM(PART) AS PART FROM V_JOB_OPERATIONS WHERE JOB = '{0}' AND SUFFIX = '{1}' AND LMO = 'L' AND SEQ < '995000' AND DATE_COMPLETED = '1900-01-01' ORDER BY SEQ ASC",v.Local.sPJob,v.Local.sPSuffix,v.Local.sSql)
+						f.ODBC.Connection!Con.OpenLocalRecordsetRO("rstWC",v.Local.sSql)
+						f.Intrinsic.Control.If(v.ODBC.Con!rstWC.EOF,=,False)
+							f.Intrinsic.String.Build("Kit Complete{0}{1} Next",v.Ambient.NewLine,v.ODBC.Con!rstWC.FieldValTrim!PART,v.Local.sSql)
+						f.Intrinsic.Control.Else
+						f.Intrinsic.String.Build("Kit Complete{0}Assemble{0}Next",v.Ambient.NewLine,v.Local.sSql)
+						f.Intrinsic.Control.EndIf
+						f.ODBC.Con!rstWC.Close
+						f.Intrinsic.Control.If(v.Args.PC.Boolean,=,False)
+							f.Data.DataTable.SetValue(v.Local.sDataTable,5,v.Local.sDataTable,v.Local.sSQL)
+							Gui.[v.Local.sForm].[V.Local.sGrid].HideRow(V.Local.sDatatable,5,False)
+						f.Intrinsic.Control.Else
+							f.Data.DataTable.SetValue(v.Local.sDataTable,3,v.Local.sDataTable,v.Local.sSQL)
+							Gui.[v.Local.sForm].[V.Local.sGrid].HideRow(V.Local.sDatatable,3,False)
+						f.Intrinsic.Control.EndIf
+					f.Intrinsic.Control.EndIf
+				F.Intrinsic.Control.EndIf
+				'Set the progress bars max value
+				F.Intrinsic.String.Build("ProgressBar{0}",V.Local.sDataTable,V.Local.sProg)
+				f.Intrinsic.Control.If(v.ODBC.Con!rstHeader.FieldValLong!QTY_ORDER,>,0)
+					Gui.[v.Local.sForm].[v.Local.sProg].Max(V.ODBC.con!rstHeader.FieldValLong!Qty_Order)
+				f.Intrinsic.Control.EndIf
+				F.ODBC.con!rstKit.Update
+				F.ODBC.con!rstKit.Close
+				
+				'We need to add the info to our Progress DT
+				f.Intrinsic.Control.If(v.Args.PC.Boolean,=,False)
+'					f.Intrinsic.String.Build("SELECT JOB, SUFFIX, RTRIM(PART) AS PART,RTRIM(DESCRIPTION) AS DESCRIPTION, QTY_ORDER / {1} AS QTY_ORDER, CAST(0 AS DOUBLE) AS QTY_COMPLETED, '{2}' AS GRID FROM V_JOB_HEADER WHERE SUFFIX > '000' AND JOB = '{0}'",v.Args.Job,v.Local.sQty.Long,v.Local.sDataTable,v.Local.sSQL)
+'					f.Intrinsic.String.Build("SELECT JOB, SUFFIX, RTRIM(PART) AS PART, RTRIM(DESCRIPTION) AS DESCRIPTION, QTY_ORDER / {1} AS QTY_ORDER, CAST(0 AS DOUBLE) AS QTY_COMPLETED, '{2}' AS GRID, '{3}' AS ORDER_NO FROM V_JOB_HEADER WHERE JOB = '{0}'",v.Args.Job,v.Local.sQty.Long,v.Local.sDataTable,v.Local.sPSuffix,v.Local.sSQL)
+					f.Intrinsic.String.Build("SELECT JOB, SUFFIX, RTRIM(PART) AS PART, RTRIM(DESCRIPTION) AS DESCRIPTION, QTY_ORDER / {1} AS QTY_ORDER, CAST(0 AS DOUBLE) AS QTY_COMPLETED, '{2}' AS GRID, '{3}' AS ORDER_NO FROM V_JOB_HEADER WHERE JOB = '{0}' AND (PARENT_SUFFIX_PARENT = '{3}' OR SUFFIX = '{3}')",v.Args.Job,v.Local.sQty.Long,v.Local.sDataTable,v.Local.sPSuffix,v.Local.sSQL)
+				f.Intrinsic.Control.Else
+'					f.Intrinsic.String.Build("SELECT JOB, SUFFIX, RTRIM(PART) AS PART, RTRIM(DESCRIPTION) AS DESCRIPTION, QTY_ORDER AS QTY_ORDER, CAST(0 AS DOUBLE) AS QTY_COMPLETED, '{0}' AS GRID, '{1}' AS ORDER_NO FROM V_JOB_HEADER AS A WHERE SUFFIX > '000' AND JOB IN (SELECT JOB FROM V_JOB_HEADER WHERE SALES_ORDER = '{1}') ORDER BY JOB ASC, SUFFIX ASC",v.Local.sDataTable,v.Local.sPOrderNo,v.Local.sSQL)
+'					f.Intrinsic.String.Build("SELECT JOB, SUFFIX, RTRIM(PART) AS PART, RTRIM(DESCRIPTION) AS DESCRIPTION, QTY_ORDER AS QTY_ORDER, CAST(0 AS DOUBLE) AS QTY_COMPLETED, '{0}' AS GRID, '{1}' AS ORDER_NO FROM V_JOB_HEADER AS A WHERE JOB IN (SELECT JOB FROM V_JOB_HEADER WHERE SALES_ORDER = '{1}') ORDER BY JOB ASC, SUFFIX ASC",v.Local.sDataTable,v.Local.sPOrderNo,v.Local.sSQL)
+'					f.Intrinsic.String.Build("SELECT A.JOB, A.SUFFIX, RTRIM(A.PART) AS PART, RTRIM(A.DESCRIPTION) AS DESCRIPTION, A.QTY_ORDER AS QTY_ORDER, CAST(0 AS DOUBLE) AS QTY_COMPLETED, '{0}' AS GRID, '{1}' AS ORDER_NO FROM V_JOB_HEADER AS A WHERE A.JOB IN (SELECT B.JOB FROM V_JOB_HEADER AS B WHERE B.SALES_ORDER = '{1}') AND (A.SUFFIX IN (SELECT C.SUFFIX FROM V_JOB_OPERATIONS AS C WHERE C.JOB = A.JOB AND C.PART IN ('*PC0','PC01','PC02','PC03','PC04','PC05','PC06','PC07')) OR A.SUFFIX = '000') ORDER BY A.JOB ASC, A.SUFFIX ASC",v.Local.sDataTable,v.Local.sPOrderNo,v.Local.sSQL)
+					F.Intrinsic.Control.If(V.Local.sPOrderNo.Length,=,7)
+						f.Intrinsic.String.Build("SELECT A.JOB, A.SUFFIX, RTRIM(A.PART) AS PART, RTRIM(A.DESCRIPTION) AS DESCRIPTION, A.QTY_ORDER AS QTY_ORDER, CAST(0 AS DOUBLE) AS QTY_COMPLETED, '{0}' AS GRID, '{1}' AS ORDER_NO FROM V_JOB_HEADER AS A WHERE A.JOB IN (SELECT B.JOB FROM V_JOB_HEADER AS B WHERE B.SALES_ORDER = '{1}') AND A.SUFFIX IN (SELECT C.SUFFIX FROM V_JOB_OPERATIONS AS C WHERE C.JOB = A.JOB AND C.PART IN ('*PC0','PC01','PC02','PC03','PC04','PC05','PC06','PC07'))  ORDER BY A.JOB ASC, A.SUFFIX ASC",v.Local.sDataTable,v.Local.sPOrderNo,v.Local.sSQL)
+					F.Intrinsic.Control.Else
+						f.Intrinsic.String.Build("SELECT A.JOB, A.SUFFIX, RTRIM(A.PART) AS PART, RTRIM(A.DESCRIPTION) AS DESCRIPTION, A.QTY_ORDER AS QTY_ORDER, CAST(0 AS DOUBLE) AS QTY_COMPLETED, '{0}' AS GRID, '{1}' AS ORDER_NO FROM V_JOB_HEADER AS A WHERE A.JOB = '{1}' AND A.SUFFIX IN (SELECT C.SUFFIX FROM V_JOB_OPERATIONS AS C WHERE C.JOB = A.JOB AND C.PART IN ('*PC0','PC01','PC02','PC03','PC04','PC05','PC06','PC07'))  ORDER BY A.JOB ASC, A.SUFFIX ASC",v.Local.sDataTable,v.Local.sPOrderNo,v.Local.sSQL)
+					F.Intrinsic.Control.EndIf
+				f.Intrinsic.Control.EndIf
+				f.Intrinsic.Control.If(v.DataTable.ProgressTemp.Exists,=,True)
+					f.Data.DataTable.Close("ProgressTemp")
+				f.Intrinsic.Control.EndIf
+				f.Data.DataTable.CreateFromSQL("ProgressTemp","Con",v.Local.sSQL)
+				'Now that we have the fields we need to add in the Priority column
+				f.Data.DataTable.AddColumn("ProgressTemp","PRIORITY","String")
+				'We need to get the Highest Priority Number that exists in our Progress table.
+				f.Intrinsic.Control.If(v.Args.PC.Boolean,=,False)
+					f.Intrinsic.String.Build("JOB = '{0}' AND SUBSTRING(GRID,1,1) = 'W'",v.Args.Job,v.Local.sSQL)
+				f.Intrinsic.Control.Else
+					f.Intrinsic.String.Build("ORDER_NO = '{0}' AND SUBSTRING(GRID,1,1) = 'P'",v.Local.sPOrderNo,v.Local.sSQL)
+				f.Intrinsic.Control.EndIf
+				f.Data.DataTable.Compute("Progress","MAX(PRIORITY)",v.Local.sSQL,v.Local.iCompleted)
+				f.Intrinsic.Math.Add(v.Local.iCompleted,1,v.Local.iCompleted)
+				f.Data.DataTable.SetValue("ProgressTemp",-1,"PRIORITY",v.Local.iCompleted)
+				'Add one to the suffix that we scanned
+				f.Intrinsic.String.Build("JOB = '{0}' AND SUFFIX = '{1}'",v.Args.Job,v.Args.Suffix,v.Local.sSQL)
+				f.Data.DataView.Create("ProgressTemp","ProgressTemp",22,v.Local.sSQL,"")
+				f.Data.DataView.SetValue("ProgressTemp","ProgressTemp",-1,"QTY_COMPLETED",1)
+				f.Data.DataView.Close("ProgressTemp","ProgressTemp")
+				'now we have everythign so we can just merge it to our progress dt
+				f.Data.DataTable.Merge("ProgressTemp","Progress",True,2)
+				f.Data.DataTable.Close("ProgressTemp")
+				'Save the new info to the table
+				f.Data.DataTable.SaveToDB("Progress","Con","GCG_4442_Metal_PROG","JOB*!*SUFFIX*!*GRID*!*PRIORITY",7)
+				f.Data.DataTable.AcceptChanges("Progress")
+				
+'				F.Intrinsic.UI.ChangeWaitStatus("Selection............")
+				
+				f.Intrinsic.Control.CallSub(Selection,"Grid",v.Local.sDataTable)
+				F.Intrinsic.Control.ExitFor(V.Local.iC)	
+			f.Intrinsic.Control.Else
+				'Check and see if this is 20 or 30.
+				f.Intrinsic.Control.If(v.Local.iCount,=,v.Local.iEnd,"AND",v.Local.iC,=,v.Local.sType.UBound)
+					'We don't have any room so we can't add it.
+					f.Intrinsic.UI.Msgbox("Job was NOT added because we don't have any more bins left.","Warning")
+				f.Intrinsic.Control.EndIf
+			F.Intrinsic.Control.EndIf
+			f.Intrinsic.Control.DoEvents
+		F.Intrinsic.Control.Next(V.Local.iCount)
+		f.Intrinsic.Control.DoEvents
+	f.Intrinsic.Control.Next(v.Local.iC)
+	f.Intrinsic.Control.DoEvents
+F.Intrinsic.Control.EndIf
+f.ODBC.Con!rstHeader.Close
+
+F.Intrinsic.Control.If(V.Local.bGood)
+	F.Intrinsic.UI.PlaySound(V.Global.sGoodScan)
+F.Intrinsic.Control.Else
+	F.Intrinsic.UI.PlaySound(V.Global.sBadScan)
+F.Intrinsic.Control.EndIf
+
+f.Intrinsic.Control.Catch
+	f.Intrinsic.Control.CallSub(TryCatch,"Sub",V.Ambient.CurrentSubroutine,"Error",V.Ambient.ErrorNumber,"Desc",V.Ambient.ErrorDescription)
+f.Intrinsic.Control.EndTry
+Program.Sub.NewJob.End
+
+Program.Sub.Selection.Start
+f.Intrinsic.Control.Try
+
+v.Local.sHold.Declare(String)
+v.Local.sGrid.Declare(String)
+v.Local.sRet.Declare(String)
+v.Local.sSQL.Declare(String)
+v.Local.sForm.Declare(String)
+v.Local.iCount.Declare(Long)
+v.Local.sJob.Declare(String)
+
+v.Local.sRet.Set(v.Args.Grid)
+'f.Intrinsic.File.Append2FileNewLine(v.Global.sLogFile,"Selected Grid")
+'f.Intrinsic.File.Append2FileNewLine(v.Global.sLogFile,V.Local.sRet)
+
+v.Local.sForm.Set("F_MetalKit")
+
+f.Intrinsic.Control.If(v.Global.sPrev,<>,"")
+	F.Intrinsic.String.Build("GsGridControl{0}",v.Global.sPrev,V.Local.sGrid)
+	Gui.[v.Local.sForm].[v.Local.sGrid].SetColumnProperty(v.Global.sPrev,v.Global.sPrev,"cellbackcolor","White")
+	Gui.[v.Local.sForm].[v.Local.sGrid].SetColumnProperty(v.Global.sPrev,v.Global.sPrev,"headerbackcolor","#0000ff")
+'	Gui.[v.Local.sForm].[V.Local.sGrid].SetCellAppearance(V.Global.sPrev,0,2,"backcolor","White")
+f.Intrinsic.Control.EndIf
+v.Global.sPrev.Set(v.Local.sRet)
+
+'Now set our column to yellow
+F.Intrinsic.String.Build("GsGridControl{0}",v.Local.sRet,V.Local.sGrid)
+Gui.[v.Local.sForm].[v.Local.sGrid].SetColumnProperty(v.Local.sRet,v.Local.sRet,"CellBackColor","Yellow")
+'Gui.[v.Local.sForm].[V.Local.sGrid].SetCellAppearance(V.Local.sRet,0,2,"backcolor","Yellow")
+Gui.[v.Local.sForm].[v.Local.sGrid].SetColumnProperty(v.Local.sRet,v.Local.sRet,"headerbackcolor","#0000ff")
+	
+Gui.F_MetalKit.GsgcView.SuspendLayout()
+Gui.F_MetalKit.GsGridControlReWork.SuspendLayout()
+
+f.Intrinsic.Control.If(v.DataTable.ComponentPartsParent.Exists,=,True)
+	f.Intrinsic.Control.If(v.DataTable.ComponentPartsParent$Parts.Exists,=,True)
+		f.Data.DataTable.Close("ComponentPartsParent$Parts")
+	f.Intrinsic.Control.EndIf
+	f.Data.DataTable.Close("ComponentPartsParent")
+f.Intrinsic.Control.EndIf
+'Add the bottom Component grid
+'f.Intrinsic.String.Build("SELECT Job, Suffix, RTRIM(PART) AS Part, RTRIM(DESCRIPTION) AS Description, QTY_ORDER, QTY_COMPLETED FROM V_JOB_HEADER WHERE JOB = '{0}' AND SUFFIX > '000' ORDER BY SUFFIX ASC",v.DataTable.[v.Args.Grid](0).[v.Args.Grid]!FieldVal,v.Local.sSQL)
+'f.Data.DataTable.CreateFromSQL("ComponentPartsParent","Con",v.Local.sSQL,True)
+'f.Data.DataTable.DeleteRow("ComponentPartsParent")
+f.Intrinsic.String.Build("GRID = '{0}' ",V.Args.GRID,V.Local.sSQL)
+f.Data.DataView.Create("Progress","MergeTemp",22,v.Local.sSQL,"JOB ASC, SUFFIX ASC")
+f.Data.DataView.ToDataTable("Progress","MergeTemp","ComponentPartsParent",True)
+'f.Data.DataView.Close("Progress","MergeTemp")
+'f.Data.DataTable.RemoveColumn("ComponentPartsParent","GRID")
+'f.Data.DataTable.RemoveColumn("ComponentPartsParent","PRIORITY")
+f.Data.DataTable.AddColumn("ComponentPartsParent","Rework","String")
+f.Data.DataTable.AddExpressionColumn("ComponentPartsParent","JobSuffix","String","[Job]+[Suffix]")
+f.Intrinsic.Control.If(v.DataTable.ComponentPartsParent.RowCount,>,0)
+	f.Data.DataView.Create("ComponentPartsParent","ComponentParentView",22,"","JOB ASC, Suffix ASC")
+	'Add all the children
+	f.Intrinsic.Control.If(v.Args.Grid.Left1,=,"W")
+'		F.Intrinsic.String.Build("SELECT Job, Suffix, Seq, RTRIM(PART) AS Part, RTRIM(DESCRIPTION) AS Description, HOURS_ESTIMATED, HOURS_ACTUAL, LMO, RTRIM(OPERATION) AS OPERATION FROM V_JOB_OPERATIONS WHERE (LMO = 'L' OR LMO = 'O')  AND SEQ < '995000' AND JOB = '{0}' AND SUFFIX > '000'  ORDER BY JOB, SEQ ASC ",v.DataTable.[v.Args.Grid](0).[v.Args.Grid]!FieldVal,v.Local.sSQL)
+		F.Intrinsic.String.Build("SELECT A.Job, A.Suffix, A.Seq, RTRIM(A.PART) AS Part, RTRIM(A.DESCRIPTION) AS Description, A.HOURS_ESTIMATED, A.HOURS_ACTUAL, A.LMO, RTRIM(A.OPERATION) AS OPERATION FROM V_JOB_OPERATIONS AS A WHERE (A.LMO = 'L' OR A.LMO = 'O')  AND A.SEQ < '995000' AND A.JOB = '{0}' AND A.SUFFIX IN (SELECT B.SUFFIX FROM GCG_4442_METAL_PROG AS B WHERE B.GRID = '{1}' AND B.SUFFIX <> B.ORDER_NO)  ORDER BY A.JOB, A.SEQ ASC ",v.DataTable.[v.Args.Grid](0).[v.Args.Grid]!FieldVal,v.Args.Grid,v.Local.sSQL)
+		f.Intrinsic.Control.If(v.DataTable.ComponentPartsParent$Parts.Exists,=,True)
+			f.Data.DataTable.Close("ComponentPartsParent$Parts")
+		f.Intrinsic.Control.EndIf
+		f.Data.DataTable.CreateFromSQL("ComponentPartsParent$Parts","Con",v.Local.sSQL,True)
+	f.Intrinsic.Control.Else
+'		f.Intrinsic.String.Build("SELECT Job, Suffix, Seq, RTRIM(PART) AS Part, RTRIM(DESCRIPTION) AS Description, HOURS_ESTIMATED, HOURS_ACTUAL, LMO, RTRIM(OPERATION) AS OPERATION FROM V_JOB_OPERATIONS WHERE (LMO = 'L' OR LMO = 'O')  AND SEQ < '995000' AND JOB IN (SELECT JOB FROM V_JOB_HEADER WHERE SALES_ORDER = '{0}')  AND SUFFIX > '000'  ORDER BY JOB ASC, SUFFIX ASC, SEQ ASC",v.DataTable.[v.Args.Grid](0).[v.Args.Grid]!FieldVal,v.Local.sSQL)
+'		f.Intrinsic.String.Build("SELECT A.Job, A.Suffix, A.Seq, RTRIM(A.PART) AS Part, RTRIM(A.DESCRIPTION) AS Description, A.HOURS_ESTIMATED, A.HOURS_ACTUAL, A.LMO, RTRIM(A.OPERATION) AS OPERATION FROM V_JOB_OPERATIONS AS A WHERE (A.LMO = 'L' OR A.LMO = 'O')  AND A.SEQ < '995000' AND A.JOB IN (SELECT B.JOB FROM V_JOB_HEADER AS B WHERE B.SALES_ORDER = '{0}')  AND A.SUFFIX IN (SELECT C.SUFFIX FROM GCG_4442_METAL_PROG AS C WHERE C.GRID = '{1}' AND C.JOB = A.JOB AND SUFFIX <> '000')  ORDER BY A.JOB ASC, A.SUFFIX ASC, A.SEQ ASC",v.DataTable.[v.Args.Grid](0).[v.Args.Grid]!FieldVal,v.Args.Grid,v.Local.sSQL)
+		f.Intrinsic.String.Build("SELECT A.Job, A.Suffix, A.Seq, RTRIM(A.PART) AS Part, RTRIM(A.DESCRIPTION) AS Description, A.HOURS_ESTIMATED, A.HOURS_ACTUAL, A.LMO, RTRIM(A.OPERATION) AS OPERATION FROM V_JOB_OPERATIONS AS A WHERE (A.LMO = 'L' OR A.LMO = 'O')  AND A.SEQ < '995000' AND A.JOB IN (SELECT B.JOB FROM V_JOB_HEADER AS B WHERE B.SALES_ORDER = '{0}')  AND A.SUFFIX IN (SELECT C.SUFFIX FROM GCG_4442_METAL_PROG AS C WHERE C.GRID = '{1}' AND C.JOB = A.JOB )  ORDER BY A.JOB ASC, A.SUFFIX ASC, A.SEQ ASC",v.DataTable.[v.Args.Grid](0).[v.Args.Grid]!FieldVal,v.Args.Grid,v.Local.sSQL)
+		f.Intrinsic.Control.If(v.DataTable.ComponentPartsParent$Parts.Exists,=,True)
+			f.Data.DataTable.Close("ComponentPartsParent$Parts")
+		f.Intrinsic.Control.EndIf
+		f.Data.DataTable.CreateFromSQL("ComponentPartsParent$Parts","Con",v.Local.sSQL,True)
+		F.Intrinsic.Control.If(v.DataTable.ComponentPartsParent$Parts.RowCount--,=,-1)
+			f.Data.DataTable.Close("ComponentPartsParent$Parts")
+			f.Intrinsic.String.Build("SELECT A.Job, A.Suffix, A.Seq, RTRIM(A.PART) AS Part, RTRIM(A.DESCRIPTION) AS Description, A.HOURS_ESTIMATED, A.HOURS_ACTUAL, A.LMO, RTRIM(A.OPERATION) AS OPERATION FROM V_JOB_OPERATIONS AS A WHERE (A.LMO = 'L' OR A.LMO = 'O')  AND A.SEQ < '995000' AND A.JOB IN (SELECT B.JOB FROM V_JOB_HEADER AS B WHERE B.JOB = '{0}')  AND A.SUFFIX IN (SELECT C.SUFFIX FROM GCG_4442_METAL_PROG AS C WHERE C.GRID = '{1}' AND C.JOB = A.JOB )  ORDER BY A.JOB ASC, A.SUFFIX ASC, A.SEQ ASC",v.DataTable.[v.Args.Grid](0).[v.Args.Grid]!FieldVal,v.Args.Grid,v.Local.sSQL)
+			f.Data.DataTable.CreateFromSQL("ComponentPartsParent$Parts","Con",v.Local.sSQL,True)
+		F.Intrinsic.Control.EndIf
+	f.Intrinsic.Control.EndIf
+	
+	'Addin in Manufactured to Stock Material for Suffix 000
+	f.Intrinsic.Control.If(v.Args.GRID.Left1,=,"W")
+'		f.Intrinsic.String.Build("SELECT Job, Suffix, Seq, RTRIM(PART) AS Part, RTRIM(DESCRIPTION) AS Description, HOURS_ESTIMATED, HOURS_ACTUAL, LMO, RTRIM(OPERATION) AS OPERATION FROM V_JOB_OPERATIONS WHERE SEQ < '995000' AND JOB = '{0}' AND LMO = 'M' AND SUFFIX = '000' AND PART IN (SELECT PART FROM V_INVENTORY_MST2 WHERE (CODE_SOURCE = 'M' OR CODE_SOURCE = 'P'))  ORDER BY JOB ASC, SUFFIX ASC, SEQ ASC",v.DataTable.[v.Args.Grid](0).[v.Args.Grid]!FieldVal,v.Local.sSQL)
+		f.Intrinsic.String.Build("SELECT A.Job, A.Suffix, A.Seq, RTRIM(A.PART) AS Part, RTRIM(A.DESCRIPTION) AS Description, A.HOURS_ESTIMATED, A.HOURS_ACTUAL, A.LMO, RTRIM(A.OPERATION) AS OPERATION FROM V_JOB_OPERATIONS AS A WHERE A.SEQ < '995000' AND A.JOB = '{0}' AND A.LMO = 'M' AND A.SUFFIX = '{1}' AND A.PART IN (SELECT B.PART FROM V_INVENTORY_MST2 AS B WHERE (B.CODE_SOURCE = 'M' OR B.CODE_SOURCE = 'P'))  ORDER BY A.JOB ASC, A.SUFFIX ASC, A.SEQ ASC",v.DataTable.[v.Args.Grid](0).[v.Args.Grid]!FieldVal,v.DataView.Progress!MergeTemp(0).Order_No!FieldValTrim,v.Local.sSQL)
+'	f.Intrinsic.Control.Else
+'		f.Intrinsic.String.Build("SELECT A.Job, A.Suffix, A.Seq, RTRIM(A.PART) AS Part, RTRIM(A.DESCRIPTION) AS Description, A.HOURS_ESTIMATED, A.HOURS_ACTUAL, A.LMO, RTRIM(A.OPERATION) AS OPERATION FROM V_JOB_OPERATIONS AS A WHERE A.SEQ < '995000' AND A.JOB IN (SELECT B.JOB FROM V_JOB_HEADER AS B WHERE B.SALES_ORDER = '{0}') AND A.LMO = 'M' AND A.SUFFIX = '000' AND A.PART IN (SELECT C.PART FROM V_INVENTORY_MST2 AS C WHERE (C.CODE_SOURCE = 'M' OR C.CODE_SOURCE = 'P'))  ORDER BY A.JOB ASC, A.SUFFIX ASC, A.SEQ ASC",v.DataTable.[v.Args.Grid](0).[v.Args.Grid]!FieldVal,v.Local.sSQL)
+'	f.Intrinsic.Control.EndIf
+	f.Intrinsic.Control.If(v.DataTable.M2S.Exists,=,True)
+		f.Data.DataTable.Close("M2S")
+	f.Intrinsic.Control.EndIf
+	f.Data.DataTable.CreateFromSQL("M2S","Con",v.Local.sSQL,True)
+	'check to see if we have any rows
+	f.Intrinsic.Control.If(v.DataTable.M2S.RowCount,>,0)
+		'Merge it into the parts table
+		f.Data.DataTable.Merge("M2S","ComponentPartsParent$Parts",True,2)
+'		'Add in a Suffix 000 because we have a row in the child
+'		f.Intrinsic.Control.If(v.Args.Grid.Left1,=,"W")
+'			f.Data.DataTable.AddRow("ComponentPartsParent","JOB",V.DataTable.ComponentPartsParent(0).JOB!FIELDVAL,"SUFFIX","000","PART",V.DataTable.[v.Local.sRet](2).[v.Local.sRet]!FIELDVAL,"DESCRIPTION",V.DataTable.[v.Local.sRet](2).[v.Local.sRet]!FIELDVAL,"QTY_ORDER",0,"QTY_COMPLETED",0,"GRID",V.Local.sRet,"PRIORITY",V.DataTable.ComponentPartsParent(0).PRIORITY!FIELDVAL)
+'		f.Intrinsic.Control.Else
+'			f.Intrinsic.String.Build("SELECT JOB, RTRIM(PART) AS PART, RTRIM(DESCRIPTION) AS DESCRIPTION FROM V_JOB_HEADER WHERE JOB IN (SELECT JOB FROM V_JOB_HEADER WHERE SALES_ORDER = '{0}') AND SUFFIX = '000' ",v.DataTable.[v.Local.sRet](0).[v.Local.sRet]!FIELDVAL,v.Local.sSQL)
+'			f.ODBC.Connection!Con.OpenLocalRecordsetRO("rst000",v.Local.sSQL)
+'			f.Intrinsic.Control.DoUntil(v.ODBC.Con!rst000.EOF,=,True)
+'				f.Data.DataTable.AddRow("ComponentPartsParent","JOB",v.ODBC.Con!rst000.FieldValTrim!JOB,"SUFFIX","000","PART",v.ODBC.Con!rst000.FieldValTrim!PART,"DESCRIPTION",v.ODBC.Con!rst000.FieldValTrim!DESCRIPTION,"QTY_ORDER",0,"QTY_COMPLETED",0,"GRID",V.Local.sRet,"PRIORITY",V.DataTable.ComponentPartsParent(0).PRIORITY!FIELDVAL)
+'				f.ODBC.Con!rst000.MoveNext
+'			f.Intrinsic.Control.Loop
+'			f.ODBC.Con!rst000.Close
+'		f.Intrinsic.Control.EndIf
+	f.Intrinsic.Control.EndIf
+	f.Data.DataTable.Close("M2S")
+	f.Intrinsic.Control.EndIf
+	
+	V.Local.sJob.Set(V.DataTable.[V.Args.Grid](0).[V.Args.Grid]!FieldValTrim)
+	F.Intrinsic.Control.If(V.Args.Grid.Left1,=,"W")
+		f.Intrinsic.String.Build("Select Job+Suffix as JobSuffix, 'Y' as Rework From V_Job_Header Where Comments_1 like '%{0}%'",V.Local.sJob,V.Local.sSQL)
+	F.Intrinsic.Control.Else
+		F.Intrinsic.Control.If(V.Local.sJob.Length,=,7)
+			f.Intrinsic.String.Build("Select Job+Suffix as JobSuffix, 'Y' as Rework From V_Job_Header Where Comments_1 like '%{0}%'",V.Local.sJob.Right4,V.Local.sSQL)
+		F.Intrinsic.Control.Else
+			f.Intrinsic.String.Build("Select Job+Suffix as JobSuffix, 'Y' as Rework From V_Job_Header Where Comments_1 like '%{0}%'",V.Local.sJob,V.Local.sSQL)
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.EndIf
+	f.Data.Dictionary.CreateFromSQL("ReworkTemp","con",V.Local.sSQL)
+	f.Data.Dictionary.SetDefaultReturn("ReworkTemp","")
+	f.Data.DataTable.FillFromDictionary("ComponentPartsParent","ReworkTemp","JobSuffix","Rework")
+	f.Data.Dictionary.Close("ReworkTemp")
+	
+	f.Data.DataView.Close("Progress","MergeTemp")
+	f.Data.DataView.Create("ComponentPartsParent$Parts","ComponentPartsView",22)
+	
+	'Add relation on job and parent_Suffix
+	f.Data.DataTable.AddRelation("ComponentPartsParent","JOB*!*SUFFIX","ComponentPartsParent$Parts","JOB*!*SUFFIX","relation1")
+	f.Data.DataTable.AddExpressionColumn("ComponentPartsParent$Parts","Yellow","String","IIF(LMO = 'O' AND PARENT(relation1).QTY_COMPLETED < PARENT(relation1).QTY_ORDER,'O',IIF(PARENT(relation1).QTY_COMPLETED >= PARENT(relation1).QTY_ORDER AND [HOURS_ACTUAL] < [HOURS_ESTIMATED] AND LMO = 'L' ,'Y',IIF([HOURS_ACTUAL] < [HOURS_ESTIMATED] AND LMO = 'L','R',IIF([HOURS_ACTUAL] >= [HOURS_ESTIMATED] AND LMO = 'L','G',''))))")
+	
+	gui.F_MetalKit.GsgcView.AddGridviewFromDataview("ComponentParentGrid","ComponentPartsParent","ComponentParentView")
+	gui.F_MetalKit.GsgcView.AddGridviewFromDataview("ComponentPartsGrid","ComponentPartsParent","ComponentPartsView")
+	
+	'Create our styles for the grids.
+	'Captions
+	Gui.F_MetalKit.GsgcView.SetColumnProperty("ComponentParentGrid","QTY_ORDER","Caption","Qty Needed")
+	Gui.F_MetalKit.GsgcView.SetColumnProperty("ComponentParentGrid","QTY_COMPLETED","Caption","Qty Scanned")
+	
+	Gui.F_MetalKit.GsgcView.SetColumnProperty("ComponentParentGrid","GRID","Visible",False)
+	Gui.F_MetalKit.GsgcView.SetColumnProperty("ComponentParentGrid","PRIORITY","Visible",False)
+	Gui.F_MetalKit.GsgcView.SetColumnProperty("ComponentParentGrid","ORDER_NO","Visible",False)
+	Gui.F_MetalKit.GsgcView.SetColumnProperty("ComponentParentGrid","ReWork","Visible",False)
+	Gui.F_MetalKit.GsgcView.SetColumnProperty("ComponentParentGrid","JobSuffix","Visible",False)
+	
+	'Set Header back color
+	Gui.F_MetalKit.GsgcView.SetColumnProperty("ComponentParentGrid","JOB","HeaderBackColor","#0000ff")
+	Gui.F_MetalKit.GsgcView.SetColumnProperty("ComponentParentGrid","SUFFIX","HeaderBackColor","#0000ff")
+	Gui.F_MetalKit.GsgcView.SetColumnProperty("ComponentParentGrid","PART","HeaderBackColor","#0000ff")
+	Gui.F_MetalKit.GsgcView.SetColumnProperty("ComponentParentGrid","DESCRIPTION","HeaderBackColor","#0000ff")
+	Gui.F_MetalKit.GsgcView.SetColumnProperty("ComponentParentGrid","QTY_ORDER","HeaderBackColor","#0000ff")
+	Gui.F_MetalKit.GsgcView.SetColumnProperty("ComponentParentGrid","QTY_COMPLETED","HeaderBackColor","#0000ff")
+	'Set Header Fore color
+	Gui.F_MetalKit.GsgcView.SetColumnProperty("ComponentParentGrid","JOB","HeaderForeColor","White")
+	Gui.F_MetalKit.GsgcView.SetColumnProperty("ComponentParentGrid","SUFFIX","HeaderForeColor","White")
+	Gui.F_MetalKit.GsgcView.SetColumnProperty("ComponentParentGrid","PART","HeaderForeColor","White")
+	Gui.F_MetalKit.GsgcView.SetColumnProperty("ComponentParentGrid","DESCRIPTION","HeaderForeColor","White")
+	Gui.F_MetalKit.GsgcView.SetColumnProperty("ComponentParentGrid","QTY_ORDER","HeaderForeColor","White")
+	Gui.F_MetalKit.GsgcView.SetColumnProperty("ComponentParentGrid","QTY_COMPLETED","HeaderForeColor","White")
+	'Set Part Bold
+	Gui.F_MetalKit.GsgcView.SetColumnProperty("ComponentParentGrid","PART","CellFontBold",True)
+	
+	'Add conditional formatting
+	Gui.F_MetalKit.GsgcView.AddStyleFormatCondition("ComponentParentGrid","QTY_COMPLETED","ParentRed","Expression","[QTY_COMPLETED] = 0 AND [ORDER_NO] <> [SUFFIX]")
+	Gui.F_MetalKit.GsgcView.SetStyleFormatConditionProperty("ComponentParentGrid","QTY_COMPLETED","ParentRed","backcolor","#ff93a5")
+	Gui.F_MetalKit.GsgcView.SetStyleFormatConditionProperty("ComponentParentGrid","QTY_COMPLETED","ParentRed","ApplyToRow",True)
+	Gui.F_MetalKit.GsgcView.AddStyleFormatCondition("ComponentParentGrid","QTY_COMPLETED","ParentYellow","Expression","[QTY_COMPLETED] > 0")
+	Gui.F_MetalKit.GsgcView.SetStyleFormatConditionProperty("ComponentParentGrid","QTY_COMPLETED","ParentYellow","backcolor","#f5ff89")
+	Gui.F_MetalKit.GsgcView.SetStyleFormatConditionProperty("ComponentParentGrid","QTY_COMPLETED","ParentYellow","ApplyToRow",True)
+	Gui.F_MetalKit.GsgcView.AddStyleFormatCondition("ComponentParentGrid","QTY_COMPLETED","ParentGreen","Expression","[QTY_COMPLETED] >= [QTY_ORDER]")
+	Gui.F_MetalKit.GsgcView.SetStyleFormatConditionProperty("ComponentParentGrid","QTY_COMPLETED","ParentGreen","backcolor","PaleGreen")
+	Gui.F_MetalKit.GsgcView.SetStyleFormatConditionProperty("ComponentParentGrid","QTY_COMPLETED","ParentGreen","ApplyToRow",True)
+	Gui.F_MetalKit.GsgcView.AddStyleFormatCondition("ComponentParentGrid","Rework","ParentBlue","Equal","Y")
+	Gui.F_MetalKit.GsgcView.SetStyleFormatConditionProperty("ComponentParentGrid","Rework","ParentBlue","backcolor","#99cfe0")
+	Gui.F_MetalKit.GsgcView.SetStyleFormatConditionProperty("ComponentParentGrid","Rework","ParentBlue","ApplyToRow",True)
+
+	'Get rid of hilighted row
+	Gui.F_MetalKit.GsgcView.SetGridviewProperty("ComponentParentGrid","OptionsSelectionEnableAppearanceFocusedRow",False)
+	'Make it not editable and read only
+	Gui.F_MetalKit.GsgcView.SetGridviewProperty("ComponentParentGrid","readonly",True)
+	Gui.F_MetalKit.GsgcView.SetGridviewProperty("ComponentParentGrid","Editable",False)
+	
+	'Set captions
+	Gui.F_MetalKit.GsgcView.SetColumnProperty("ComponentPartsGrid","HOURS_ESTIMATED","Caption","Estimated Hours")
+	Gui.F_MetalKit.GsgcView.SetColumnProperty("ComponentPartsGrid","HOURS_ACTUAL","Caption","Actual Hours")
+	
+	Gui.F_MetalKit.GsgcView.SetColumnProperty("ComponentPartsGrid","Yellow","Visible",False)
+	Gui.F_MetalKit.GsgcView.SetColumnProperty("ComponentPartsGrid","LMO","Visible",False)
+	Gui.F_MetalKit.GsgcView.SetColumnProperty("ComponentPartsGrid","OPERATION","Visible",False)
+	'Set Header Back Color
+	Gui.F_MetalKit.GsgcView.SetColumnProperty("ComponentPartsGrid","JOB","HeaderBackColor","#0000ff")
+	Gui.F_MetalKit.GsgcView.SetColumnProperty("ComponentPartsGrid","SUFFIX","HeaderBackColor","#0000ff")
+	Gui.F_MetalKit.GsgcView.SetColumnProperty("ComponentPartsGrid","SEQ","HeaderBackColor","#0000ff")
+	Gui.F_MetalKit.GsgcView.SetColumnProperty("ComponentPartsGrid","PART","HeaderBackColor","#0000ff")
+	Gui.F_MetalKit.GsgcView.SetColumnProperty("ComponentPartsGrid","DESCRIPTION","HeaderBackColor","#0000ff")
+	Gui.F_MetalKit.GsgcView.SetColumnProperty("ComponentPartsGrid","HOURS_ESTIMATED","HeaderBackColor","#0000ff")
+	Gui.F_MetalKit.GsgcView.SetColumnProperty("ComponentPartsGrid","HOURS_ACTUAL","HeaderBackColor","#0000ff")
+	'Set Header Fore Color
+	Gui.F_MetalKit.GsgcView.SetColumnProperty("ComponentPartsGrid","JOB","HeaderForeColor","White")
+	Gui.F_MetalKit.GsgcView.SetColumnProperty("ComponentPartsGrid","SUFFIX","HeaderForeColor","White")
+	Gui.F_MetalKit.GsgcView.SetColumnProperty("ComponentPartsGrid","SEQ","HeaderForeColor","White")
+	Gui.F_MetalKit.GsgcView.SetColumnProperty("ComponentPartsGrid","PART","HeaderForeColor","White")
+	Gui.F_MetalKit.GsgcView.SetColumnProperty("ComponentPartsGrid","DESCRIPTION","HeaderForeColor","White")
+	Gui.F_MetalKit.GsgcView.SetColumnProperty("ComponentPartsGrid","HOURS_ESTIMATED","HeaderForeColor","White")
+	Gui.F_MetalKit.GsgcView.SetColumnProperty("ComponentPartsGrid","HOURS_ACTUAL","HeaderForeColor","White")
+	'Set Part Bold
+	Gui.F_MetalKit.GsgcView.SetColumnProperty("ComponentPartsGrid","PART","CellFontBold",True)
+	'Add conditional formatting
+	Gui.F_MetalKit.GsgcView.AddStyleFormatCondition("ComponentPartsGrid","YELLOW","Childyellow","EQUAL","Y")
+	Gui.F_MetalKit.GsgcView.SetStyleFormatConditionProperty("ComponentPartsGrid","YELLOW","Childyellow","backcolor","#f5ff89")
+	Gui.F_MetalKit.GsgcView.SetStyleFormatConditionProperty("ComponentPartsGrid","YELLOW","Childyellow","ApplyToRow",True)
+	
+	Gui.F_MetalKit.GsgcView.AddStyleFormatCondition("ComponentPartsGrid","YELLOW","ChildGREEN","EQUAL","G")
+	Gui.F_MetalKit.GsgcView.SetStyleFormatConditionProperty("ComponentPartsGrid","YELLOW","ChildGREEN","backcolor","PaleGreen")
+	Gui.F_MetalKit.GsgcView.SetStyleFormatConditionProperty("ComponentPartsGrid","YELLOW","ChildGREEN","ApplyToRow",True)
+	
+	Gui.F_MetalKit.GsgcView.AddStyleFormatCondition("ComponentPartsGrid","YELLOW","ChildRED","EQUAL","R")
+	Gui.F_MetalKit.GsgcView.SetStyleFormatConditionProperty("ComponentPartsGrid","YELLOW","ChildRED","backcolor","Pink")
+	Gui.F_MetalKit.GsgcView.SetStyleFormatConditionProperty("ComponentPartsGrid","YELLOW","ChildRED","ApplyToRow",True)
+	
+	Gui.F_MetalKit.GsgcView.AddStyleFormatCondition("ComponentPartsGrid","YELLOW","ChildORANGE","EQUAL","O")
+	Gui.F_MetalKit.GsgcView.SetStyleFormatConditionProperty("ComponentPartsGrid","YELLOW","ChildORANGE","backcolor","Orange")
+	Gui.F_MetalKit.GsgcView.SetStyleFormatConditionProperty("ComponentPartsGrid","YELLOW","ChildORANGE","ApplyToRow",True)
+	
+	'Gui.F_MetalKit.GsgcView.AddStyleFormatCondition("ComponentPartsGrid","HOURS_ACTUAL","ChildGreen","Expression","[HOURS_ACTUAL] >= [HOURS_ESTIMATED]")
+	'Gui.F_MetalKit.GsgcView.SetStyleFormatConditionProperty("ComponentPartsGrid","HOURS_ACTUAL","ChildGreen","backcolor","PaleGreen")
+	'Gui.F_MetalKit.GsgcView.SetStyleFormatConditionProperty("ComponentPartsGrid","HOURS_ACTUAL","ChildGreen","ApplyToRow",True)
+	
+	'Gui.F_MetalKit.GsgcView.AddStyleFormatCondition("ComponentPartsGrid","HOURS_ACTUAL","ChildRed","Expression","[HOURS_ACTUAL] < [HOURS_ESTIMATED]")
+	'Gui.F_MetalKit.GsgcView.SetStyleFormatConditionProperty("ComponentPartsGrid","HOURS_ACTUAL","ChildRed","backcolor","Pink")
+	'Gui.F_MetalKit.GsgcView.SetStyleFormatConditionProperty("ComponentPartsGrid","HOURS_ACTUAL","ChildRed","ApplyToRow",True)
+	
+	
+	'Get rid of hilighted row
+	Gui.F_MetalKit.GsgcView.SetGridviewProperty("ComponentPartsGrid","OptionsSelectionEnableAppearanceFocusedRow",False)
+	
+	'make it not editable and read only
+	Gui.F_MetalKit.GsgcView.SetGridviewProperty("ComponentPartsGrid","readonly",True)
+	Gui.F_MetalKit.GsgcView.SetGridviewProperty("ComponentPartsGrid","Editable",False)
+	
+	gui.F_MetalKit.GsgcView.MainView("ComponentParentGrid")
+	
+	'Creae an empty grid for not viewing anything
+	F.Intrinsic.Control.If(V.DataTable.Rework.Exists,=,True)
+		F.Data.DataTable.Close("Rework")
+	F.Intrinsic.Control.EndIf
+	
+	V.Local.sJob.Set(V.DataTable.[V.Args.Grid](0).[V.Args.Grid]!FieldValTrim)
+	F.Intrinsic.Control.If(V.Args.Grid.Left1,=,"W")
+		F.Intrinsic.String.Build("SELECT JOB, SUFFIX, RTRIM(PART) AS PART, RTRIM(DESCRIPTION) AS DESCRIPTION, QTY_ORDER, RTRIM(COMMENTS_1) as COMMENTS_1,'' AS STATUS, '' AS GRID FROM V_JOB_HEADER WHERE COMMENTS_1 Like '%{0}%' and Suffix In(Select Distinct Suffix From GCG_4442_Metal_Prog Where Grid = '{1}')",V.Local.sJob,V.Args.Grid,V.Local.sSQL)
+	F.Intrinsic.Control.Else
+		F.Intrinsic.Control.If(V.Local.sJob.Length,=,7)
+			F.Intrinsic.String.Build("SELECT JOB, SUFFIX, RTRIM(PART) AS PART, RTRIM(DESCRIPTION) AS DESCRIPTION, QTY_ORDER, RTRIM(COMMENTS_1) as COMMENTS_1,'' AS STATUS, '' AS GRID FROM V_JOB_HEADER WHERE COMMENTS_1 Like '%{0}%' and Job In(Select Distinct Job From GCG_4442_Metal_Prog Where Grid = '{1}') and Suffix In(Select Distinct Suffix From GCG_4442_Metal_Prog Where Grid = '{1}')",V.Local.sJob.Right4,V.Args.Grid,V.Local.sSQL)
+		F.Intrinsic.Control.Else
+			F.Intrinsic.String.Build("SELECT JOB, SUFFIX, RTRIM(PART) AS PART, RTRIM(DESCRIPTION) AS DESCRIPTION, QTY_ORDER, RTRIM(COMMENTS_1) as COMMENTS_1,'' AS STATUS, '' AS GRID FROM V_JOB_HEADER WHERE COMMENTS_1 Like '%{0}%' and Job In(Select Distinct Job From GCG_4442_Metal_Prog Where Grid = '{1}') and Suffix In(Select Distinct Suffix From GCG_4442_Metal_Prog Where Grid = '{1}')",V.Local.sJob,V.Args.Grid,V.Local.sSQL)
+			F.Intrinsic.String.Build("SELECT JOB, SUFFIX, RTRIM(PART) AS PART, RTRIM(DESCRIPTION) AS DESCRIPTION, QTY_ORDER, RTRIM(COMMENTS_1) as COMMENTS_1,'' AS STATUS, '' AS GRID FROM V_JOB_HEADER WHERE COMMENTS_1 Like '%{0}%' and Suffix In(Select Distinct Suffix From GCG_4442_Metal_Prog Where Grid = '{1}')",V.Local.sJob,V.Args.Grid,V.Local.sSQL)
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.EndIf
+	
+	F.Data.DataTable.CreateFromSQL("Rework","con",V.Local.sSQL,True)
+	f.Data.DataView.Create("Rework","Rework")
+	
+	F.Intrinsic.Control.For(V.Local.iCount,0,V.DataTable.Rework.RowCount--,1)
+		F.Intrinsic.String.Build("Select Rec_ID, Kitting_Status From GCG_4442_Metal_Kit Where Job = '{0}'",V.DataTable.Rework(V.Local.iCount).Job!FieldValTrim,V.Local.sSQL)
+		F.ODBC.Connection!Con.ExecuteAndReturn(V.Local.sSQL,V.Local.sRet)
+		F.Intrinsic.String.Split(V.Local.sRet,"*!*",V.Local.sRet)
+		F.Intrinsic.Control.If(V.Local.sRet.UBound,=,1)
+			F.Data.DataTable.SetValue("Rework",V.Local.iCount,"Grid",V.Local.sRet(0),"STATUS",V.Local.sRet(1))
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.Next(V.Local.iCount)
+	
+	Gui.F_MetalKit.GsGridControlReWork.AddGridviewFromDataview("ReworkGrid","Rework","Rework")
+	
+	Gui.F_MetalKit.GsGridControlReWork.SetColumnProperty("ReworkGrid","QTY_ORDER","Caption","Qty Needed")
+	Gui.F_MetalKit.GsGridControlReWork.SetColumnProperty("ReworkGrid","COMMENTS_1","Caption","Comment")
+	
+	'Set Header back color
+	Gui.F_MetalKit.GsGridControlReWork.SetColumnProperty("ReworkGrid","JOB","HeaderBackColor","#0000ff")
+	Gui.F_MetalKit.GsGridControlReWork.SetColumnProperty("ReworkGrid","SUFFIX","HeaderBackColor","#0000ff")
+	Gui.F_MetalKit.GsGridControlReWork.SetColumnProperty("ReworkGrid","PART","HeaderBackColor","#0000ff")
+	Gui.F_MetalKit.GsGridControlReWork.SetColumnProperty("ReworkGrid","DESCRIPTION","HeaderBackColor","#0000ff")
+	Gui.F_MetalKit.GsGridControlReWork.SetColumnProperty("ReworkGrid","QTY_ORDER","HeaderBackColor","#0000ff")
+	Gui.F_MetalKit.GsGridControlReWork.SetColumnProperty("ReworkGrid","COMMENTS_1","HeaderBackColor","#0000ff")
+	Gui.F_MetalKit.GsGridControlReWork.SetColumnProperty("ReworkGrid","GRID","HeaderBackColor","#0000ff")
+	Gui.F_MetalKit.GsGridControlReWork.SetColumnProperty("ReworkGrid","STATUS","HeaderBackColor","#0000ff")
+	
+	'Set Header Fore color
+	Gui.F_MetalKit.GsGridControlReWork.SetColumnProperty("ReworkGrid","JOB","HeaderForeColor","White")
+	Gui.F_MetalKit.GsGridControlReWork.SetColumnProperty("ReworkGrid","SUFFIX","HeaderForeColor","White")
+	Gui.F_MetalKit.GsGridControlReWork.SetColumnProperty("ReworkGrid","PART","HeaderForeColor","White")
+	Gui.F_MetalKit.GsGridControlReWork.SetColumnProperty("ReworkGrid","DESCRIPTION","HeaderForeColor","White")
+	Gui.F_MetalKit.GsGridControlReWork.SetColumnProperty("ReworkGrid","QTY_ORDER","HeaderForeColor","White")
+	Gui.F_MetalKit.GsGridControlReWork.SetColumnProperty("ReworkGrid","COMMENTS_1","HeaderForeColor","White")
+	Gui.F_MetalKit.GsGridControlReWork.SetColumnProperty("ReworkGrid","GRID","HeaderForeColor","White")
+	Gui.F_MetalKit.GsGridControlReWork.SetColumnProperty("ReworkGrid","STATUS","HeaderForeColor","White")
+
+	Gui.F_MetalKit.GsGridControlReWork.SetColumnProperty("ReworkGrid","JOB","MaxWidth","75")
+	Gui.F_MetalKit.GsGridControlReWork.SetColumnProperty("ReworkGrid","Suffix","MaxWidth","75")
+	Gui.F_MetalKit.GsGridControlReWork.SetColumnProperty("ReworkGrid","Qty_Order","MaxWidth","75")
+	Gui.F_MetalKit.GsGridControlReWork.SetColumnProperty("ReworkGrid","Grid","MaxWidth","75")
+	Gui.F_MetalKit.GsGridControlReWork.SetColumnProperty("ReworkGrid","STATUS","MaxWidth","75")
+	Gui.F_MetalKit.GsGridControlReWork.SetColumnProperty("ReworkGrid","DESCRIPTION","MaxWidth","110")
+	
+	Gui.F_MetalKit.GsGridControlReWork.SetGridviewProperty("ReworkGrid","Editable",False)
+	Gui.F_MetalKit.GsGridControlReWork.SetGridviewProperty("ReworkGrid","readonly",True)
+
+	Gui.F_MetalKit.GsGridControlReWork.MainView("ReworkGrid")
+
+f.Intrinsic.Control.Else
+	f.Data.DataView.Close("Progress","MergeTemp")
+	Gui.F_MetalKit.GsgcView.MainView("Empty")
+	Gui.F_MetalKit.GsGridControlReWork.MainView("EmptyRework")
+f.Intrinsic.Control.EndIf
+
+Gui.F_MetalKit.GsgcView.ResumeLayout()
+Gui.F_MetalKit.GsGridControlReWork.ResumeLayout()
+
+'f.Intrinsic.Control.For(v.Local.iCount,v.DataTable.ComponentPartsParent.RowCount--)
+'	Gui.F_MetalKit.GsgcView.ExpandMasterRow("ComponentParentGrid",v.Local.iCount)
+'f.Intrinsic.Control.Next(v.Local.iCount)
+'f.Intrinsic.Control.DoEvents
+
+'f.Intrinsic.Control.CallSub(FlexSchedule,"Order",v.DataTable.[v.Local.sRet](0).[v.Local.sRet]!FieldVal)
+
+
+f.Intrinsic.Control.Catch
+	f.Intrinsic.Control.CallSub(TryCatch,"Sub",V.Ambient.CurrentSubroutine,"Error",V.Ambient.ErrorNumber,"Desc",V.Ambient.ErrorDescription)
+f.Intrinsic.Control.EndTry
+Program.Sub.Selection.End
+
+Program.Sub.MenuClick.Start
+f.Intrinsic.Control.Try
+
+v.Local.sForm.Declare(String)
+v.Local.sRet.Declare(String)
+v.Local.sInput.Declare(String)
+v.Local.sSeq.Declare(String)
+v.Local.sSQL.Declare(String)
+v.Local.sDate.Declare(String)
+v.Local.sJob.Declare(String)
+v.Local.sSuffix.Declare(String)
+v.Local.sKeySeq.Declare(String)
+v.Local.sInput2.Declare(String)
+v.Local.bExist.Declare(Boolean)
+v.Local.fQty.Declare(Float)
+v.Local.sProg.Declare(String)
+v.Local.iPos.Declare(Long)
+V.Local.sDataTable.Declare(String)
+V.Local.iQty.Declare(Long)
+v.Local.iCompleted.Declare(Long)
+V.Local.sMsg.Declare(String)
+V.Local.sFilter.Declare(String)
+V.Local.sGrid.Declare(String)
+
+f.Intrinsic.Control.BlockEvents
+
+f.Intrinsic.Control.If(v.Args.MenuName,=,"CTXOVERRIDE")
+	v.Local.sForm.Set("F_MetalKit")
+'	f.Intrinsic.File.Append2FileNewLine(v.Global.sLogFile,"Override")
+'	f.Intrinsic.File.Append2FileNewLine(v.Global.sLogFile,v.Global.sGrid)
+
+	
+	f.Intrinsic.Control.CallSub(GsGridControl_RowCellClick,"BUTTON","Left","RowIndex","5","ControlName",v.Global.sControl,"Column",v.Global.sGrid,"Screen",v.Local.sForm,"Override","True")
+	Gui.[v.Local.sForm].[v.Global.sControl].SetColumnProperty(v.Global.sGrid,v.Global.sGrid,"cellbackcolor","White")
+	Gui.[v.Local.sForm].[v.Global.sControl].SetColumnProperty(v.Global.sGrid,v.Global.sGrid,"headerbackcolor","#0000ff")
+	Gui.F_MetalKit.GsgcView.MainView("Empty")
+	
+f.Intrinsic.Control.ElseIf(v.Args.MenuName,=,"CTXOUTSIDE")
+	f.Intrinsic.Control.If(v.Args.ItemName,=,"OUTSIDE")
+'		f.Intrinsic.File.Append2FileNewLine(v.Global.sLogFile,"Outside")
+		'Check to make sure it is the Child Grid
+		Gui.F_MetalKit.GsgcView.GetFocusedGridview(v.Local.sForm)
+		f.Intrinsic.Control.If(v.Local.sForm,<>,"PARTS")
+			'Not the child grid so don't do anything
+			f.Intrinsic.Control.UnBlockEvents
+			f.Intrinsic.Control.ExitSub
+		f.Intrinsic.Control.EndIf
+		'We are doing override so we need to grab the part that was selected and ask for the Quantity to create a PO
+		Gui.F_MetalKit.GsgcView.GetSelectedRowsInFocus(v.Local.sRet)
+		f.Intrinsic.Control.If(v.Local.sRet,<>,"","AND",v.Local.sRet,<>,"-1")
+			f.Intrinsic.String.Split(v.Local.sRet,"*!*",v.Local.sRet)
+			'We need to get the Part, Job, Suffix, and Seq
+	'		Gui.F_MetalKit.GsgcView.GetRowHandle("ComponentPartsGrid",v.Local.sRet.Long,v.Local.sRet)
+			Gui.F_MetalKit.GsgcView.GetCellValueByColumnName("ComponentPartsGrid","Job",v.Local.sRet.Long,v.Local.sJob)
+			Gui.F_MetalKit.GsgcView.GetCellValueByColumnName("ComponentPartsGrid","Suffix",v.Local.sRet.Long,v.Local.sSuffix)
+			Gui.F_MetalKit.GsgcView.GetCellValueByColumnName("ComponentPartsGrid","Seq",v.Local.sRet.Long,v.Local.sSeq)
+			'Do a Select statement on the DT to get the index
+			f.Intrinsic.String.Build("JOB = '{0}' AND SUFFIX = '{1}' AND SEQ = '{2}' ",v.Local.sJob,v.Local.sSuffix,v.Local.sSeq,v.Local.sSQL)
+			f.Data.DataTable.Select("ComponentPartsParent$Parts",v.Local.sSQL,v.Local.sRet)
+			'Make sure we are on a Outside Seq
+			f.Intrinsic.Control.If(v.DataTable.ComponentPartsParent$Parts(v.Local.sRet.Long).LMO!FieldValTrim,=,"O")
+				'Make sure our qty > 0
+				f.Intrinsic.String.Build("JOB = '{0}' AND SUFFIX = '{1}'",v.Local.sJob,v.Local.sSuffix,v.Local.sSQL)
+				f.Data.DataTable.Select("ComponentPartsParent",v.Local.sSQL,v.Local.sInput)
+				f.Intrinsic.Control.If(v.DataTable.ComponentPartsParent(v.Local.sInput.Long).Qty_Completed!FieldValFloat,>,0)
+					'we are on an outside seq so lets ask them how many they want to make
+					f.Intrinsic.String.Build("Enter Quantity for {0} Outside PO",v.DataTable.ComponentPartsParent$Parts(v.Local.sRet.Long).Part!FieldValTrim,v.Local.sInput2)
+					f.Intrinsic.UI.Inputbox(v.Local.sInput2,"Outside PO Creation","",v.Local.sInput2)
+					f.Intrinsic.Math.IsNumeric(v.Local.sInput2,v.Local.bExist)
+					f.Intrinsic.Control.If(v.Local.sInput2,<>,"***CANCEL***","AND",v.Local.sInput2,<>,"0",v.Local.bExist,=,True)
+						f.Intrinsic.Math.Sub(v.DataTable.ComponentPartsParent(v.Local.sInput.Long).Qty_Completed!FieldValFloat,v.Local.sInput2.Long,v.Local.fQty)
+						f.Intrinsic.Control.If(v.Local.fQty,>,-1)
+							f.Intrinsic.Control.CallSub(OutsidePO,"Job",v.DataTable.ComponentPartsParent$Parts(v.Local.sRet.Long).Job!FieldValTrim,"Suffix",v.DataTable.ComponentPartsParent$Parts(v.Local.sRet.Long).Suffix!FieldValTrim,"Seq",v.DataTable.ComponentPartsParent$Parts(v.Local.sRet.Long).Seq!FieldValTrim,"Part",v.DataTable.ComponentPartsParent$Parts(v.Local.sRet.Long).Part!FieldValTrim,"Operation",v.DataTable.ComponentPartsParent$Parts(v.Local.sRet.Long).OPERATION!FieldValTrim,"Qty",v.Local.sInput2.Float)
+							'Now that we are done creating the Outside PO we need to remove it from the Grids.
+				'			f.Intrinsic.Control.If(v.DataTable.ComponentPartsParent.RowCount,>,0)
+				'				v.Global.sGrid.Set(v.DataTable.ComponentPartsParent(0).GRID!FieldValTrim)
+				'				f.Intrinsic.String.Build("GsGridControl{0}",v.Global.sGrid,v.Global.sControl)
+				'				f.Intrinsic.Control.CallSub(MenuClick,"Menuname","CTXOVERRIDE")
+				'			f.Intrinsic.Control.EndIf
+							'We need to remove 1 from the Progress Qty
+							f.Intrinsic.String.Build("JOB = '{0}' AND SUFFIX = '{1}' AND GRID = '{2}'",v.Local.sJob,v.Local.sSuffix,v.DataTable.ComponentPartsParent(v.Local.sInput.Long).Grid!FieldValTrim,v.Local.sSQL)
+							f.Data.DataTable.Select("Progress",v.Local.sSQL,v.Local.sRet)
+							f.Data.DataTable.SetValue("Progress",v.Local.sRet.Long,"QTY_COMPLETED",v.Local.fQty)
+							f.Data.DataTable.SetValue("ComponentPartsParent",v.Local.sInput.Long,"QTY_COMPLETED",v.Local.fQty)
+							
+							v.Global.sGrid.Set(v.DataTable.ComponentPartsParent(v.Local.sInput.Long).GRID!FieldValTrim)
+							f.Intrinsic.Control.If(v.Global.sGrid.Left1,=,"W")
+								v.Local.iPos.Set(4)
+							f.Intrinsic.Control.Else
+								v.Local.iPos.Set(2)
+							f.Intrinsic.Control.EndIf
+							'We need to update the x of x
+'							f.Intrinsic.File.Append2FileNewLine(v.Global.sLogFile,v.DataTable.[v.DataTable.Progress(v.Local.sRet.Long).Grid!FieldValTrim](v.Local.iPos).[v.DataTable.Progress(v.Local.sRet.Long).Grid!FieldValTrim]!FieldValTrim)
+							f.Intrinsic.String.Split(v.DataTable.[v.DataTable.Progress(v.Local.sRet.Long).Grid!FieldValTrim](v.Local.iPos).[v.DataTable.Progress(v.Local.sRet.Long).Grid!FieldValTrim]!FieldValTrim," OF ",v.Local.sInput)
+							v.Local.sInput.RedimPreserve(0,1)
+							f.Intrinsic.Math.Sub(v.Local.sInput(0).Long,v.Local.sInput2.Long,v.Local.sInput(0))
+							f.Intrinsic.Control.If(v.Local.sInput(0).Long,>,0)
+								v.Local.sForm.Set("F_MetalKit")
+								f.Intrinsic.String.Build("ProgressBar{0}",v.Global.sGrid,v.Local.sProg)
+								'set progress bar value
+								Gui.[v.Local.sForm].[v.Local.sProg].Value(v.Local.sInput(0).Long)
+								f.Intrinsic.String.Join(v.Local.sInput," OF ",v.Local.sInput)
+'								f.Intrinsic.File.Append2FileNewLine(v.Global.sLogFile,v.Local.sInput)
+								'Set x of x value in grid
+								f.Data.DataTable.SetValue(v.Global.sGrid,v.Local.iPos,v.Global.sGrid,v.Local.sInput)
+								'Set x of x in table
+								F.Intrinsic.String.Build("Select * From GCG_4442_METAL_KIT Where Rec_ID = '{0}'",v.Global.sGrid,V.Local.sSQL)
+								F.ODBC.Connection!con.OpenLocalRecordsetRW("rstKit",V.Local.sSQL)
+								f.Intrinsic.Control.If(v.ODBC.Con!rstKit.EOF,=,False)
+									'Save Kit Status
+									f.ODBC.Con!rstKit.Set!Kitting_Status(v.Local.sInput)
+									f.ODBC.Con!rstKit.Update
+								f.Intrinsic.Control.EndIf
+								f.ODBC.Con!rstKit.Close
+								f.Data.DataTable.SaveToDB("Progress","Con","GCG_4442_METAL_PROG","JOB*!*SUFFIX*!*GRID*!*PRIORITY",2)
+								f.Data.DataTable.AcceptChanges("Progress")
+							f.Intrinsic.Control.Else
+								'We are at 0 so we just need to remove everything from the screen.
+								f.Intrinsic.String.Build("GsGridControl{0}",v.Global.sGrid,v.Global.sControl)
+								f.Intrinsic.Control.CallSub(MenuClick,"Menuname","CTXOVERRIDE")
+							f.Intrinsic.Control.EndIf
+						f.Intrinsic.Control.EndIf	
+					f.Intrinsic.Control.EndIf			
+				f.Intrinsic.Control.EndIf
+			f.Intrinsic.Control.EndIf
+		f.Intrinsic.Control.EndIf
+	f.Intrinsic.Control.ElseIf(v.Args.ItemName,=,"REMOVE")
+'		f.Intrinsic.File.Append2FileNewLine(v.Global.sLogFile,"Remove")
+		'We need to subtract a qty from the progress grid that we selected and subtract 1 from the top grid and progress bar
+		Gui.F_MetalKit.GsgcView.GetFocusedGridview(v.Local.sForm)
+		f.Intrinsic.Control.If(v.Local.sForm,=,"COMPONENTPARTSPARENT")
+			Gui.F_MetalKit.GsgcView.GetSelectedRowsInFocus(v.Local.sRet)
+			f.Intrinsic.Control.If(v.Local.sRet,<>,"","AND",v.Local.sRet,<>,"-1")
+				f.Intrinsic.String.Split(v.Local.sRet,"*!*",v.Local.sRet)
+				Gui.F_MetalKit.GsgcView.GetCellValueByColumnName("ComponentParentGrid","Job",v.Local.sRet.Long,v.Local.sJob)
+				Gui.F_MetalKit.GsgcView.GetCellValueByColumnName("ComponentParentGrid","Suffix",v.Local.sRet.Long,v.Local.sSuffix)
+				Gui.F_MetalKit.GsgcView.GetCellValueByColumnName("ComponentParentGrid","GRID",v.Local.sRet.Long,v.Global.sGrid)
+				f.Intrinsic.Control.If(v.Global.sGrid.Left1,=,"W")
+					v.Local.iPos.Set(4)
+				f.Intrinsic.Control.Else
+					v.Local.iPos.Set(2)
+				f.Intrinsic.Control.EndIf
+				'Do a Select statement on the DT to get the index
+				f.Intrinsic.String.Build("JOB = '{0}' AND SUFFIX = '{1}' AND GRID = '{2}' ",v.Local.sJob,v.Local.sSuffix,v.Global.sGrid,v.Local.sSQL)
+				f.Data.DataTable.Select("Progress",v.Local.sSQL,v.Local.sRet)
+				'Subtract 1 from the return qty
+				f.Intrinsic.Math.Sub(v.DataTable.Progress(v.Local.sRet.Long).QTY_COMPLETED!FieldValFloat,1,v.Local.fQty)
+				f.Intrinsic.Control.If(v.Local.fQty,>,-1)
+					'set the qty
+					f.Data.DataTable.SetValue("Progress",v.Local.sRet.Long,"QTY_COMPLETED",v.Local.fQty)
+					'we need to get the displayed bottom grid and upate it
+					f.Intrinsic.String.Build("JOB = '{0}' AND SUFFIX = '{1}' ",v.Local.sJob,v.Local.sSuffix,v.Local.sSQL)
+					f.Data.DataTable.Select("ComponentPartsParent",v.Local.sSQL,v.Local.sInput)
+					f.Data.DataTable.SetValue("ComponentPartsParent",v.Local.sInput.Long,"QTY_COMPLETED",v.Local.fQty)
+					'we need to update the top grid now
+'					f.Intrinsic.File.Append2FileNewLine(v.Global.sLogFile,v.DataTable.[v.Global.sGrid](v.Local.iPos).[v.Global.sGrid]!FieldValTrim)
+					f.Intrinsic.String.Split(v.DataTable.[v.Global.sGrid](v.Local.iPos).[v.Global.sGrid]!FieldValTrim," OF ",v.Local.sInput)
+					v.Local.sInput.RedimPreserve(0,1)
+					f.Intrinsic.Math.Sub(v.Local.sInput(0).Long,1,v.Local.sInput(0))
+					f.Intrinsic.Control.If(v.Local.sInput(0).Long,>,0)
+						'we are not at 0 so keep updating
+						v.Local.sForm.Set("F_MetalKit")
+						f.Intrinsic.String.Build("ProgressBar{0}",v.Global.sGrid,v.Local.sProg)
+						'set progress bar value
+						Gui.[v.Local.sForm].[v.Local.sProg].Value(v.Local.sInput(0).Long)
+						f.Intrinsic.String.Join(v.Local.sInput," OF ",v.Local.sInput)
+'						f.Intrinsic.File.Append2FileNewLine(v.Global.sLogFile,v.Local.sInput)
+						'Set x of x value in grid
+						f.Data.DataTable.SetValue(v.Global.sGrid,v.Local.iPos,v.Global.sGrid,v.Local.sInput)
+						'Set x of x in table
+						F.Intrinsic.String.Build("Select * From GCG_4442_METAL_KIT Where Rec_ID = '{0}'",v.Global.sGrid,V.Local.sSQL)
+						F.ODBC.Connection!con.OpenLocalRecordsetRW("rstKit",V.Local.sSQL)
+						f.Intrinsic.Control.If(v.ODBC.Con!rstKit.EOF,=,False)
+							'Save Kit Status
+							f.ODBC.Con!rstKit.Set!Kitting_Status(v.Local.sInput)
+							f.ODBC.Con!rstKit.Update
+						f.Intrinsic.Control.EndIf
+						f.ODBC.Con!rstKit.Close
+						'Now we are done setting all the values we need to save the xmls for the other person
+						f.Data.DataTable.SaveToDB("Progress","Con","GCG_4442_METAL_PROG","JOB*!*SUFFIX*!*GRID*!*PRIORITY",2)
+						f.Data.DataTable.AcceptChanges("Progress")
+					f.Intrinsic.Control.Else
+						'We are at 0 so we just need to remove everything from the screen.
+						f.Intrinsic.String.Build("GsGridControl{0}",v.Global.sGrid,v.Global.sControl)
+						f.Intrinsic.Control.CallSub(MenuClick,"Menuname","CTXOVERRIDE")
+					f.Intrinsic.Control.EndIf
+				f.Intrinsic.Control.EndIf
+			f.Intrinsic.Control.EndIf
+		f.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.ElseIf(v.Args.ItemName,=,"OVERRIDE")
+		F.Intrinsic.Control.UnBlockEvents
+		F.Intrinsic.Control.Try
+			Gui.F_MetalKit.GsgcView.GetFocusedGridview(v.Local.sForm)
+		F.Intrinsic.Control.Catch
+			F.Intrinsic.UI.Msgbox("Left Click on the Grid first to give focus to the grid then right click on the row you are wanting to modify the qty")
+			F.Intrinsic.Control.ExitSub
+		F.Intrinsic.Control.EndTry
+			
+		Gui.F_MetalKit.GsgcView.GetSelectedRowsInFocus(V.Local.sRet)
+		f.Intrinsic.Control.If(v.Local.sRet,<>,"","AND",v.Local.sRet,<>,"-1")
+			f.Intrinsic.String.Split(v.Local.sRet,"*!*",v.Local.sRet)
+			V.Local.sDataTable.Set(V.DataTable.ComponentPartsParent(V.Local.sRet.Long).Grid!FieldValTrim)
+			
+			F.Intrinsic.Control.If(V.DataView.Progress!Override.Exists,=,True)
+				F.Data.DataView.Close("Progress","Override")
+			F.Intrinsic.Control.EndIf
+			
+			F.Intrinsic.String.Build("GRID = '{0}'",V.Local.sDataTable,V.Local.sFilter)
+			F.Data.DataView.Create("Progress","Override",22,V.Local.sFilter,"PRIORITY ASC, JOB ASC, SUFFIX ASC")
+'			F.Data.DataView.Create("Progress","Override")
+'			F.Data.DataView.SetFilter("Progress","Override",V.Local.sFilter)
+			
+			F.Intrinsic.Math.Sub(V.DataView.Progress!Override(V.Local.sRet.Long).Qty_Order!FieldValLong,V.DataView.Progress!Override(V.Local.sRet.Long).Qty_Completed!FieldValLong,V.Local.iQty)
+			Gui.Form_QtyOverride.txtQtyNeeded.Text(V.Local.iQty)
+			F.Intrinsic.String.Build("Job:{0} Suffix:{1} Part:{2}",V.DataView.Progress!Override(V.Local.sRet.Long).Job!FieldValTrim,V.DataView.Progress!Override(V.Local.sRet.Long).Suffix!FieldValTrim,V.DataView.Progress!Override(V.Local.sRet.Long).Part!FieldValTrim,V.Local.sMsg)
+			Gui.Form_QtyOverride.lblJobSuffixPart.Caption(V.Local.sMsg)
+			Gui.Form_QtyOverride..Show
+			Gui.Form_QtyOverride.txtQtyOpen.SetFocus
+			Gui.Form_QtyOverride.txtQtyOpen.SelectAll
+			GUi.F_MetalKit..Enabled(False)
+			Gui.Form_QtyOverride..WaitForDismiss
+			F.Intrinsic.Control.If(V.Screen.Form_QtyOverride!txtQtyOpen.Text,>,0)
+				f.Intrinsic.Math.Add(V.DataView.Progress!Override(V.Local.sRet.Long).Qty_Completed!FieldValLong,V.Screen.Form_QtyOverride!txtQtyOpen.Text,v.Local.iCompleted)
+				f.Data.DataTable.SetValue("ComponentPartsParent",V.Local.sRet.Long,"QTY_COMPLETED",v.Local.iCompleted)
+				f.Data.DataView.SetValue("Progress","Override",V.Local.sRet.Long,"QTY_COMPLETED",v.Local.iCompleted)
+				
+				f.Intrinsic.String.Split(v.DataTable.[V.Local.sDataTable](2).[V.Local.sDataTable]!FieldValTrim," OF ",v.Local.sInput)
+				v.Local.sInput.RedimPreserve(0,1)
+				F.Intrinsic.Math.Add(V.Local.sInput(0).Long,V.Screen.Form_QtyOverride!txtQtyOpen.Text,V.Local.iCompleted)
+				V.Local.sInput(0).Set(V.Local.iCompleted)
+				V.Local.iQty.Set(V.Local.sInput(1).Long)
+				v.Local.sForm.Set("F_MetalKit")
+				f.Intrinsic.String.Build("ProgressBar{0}",V.Local.sDataTable,v.Local.sProg)
+				'set progress bar value
+				Gui.[v.Local.sForm].[v.Local.sProg].Value(v.Local.sInput(0).Long)
+				f.Intrinsic.String.Join(v.Local.sInput," OF ",v.Local.sInput)
+				'Set x of x value in grid
+				f.Data.DataTable.SetValue(V.Local.sDataTable,2,V.Local.sDataTable,v.Local.sInput)
+				'Set x of x in table
+				F.Intrinsic.String.Build("Select * From GCG_4442_METAL_KIT Where Rec_ID = '{0}'",V.Local.sDataTable,V.Local.sSQL)
+				F.ODBC.Connection!con.OpenLocalRecordsetRW("rstKit",V.Local.sSQL)
+				f.Intrinsic.Control.If(v.ODBC.Con!rstKit.EOF,=,False)
+					'Save Kit Status
+					f.ODBC.Con!rstKit.Set!Kitting_Status(v.Local.sInput)
+					f.ODBC.Con!rstKit.Update
+				f.Intrinsic.Control.EndIf
+				f.ODBC.Con!rstKit.Close
+				
+				'if x of x is max then unhide the ready button on row 4
+				F.Intrinsic.Control.If(V.Local.iCompleted,=,V.Local.iQty)
+					F.Intrinsic.String.Build("GsGridControl{0}",V.Local.sDataTable,V.Local.sGrid)
+					'Set the button to the next labor step
+					f.Intrinsic.String.Build("SELECT TOP 1 RTRIM(PART) AS PART FROM V_JOB_OPERATIONS WHERE JOB = '{0}' AND SUFFIX = '{1}' AND LMO = 'L' AND SEQ < '995000' AND DATE_COMPLETED = '1900-01-01' ORDER BY SEQ ASC",V.DataView.Progress!Override(V.Local.sRet.Long).Job!FieldValTrim,V.DataView.Progress!Override(V.Local.sRet.Long).Suffix!FieldValTrim,v.Local.sSql)
+					f.ODBC.Connection!Con.OpenLocalRecordsetRO("rstWC",v.Local.sSql)
+					f.Intrinsic.Control.If(v.ODBC.Con!rstWC.EOF,=,False)
+						f.Intrinsic.String.Build("Kit Complete{0}{1} Next",v.Ambient.NewLine,v.ODBC.Con!rstWC.FieldValTrim!PART,v.Local.sSql)
+					f.Intrinsic.Control.Else
+						f.Intrinsic.String.Build("Kit Complete{0}Assemble{0}Next",v.Ambient.NewLine,v.Local.sSql)
+					f.Intrinsic.Control.EndIf
+					f.ODBC.Con!rstWC.Close
+					f.Intrinsic.Control.If(V.Local.sDataTable.Left1,=,"W")
+						f.Data.DataTable.SetValue(v.Local.sDataTable,5,v.Local.sDataTable,v.Local.sSQL)
+						Gui.[v.Local.sForm].[V.Local.sGrid].HideRow(V.Local.sDatatable,5,False)
+					f.Intrinsic.Control.Else
+						f.Data.DataTable.SetValue(v.Local.sDataTable,3,v.Local.sDataTable,v.Local.sSQL)
+						Gui.[v.Local.sForm].[V.Local.sGrid].HideRow(V.Local.sDatatable,3,False)
+					f.Intrinsic.Control.EndIf
+				f.Intrinsic.Control.EndIf
+					
+				f.Data.DataTable.SaveToDB("Progress","Con","GCG_4442_Metal_PROG","JOB*!*SUFFIX*!*GRID*!*PRIORITY",2)
+				f.Data.DataTable.AcceptChanges("Progress")
+			F.Intrinsic.Control.EndIf
+			
+			Gui.Form_QtyOverride.txtQtyOpen.Text(0)
+			
+			GUi.F_MetalKit..Enabled(True)
+		F.Intrinsic.Control.EndIf
+	f.Intrinsic.Control.ElseIf(v.Args.ItemName,=,"REMOVEJOB")
+		F.Intrinsic.Control.Try
+			Gui.F_MetalKit.GsgcView.GetFocusedGridview(v.Local.sForm)
+		F.Intrinsic.Control.Catch
+			F.Intrinsic.UI.Msgbox("Left Click on the Grid first to give focus to the grid then right click on the row you are wanting to modify the qty")
+			F.Intrinsic.Control.ExitSub
+		F.Intrinsic.Control.EndTry
+		f.Intrinsic.Control.If(v.Local.sForm,=,"COMPONENTPARTSPARENT")
+			Gui.F_MetalKit.GsgcView.GetSelectedRowsInFocus(v.Local.sRet)
+			f.Intrinsic.Control.If(v.Local.sRet,<>,"","AND",v.Local.sRet,<>,"-1")
+				f.Intrinsic.String.Split(v.Local.sRet,"*!*",v.Local.sRet)
+				Gui.F_MetalKit.GsgcView.GetCellValueByColumnName("ComponentParentGrid","Job",v.Local.sRet.Long,v.Local.sJob)
+				F.Data.DataView.Create("Progress","JobDelete")
+
+				V.Local.sGrid.Set(V.DataTable.ComponentPartsParent(V.DataTable.ComponentPartsParent.RowCount--).Grid!FieldValTrim)
+				F.Intrinsic.String.Build("GRID = '{0}'",V.Local.sGrid,V.Local.sSQL)
+				F.Data.DataView.SetFilter("Progress","JobDelete",V.Local.sSql)
+				F.Data.DataView.ToDataTableDistinct("Progress","JobDelete","JobDeleteTemp","Job")
+				F.Intrinsic.Control.If(V.DataTable.JobDeleteTemp.RowCount--,<,1)
+					F.Data.DataTable.Close("JobDeleteTemp")
+					F.Data.DataView.Close("Progress","JobDelete")
+					F.Intrinsic.Control.UnBlockEvents
+					F.Intrinsic.Control.ExitSub
+				F.Intrinsic.Control.EndIf
+				F.Intrinsic.String.Build("Are you sure you want to remove Job: {0}",V.Local.sJob,V.Local.sRet)
+				F.Intrinsic.UI.Msgbox(V.Local.sRet,"Attention",4,V.Local.iQty)
+				F.Intrinsic.Control.If(V.Local.iQty,=,7)
+					F.Intrinsic.Control.ExitSub
+				F.Intrinsic.Control.EndIf
+
+'				F.Intrinsic.UI.InvokeWaitDialog("Removing Job From Grid.........")
+				Gui.F_MetalKit.txtWO.Enabled(False)
+				
+				F.Intrinsic.String.Build("Job = '{0}' and Grid = '{1}'",V.Local.sJob,V.Local.sGrid,V.Local.sSql)
+				F.Data.DataView.SetFilter("Progress","JobDelete",V.Local.sSQL)
+				
+				F.Intrinsic.Control.For(V.Local.iCount,V.DataView.Progress!JobDelete.RowCount--,0,-1)
+					F.Data.DataTable.DeleteRow("Progress",V.DataView.Progress!JobDelete(V.Local.iCount).DataTableIndex)
+				F.Intrinsic.Control.Next(V.Local.iCount)
+				
+				F.Data.DataView.Close("Progress","JobDelete")
+				
+				'Now we are done setting all the values we need to save the xmls for the other person
+				f.Data.DataTable.SaveToDB("Progress","Con","GCG_4442_Metal_PROG","JOB*!*SUFFIX*!*GRID*!*PRIORITY",4)
+				f.Data.DataTable.AcceptChanges("Progress")
+				
+				F.Intrinsic.String.Build("Delete From GCG_4442_Metal_Kit Where Job = '{0}' and Rec_Id = '{1}'",V.Local.sJob,V.Local.sGrid,V.Local.sSql)
+				F.ODBC.Connection!Con.Execute(V.Local.sSql)
+				
+				F.Intrinsic.String.Build("Select Sum(Qty_Completed) as Qty_Completed, Sum(Qty_Order) From GCG_4442_Metal_Prog Where Grid = '{0}'",V.Local.sGrid,v.Local.sSql)
+				
+				v.Local.sForm.Set("F_MetalKit")
+						
+				f.Intrinsic.String.Build("ProgressBar{0}",V.Local.sGrid,v.Local.sProg)
+				
+				F.ODBC.Connection!Con.ExecuteAndReturn(V.Local.sSQL,V.Local.sRet)
+				F.Intrinsic.String.Split(V.Local.sRet,"*!*",V.Local.sRet)
+				F.Intrinsic.Control.If(V.Local.sRet.UBound,=,1)
+					F.Intrinsic.Control.If(V.Local.sRet(0),>=,V.Local.sRet(1))
+						'set progress bar value
+						Gui.[v.Local.sForm].[v.Local.sProg].Value(V.Local.sRet(1).Long)
+						Gui.[v.Local.sForm].[v.Local.sProg].Max(V.Local.sRet(1).Long)
+						F.Intrinsic.String.Build("{0} of {1}",V.Local.sRet(1),V.Local.sRet(1),V.Local.sRet)
+					F.Intrinsic.Control.Else
+						Gui.[v.Local.sForm].[v.Local.sProg].Value(V.Local.sRet(0).Long)
+						Gui.[v.Local.sForm].[v.Local.sProg].Max(V.Local.sRet(1).Long)
+						F.Intrinsic.String.Build("{0} of {1}",V.Local.sRet(0),V.Local.sRet(1),V.Local.sRet)
+					F.Intrinsic.Control.EndIf
+					F.Data.DataTable.SetValue(V.Local.sGrid,4,V.Local.sGrid,V.Local.sRet)
+				F.Intrinsic.Control.EndIf
+				F.Intrinsic.Control.CallSub(Selection,"GRID",V.Local.sGrid)
+			F.Intrinsic.Control.EndIf
+		F.Intrinsic.Control.EndIf
+	f.Intrinsic.Control.EndIf
+f.Intrinsic.Control.EndIf
+	
+f.Intrinsic.Control.UnBlockEvents
+
+gui.F_MetalKit.txtWO.SetFocus
+gui.F_MetalKit.txtWO.SelectAll
+
+f.Intrinsic.Control.Catch
+	f.Intrinsic.Control.CallSub(TryCatch,"Sub",V.Ambient.CurrentSubroutine,"Error",V.Ambient.ErrorNumber,"Desc",V.Ambient.ErrorDescription)
+f.Intrinsic.Control.EndTry
+Program.Sub.MenuClick.End
+
+Program.Sub.LookUp.Start
+f.Intrinsic.Control.Try
+
+v.Local.sSQL.Declare(String)
+v.Local.iCount.Declare(Long)
+v.Local.sPOrderNo.Declare(String)
+v.Local.bPC.Declare(Boolean,False)
+v.Local.bParent.Declare(Boolean,False)
+
+'Get the 000 Sales Order
+f.Intrinsic.String.Build("SELECT RTRIM(SALES_ORDER) AS SALES_ORDER FROM V_JOB_HEADER WHERE JOB = '{0}' AND SUFFIX = '000' ",v.Args.Job,v.Local.sSQL)
+f.ODBC.Connection!Con.OpenLocalRecordsetRO("rstOrder",v.Local.sSQL)
+f.Intrinsic.Control.If(v.ODBC.Con!rstOrder.EOF,=,False)
+	'Set the Sales Order for later
+	v.Local.sPOrderNo.Set(v.ODBC.Con!rstOrder.FieldValTrim!SALES_ORDER)
+f.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.If(V.Local.sPOrderNo,=,"0000000","OR",V.Local.sPOrderNo.Length,=,0)
+	V.Local.sPOrderNo.Set(V.Args.Job)
+F.Intrinsic.Control.EndIf
+
+f.ODBC.Con!rstOrder.Close
+
+	'Get the Parent job and Suffix
+	f.Intrinsic.String.Build("SELECT ISNULL(PARENT_WO,'{0}') AS PARENT_WO, ISNULL(PARENT_SUFFIX_PARENT,'000') AS PARENT_SUFFIX FROM V_JOB_HEADER WHERE JOB = '{0}' AND SUFFIX = '{1}' ",v.Args.Job,v.Args.Suffix,v.Local.sSQL)
+	F.ODBC.Connection!con.OpenLocalRecordsetRO("rstHeader",V.Local.sSQL)
+	F.Intrinsic.Control.If(V.ODBC.con!rstHeader.EOF,=,False)
+		'Holds Welding and/or Powder coating *WD0 and *PC0 of the Scanned Job Suffix
+		f.Intrinsic.String.Build("SELECT RTRIM(PART) AS WC, RTRIM(FLAG_CLOSED) AS FLAG_CLOSED FROM V_JOB_OPERATIONS WHERE JOB = '{0}' AND SUFFIX = '{1}' AND PART IN ('*WD0','WD01','WD02','WD03','WD04','WD05','WD06','*PC0','PC01','PC02','PC03','PC04','PC05','PC06','PC07') ORDER BY SEQ ASC",v.Args.Job,v.Args.Suffix,v.Local.sSQL)
+		f.ODBC.Connection!Con.OpenLocalRecordSetRO("rstJob",v.Local.sSQL)
+		f.Intrinsic.Control.If(v.ODBC.Con!rstJob.EOF,=,False)
+			'Check to see if the first labor sequence is *WD0 Welding
+			f.Intrinsic.Control.If(v.ODBC.Con!rstJob.FieldValTrim!WC,=,"*WD0","OR",v.ODBC.Con!rstJob.FieldValTrim!WC,=,"WD01",v.ODBC.Con!rstJob.FieldValTrim!WC,=,"WD02",v.ODBC.Con!rstJob.FieldValTrim!WC,=,"WD03",v.ODBC.Con!rstJob.FieldValTrim!WC,=,"WD04",v.ODBC.Con!rstJob.FieldValTrim!WC,=,"WD05",v.ODBC.Con!rstJob.FieldValTrim!WC,=,"WD06")
+				'Check to see if Weld is closed
+				f.Intrinsic.Control.If(v.ODBC.Con!rstJob.FieldValTrim!FLAG_CLOSED,=,"Y")
+'					'Welding is not closed so we need to look and see if he Job and Suffix Exist in Welding
+'					f.Intrinsic.String.Build("JOB = '{0}' AND SUFFIX = '{1}' AND SUBSTRING(GRID,1,1) = 'W' AND ORDER_NO = '{2}' ",v.Args.Job,v.Args.Suffix,V.ODBC.Con!rstHeader.FieldValTrim!PARENT_SUFFIX,v.Local.sSQL)
+'					f.Data.DataView.SetFilter("Progress","ProgressView",v.Local.sSQL)
+'					f.Data.DataView.SetSort("Progress","ProgressView","PRIORITY ASC")
+'				f.Intrinsic.Control.Else
+					'Welding is complete so we need to check and see if it has Powder Coating
+					f.ODBC.Con!rstJob.MoveNext
+					f.Intrinsic.Control.DoUntil(v.ODBC.Con!rstJob.EOF,=,True)
+						'We have a next so check and see if it is powder coating.
+						f.Intrinsic.Control.If(v.ODBC.Con!rstJob.FieldValTrim!WC,=,"*PC0","OR",v.ODBC.Con!rstJob.FieldValTrim!WC,=,"PC01",v.ODBC.Con!rstJob.FieldValTrim!WC,=,"PC02",v.ODBC.Con!rstJob.FieldValTrim!WC,=,"PC03",v.ODBC.Con!rstJob.FieldValTrim!WC,=,"PC04",v.ODBC.Con!rstJob.FieldValTrim!WC,=,"PC05",v.ODBC.Con!rstJob.FieldValTrim!WC,=,"PC06",v.ODBC.Con!rstJob.FieldValTrim!WC,=,"PC07")
+							'It is powder coating so we will put this in Powder Coating because Welding is closed
+'							f.Intrinsic.String.Build("ORDER_NO = '{0}' AND SUBSTRING(GRID,1,1) = 'P'",v.Local.sPOrderNo,v.Local.sSQL)
+							f.Intrinsic.String.Build("ORDER_NO = '{0}' AND JOB = '{1}' AND SUFFIX = '{2}' AND SUBSTRING(GRID,1,1) = 'P'",v.Local.sPOrderNo,v.Args.Job,v.Args.Suffix,v.Local.sSQL)
+							f.Data.DataView.SetFilter("Progress","ProgressView",v.Local.sSQL)
+							f.Data.DataView.SetSort("Progress","ProgressView","PRIORITY ASC")
+							v.Local.bPC.Set(True)
+	'						f.Intrinsic.Control.If(v.ODBC.Con!rstJob.EOF,=,False)
+	'							f.ODBC.Con!rstJob.MoveLast
+	'						f.Intrinsic.Control.EndIf
+						f.Intrinsic.Control.EndIf
+						f.ODBC.Con!rstJob.MoveNext
+						f.Intrinsic.Control.DoEvents
+					f.Intrinsic.Control.Loop
+					f.Intrinsic.Control.DoEvents
+					f.Intrinsic.Control.If(v.Local.bPC,=,False)
+						'Lets check and see if this is an outside Sequence.
+						f.Intrinsic.String.Build("SELECT RTRIM(OPERATION) AS OPERATION, RTRIM(PART) AS PART FROM V_JOB_OPERATIONS WHERE JOB = '{0}' AND SUFFIX = '{1}' AND SEQ = '{2}' AND LMO = 'O'",v.Args.Job.Trim,v.Args.Suffix.Trim,v.Args.Seq.Trim,v.Local.sSQL)
+						f.ODBC.Connection!Con.OpenLocalRecordsetRO("rstOP",v.Local.sSQL)
+						f.Intrinsic.Control.If(v.ODBC.Con!rstOP.EOF,=,False)
+							'it is an Outside Operation
+							f.Intrinsic.UI.Msgbox("This is an Outside Sequence, do you want to create a PO?","Outside PO",4,v.Local.sSQL)
+							f.Intrinsic.Control.If(v.Local.sSQL.Long,=,6)
+								'They clicked yes so create an Outside PO
+								f.Intrinsic.Control.CallSub(OutsidePO,"Job",v.Args.Job,"Suffix",v.Args.Suffix,"Seq",v.Args.Seq,"Part",v.ODBC.Con!rstOP.FieldValTrim!PART,"Operation",v.ODBC.Con!rstOP.FieldValTrim!OPERATION)
+							f.Intrinsic.Control.EndIf
+							f.ODBC.Con!rstOP.Close
+							f.ODBC.Con!rstJob.Close
+							f.ODBC.Con!rstHeader.Close
+							f.Intrinsic.Variable.AddRV("Stop",True)
+							f.Intrinsic.Control.ExitSub
+						f.Intrinsic.Control.Else
+							'Job doesn't have Weld or Powder Coating so we need to prompt them and tell them to do something else.
+'							f.Intrinsic.UI.Msgbox("Scanned Part does not have Weld or Powder Coating.")
+							'Welding is completed and we dont' have powder coating so out parent has welding
+							v.Local.bParent.Set(True)
+							f.Intrinsic.String.Build("JOB = '{0}' AND SUFFIX = '{1}' AND SUBSTRING(GRID,1,1) = 'W' AND ORDER_NO = '{2}' ",v.Args.Job,v.Args.Suffix,V.ODBC.Con!rstHeader.FieldValTrim!PARENT_SUFFIX,v.Local.sSQL)
+							f.Data.DataView.SetFilter("Progress","ProgressView",v.Local.sSQL)
+							f.Data.DataView.SetSort("Progress","ProgressView","PRIORITY ASC")
+						f.Intrinsic.Control.EndIf
+						f.ODBC.Con!rstOP.Close
+						
+					f.Intrinsic.Control.EndIf
+				f.Intrinsic.Control.Else
+					f.ODBC.Con!rstJob.Close
+					f.ODBC.Con!rstHeader.Close
+					f.Intrinsic.Variable.AddRV("Stop",True)
+					f.Intrinsic.Control.ExitSub
+				f.Intrinsic.Control.EndIf
+			f.Intrinsic.Control.Else
+				'It is not weld so it must be powder coating, otherwise this would be EOF
+'				f.Intrinsic.String.Build("ORDER_NO = '{0}' AND SUBSTRING(GRID,1,1) = 'P'",v.Local.sPOrderNo,v.Local.sSQL)
+				f.Intrinsic.String.Build("ORDER_NO = '{0}' AND JOB = '{1}' AND SUFFIX = '{2}' AND SUBSTRING(GRID,1,1) = 'P'",v.Local.sPOrderNo,v.Args.Job,v.Args.Suffix,v.Local.sSQL)
+				f.Data.DataView.SetFilter("Progress","ProgressView",v.Local.sSQL)
+				f.Data.DataView.SetSort("Progress","ProgressView","PRIORITY ASC")
+				v.Local.bPC.Set(True)
+			f.Intrinsic.Control.EndIf
+		f.Intrinsic.Control.Else
+			'Scanned Suffix does not have welding or powder coating so we need to check it's parent to see if it has welding or powder coating.
+			f.Intrinsic.String.Build("SELECT RTRIM(PART) AS WC, RTRIM(FLAG_CLOSED) AS FLAG_CLOSED FROM V_JOB_OPERATIONS WHERE JOB = '{0}' AND SUFFIX = '{1}' AND PART IN ('*WD0','WD01','WD02','WD03','WD04','WD05','WD06','*PC0','PC01','PC02','PC03','PC04','PC05','PC06','PC07') ORDER BY SEQ ASC",v.ODBC.Con!rstHeader.FieldValTrim!PARENT_WO,v.ODBC.Con!rstHeader.FieldValTrim!PARENT_SUFFIX,v.Local.sSQL)
+			f.ODBC.Connection!Con.OpenLocalRecordSetRO("rstJobParent",v.Local.sSQL)
+			f.Intrinsic.Control.If(v.ODBC.Con!rstJobParent.EOF,=,False)
+				'Check to see if the first labor sequence is *WD0 Welding
+				f.Intrinsic.Control.If(v.ODBC.Con!rstJobParent.FieldValTrim!WC,=,"*WD0","OR",v.ODBC.Con!rstJobParent.FieldValTrim!WC,=,"WD01",v.ODBC.Con!rstJobParent.FieldValTrim!WC,=,"WD02",v.ODBC.Con!rstJobParent.FieldValTrim!WC,=,"WD03",v.ODBC.Con!rstJobParent.FieldValTrim!WC,=,"WD04",v.ODBC.Con!rstJobParent.FieldValTrim!WC,=,"WD05",v.ODBC.Con!rstJobParent.FieldValTrim!WC,=,"WD06")
+					'Check to see if Weld is closed
+					f.Intrinsic.Control.If(v.ODBC.Con!rstJobParent.FieldValTrim!FLAG_CLOSED,<>,"Y")
+						v.Local.bParent.Set(True)
+						'Welding is not closed so we need to look and see if he Job and Suffix Exist in Welding
+						f.Intrinsic.String.Build("JOB = '{0}' AND SUFFIX = '{1}' AND SUBSTRING(GRID,1,1) = 'W' AND ORDER_NO = '{2}' ",v.Args.Job,v.Args.Suffix,V.ODBC.Con!rstHeader.FieldValTrim!PARENT_SUFFIX,v.Local.sSQL)
+						f.Data.DataView.SetFilter("Progress","ProgressView",v.Local.sSQL)
+						f.Data.DataView.SetSort("Progress","ProgressView","PRIORITY ASC")
+					f.Intrinsic.Control.Else
+						'Welding is complete so we need to check and see if it has Powder Coating
+						f.ODBC.Con!rstJobParent.MoveNext
+						f.Intrinsic.Control.DoUntil(v.ODBC.Con!rstJobParent.EOF,=,True)
+							'We have a next so check and see if it is powder coating.
+							f.Intrinsic.Control.If(v.ODBC.Con!rstJobParent.FieldValTrim!WC,=,"*PC0","OR",v.ODBC.Con!rstJobParent.FieldValTrim!WC,=,"PC01",v.ODBC.Con!rstJobParent.FieldValTrim!WC,=,"PC02",v.ODBC.Con!rstJobParent.FieldValTrim!WC,=,"PC03",v.ODBC.Con!rstJobParent.FieldValTrim!WC,=,"PC04",v.ODBC.Con!rstJobParent.FieldValTrim!WC,=,"PC05",v.ODBC.Con!rstJobParent.FieldValTrim!WC,=,"PC06",v.ODBC.Con!rstJobParent.FieldValTrim!WC,=,"PC07")
+								'It is powder coating so we will put this in Powder Coating because Welding is closed
+'								f.Intrinsic.String.Build("ORDER_NO = '{0}' AND SUBSTRING(GRID,1,1) = 'P'",v.Local.sPOrderNo,v.Local.sSQL)
+								f.Intrinsic.String.Build("ORDER_NO = '{0}' AND JOB = '{1}' AND SUFFIX = '{2}' AND SUBSTRING(GRID,1,1) = 'P'",v.Local.sPOrderNo,v.Args.Job,v.Args.Suffix,v.Local.sSQL)
+								f.Data.DataView.SetFilter("Progress","ProgressView",v.Local.sSQL)
+								f.Data.DataView.SetSort("Progress","ProgressView","PRIORITY ASC")
+								v.Local.bPC.Set(True)
+	'							f.Intrinsic.Control.If(v.ODBC.Con!rstJob.EOF,=,False)
+	'								f.ODBC.Con!rstJob.MoveLast
+	'							f.Intrinsic.Control.EndIf
+							f.Intrinsic.Control.EndIf
+							f.ODBC.Con!rstJobParent.MoveNext
+							f.Intrinsic.Control.DoEvents
+						f.Intrinsic.Control.Loop
+						f.Intrinsic.Control.DoEvents
+						f.Intrinsic.Control.If(v.Local.bPC,=,False)
+							'Lets check and see if this is an outside Sequence.
+							f.Intrinsic.String.Build("SELECT RTRIM(OPERATION) AS OPERATION, RTRIM(PART) AS PART FROM V_JOB_OPERATIONS WHERE JOB = '{0}' AND SUFFIX = '{1}' AND SEQ = '{2}' AND LMO = 'O'",v.Args.Job.Trim,v.Args.Suffix.Trim,v.Args.Seq.Trim,v.Local.sSQL)
+							f.ODBC.Connection!Con.OpenLocalRecordsetRO("rstOP",v.Local.sSQL)
+							f.Intrinsic.Control.If(v.ODBC.Con!rstOP.EOF,=,False)
+								'it is an Outside Operation
+								f.Intrinsic.UI.Msgbox("This is an Outside Sequence, do you want to create a PO?","Outside PO",4,v.Local.sSQL)
+								f.Intrinsic.Control.If(v.Local.sSQL.Long,=,6)
+									'They clicked yes so create an Outside PO
+									f.Intrinsic.Control.CallSub(OutsidePO,"Job",v.Args.Job,"Suffix",v.Args.Suffix,"Seq",v.Args.Seq,"Part",v.ODBC.Con!rstOP.FieldValTrim!PART,"Operation",v.ODBC.Con!rstOP.FieldValTrim!OPERATION)
+								f.Intrinsic.Control.EndIf
+							f.Intrinsic.Control.Else
+								'Job doesn't have Weld or Powder Coating so we need to prompt them and tell them to do something else.
+								f.Intrinsic.UI.Msgbox("Scanned Part does not have Weld or Powder Coating.")
+							f.Intrinsic.Control.EndIf
+							f.ODBC.Con!rstOP.Close
+							f.ODBC.Con!rstJobParent.Close
+							f.ODBC.Con!rstJob.Close
+							f.ODBC.Con!rstHeader.Close
+							f.Intrinsic.Variable.AddRV("Stop",True)
+							f.Intrinsic.Control.ExitSub
+						f.Intrinsic.Control.EndIf
+					f.Intrinsic.Control.EndIf
+				f.Intrinsic.Control.Else
+					'It is not weld so it must be powder coating, otherwise this would be EOF
+'					f.Intrinsic.String.Build("ORDER_NO = '{0}' AND SUBSTRING(GRID,1,1) = 'P'",v.Local.sPOrderNo,v.Local.sSQL)
+					f.Intrinsic.String.Build("ORDER_NO = '{0}' AND JOB = '{1}' AND SUFFIX = '{2}' AND SUBSTRING(GRID,1,1) = 'P'",v.Local.sPOrderNo,v.Args.Job,v.Args.Suffix,v.Local.sSQL)
+					f.Data.DataView.SetFilter("Progress","ProgressView",v.Local.sSQL)
+					f.Data.DataView.SetSort("Progress","ProgressView","PRIORITY ASC")
+					v.Local.bPC.Set(True)
+				f.Intrinsic.Control.EndIf
+			f.Intrinsic.Control.Else
+				'Lets check and see if this is an outside Sequence.
+				f.Intrinsic.String.Build("SELECT RTRIM(OPERATION) AS OPERATION, RTRIM(PART) AS PART FROM V_JOB_OPERATIONS WHERE JOB = '{0}' AND SUFFIX = '{1}' AND SEQ = '{2}' AND LMO = 'O'",v.Args.Job.Trim,v.Args.Suffix.Trim,v.Args.Seq.Trim,v.Local.sSQL)
+				f.ODBC.Connection!Con.OpenLocalRecordsetRO("rstOP",v.Local.sSQL)
+				f.Intrinsic.Control.If(v.ODBC.Con!rstOP.EOF,=,False)
+					'it is an Outside Operation
+					f.Intrinsic.UI.Msgbox("This is an Outside Sequence, do you want to create a PO?","Outside PO",4,v.Local.sSQL)
+					f.Intrinsic.Control.If(v.Local.sSQL.Long,=,6)
+						'They clicked yes so create an Outside PO
+						f.Intrinsic.Control.CallSub(OutsidePO,"Job",v.Args.Job,"Suffix",v.Args.Suffix,"Seq",v.Args.Seq,"Part",v.ODBC.Con!rstOP.FieldValTrim!PART,"Operation",v.ODBC.Con!rstOP.FieldValTrim!OPERATION)
+					f.Intrinsic.Control.EndIf
+				f.Intrinsic.Control.Else
+					'Job doesn't have Weld or Powder Coating so we need to prompt them and tell them to do something else.
+					f.Intrinsic.UI.Msgbox("Scanned Part does not have Weld or Powder Coating.")
+				f.Intrinsic.Control.EndIf
+				f.ODBC.Con!rstOP.Close
+				f.ODBC.Con!rstJobParent.Close
+				f.ODBC.Con!rstJob.Close
+				f.ODBC.Con!rstHeader.Close
+				f.Intrinsic.Variable.AddRV("Stop",True)
+				f.Intrinsic.Control.ExitSub
+			f.Intrinsic.Control.EndIf
+			f.ODBC.Con!rstJobParent.Close
+		f.Intrinsic.Control.EndIf
+		f.ODBC.Con!rstJob.Close
+	f.Intrinsic.Control.Else
+		'Job was not found
+		f.ODBC.Con!rstHeader.Close
+		f.Intrinsic.Variable.AddRV("Stop",True)
+		F.Intrinsic.UI.PlaySound(V.Global.sBadScan)
+		f.Intrinsic.Control.ExitSub
+	f.Intrinsic.Control.EndIf
+	f.ODBC.Con!rstHeader.Close
+'f.Intrinsic.Control.EndIf
+
+
+'We will check in our tables to see if we have a job already.
+'If we have a job then we will see if we need any more quantity for the Suffix.
+'If we need more qty for the Suffix then we will update existing job.
+'If we don't need any more qty for the Suffix then we will create a new job
+
+
+'Check to see if we have anything in the view
+f.Intrinsic.Control.If(v.DataView.Progress!ProgressView.RowCount,>,0)
+	'We have something
+	'Now we need to determin if we need to just add it to existing or we have enough and need to create a new job
+	f.Intrinsic.Control.For(v.Local.iCount,0,v.DataView.Progress!ProgressView.RowCount--,1)
+		'We need to see if our Order Qty is greater than our complete qty
+		f.Intrinsic.Control.If(v.DataView.Progress!ProgressView(v.Local.iCount).Qty_Completed!FieldValLong,<,v.DataView.Progress!ProgressView(v.Local.iCount).Qty_Order!FieldValLong)
+			'we still need more for this job so just update existing job
+			f.Intrinsic.Variable.AddRV("Step","Update","DT",v.DataView.Progress!ProgressView(v.Local.iCount).Grid!FieldVal,"Stop",False)
+			f.Intrinsic.Control.ExitFor(v.Local.iCount)
+		f.Intrinsic.Control.Else
+			'Qty has been met so we need to go to the next one, if we don't have a next one then we need to add it as a new job
+			f.Intrinsic.Control.If(v.Local.iCount,=,v.DataView.Progress!ProgressView.RowCount--)
+				f.Intrinsic.Control.If(v.Local.bPC,=,False)
+					f.Intrinsic.Variable.AddRV("Step","New","PC",v.Local.bPC,"Stop",False,"bParent",v.Local.bParent)
+				f.Intrinsic.Control.Else
+					'don't need any more for this job suffix
+					f.Intrinsic.UI.Msgbox("Too many of this Part has been scanned. Nothing has been done.")
+					f.Intrinsic.Variable.AddRV("Stop",True)
+					f.Intrinsic.Control.ExitSub
+				f.Intrinsic.Control.EndIf
+			f.Intrinsic.Control.EndIf		
+		f.Intrinsic.Control.EndIf
+		f.Intrinsic.Control.DoEvents
+	f.Intrinsic.Control.Next(v.Local.iCount)
+	f.Intrinsic.Control.DoEvents
+f.Intrinsic.Control.Else
+	'We don't have anythign so it is new
+'	f.Intrinsic.Control.If(v.Local.bPC,=,False)
+		f.Intrinsic.Variable.AddRV("Step","New","PC",v.Local.bPC,"Stop",False,"bParent",v.Local.bParent)
+'	f.Intrinsic.Control.Else
+'		'don't need any more for this job suffix
+'		f.Intrinsic.UI.Msgbox("Too many of this Part has been scanned. Nothing has been done.")
+'		f.Intrinsic.Variable.AddRV("Stop",True)
+'		f.Intrinsic.Control.ExitSub
+'	f.Intrinsic.Control.EndIf
+f.Intrinsic.Control.EndIf
+
+
+f.Intrinsic.Control.Catch
+	f.Intrinsic.Control.CallSub(TryCatch,"Sub",V.Ambient.CurrentSubroutine,"Error",V.Ambient.ErrorNumber,"Desc",V.Ambient.ErrorDescription)
+f.Intrinsic.Control.EndTry
+Program.Sub.LookUp.End
+
+Program.Sub.GridButtons.Start
+f.Intrinsic.Control.Try
+
+v.Local.iCount.Declare(Long)
+
+'This sub is for expanding and collapsing the Gridview at the bottom of the screen
+f.Intrinsic.Control.If(v.Args.ControlName,=,"CMDEXPAND")
+	f.Intrinsic.Control.For(v.Local.iCount,0,v.DataTable.ComponentPartsParent.RowCount--,1)
+		Gui.F_MetalKit.GsgcView.ExpandMasterRow("ComponentParentGrid",v.Local.iCount)
+	f.Intrinsic.Control.Next(v.Local.iCount)
+	f.Intrinsic.Control.DoEvents
+f.Intrinsic.Control.Else
+	f.Intrinsic.Control.For(v.Local.iCount,0,v.DataTable.ComponentPartsParent.RowCount--,1)
+		Gui.F_MetalKit.GsgcView.CollapseMasterRow("ComponentParentGrid",v.Local.iCount)
+	f.Intrinsic.Control.Next(v.Local.iCount)
+	f.Intrinsic.Control.DoEvents
+f.Intrinsic.Control.EndIf
+
+gui.F_MetalKit.txtWO.SetFocus
+gui.F_MetalKit.txtWO.SelectAll
+
+f.Intrinsic.Control.Catch
+	f.Intrinsic.Control.CallSub(TryCatch,"Sub",V.Ambient.CurrentSubroutine,"Error",V.Ambient.ErrorNumber,"Desc",V.Ambient.ErrorDescription)
+f.Intrinsic.Control.EndTry
+Program.Sub.GridButtons.End
+
+Program.Sub.GsgcView_RowCellClick.Start
+f.Intrinsic.Control.Try
+
+F.Intrinsic.Control.If(V.Caller.User.Trim,<>,"MKTIN")
+	F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.EndIf
+
+gui.F_MetalKit.txtWO.SetFocus
+gui.F_MetalKit.txtWO.SelectAll
+
+f.Intrinsic.Control.Catch
+	f.Intrinsic.Control.CallSub(TryCatch,"Sub",V.Ambient.CurrentSubroutine,"Error",V.Ambient.ErrorNumber,"Desc",V.Ambient.ErrorDescription)
+f.Intrinsic.Control.EndTry
+Program.Sub.GsgcView_RowCellClick.End
+
+Program.Sub.OutsidePO.Start
+f.Intrinsic.Control.Try
+
+v.Local.sInput.Declare(String)
+v.Local.sSQL.Declare(String)
+v.Local.sKeySeq.Declare(String)
+v.Local.sDate.Declare(String)
+
+''we are on an outside seq so lets ask them how many they want to make
+'f.Intrinsic.String.Build("Enter Quantity for {0} Outside PO",v.Args.Part.Trim,v.Local.sInput)
+'f.Intrinsic.UI.Inputbox(v.Local.sInput,"Outside PO Creation","",v.Local.sInput)
+'f.Intrinsic.Control.If(v.Local.sInput,<>,"***CANCEL***")
+	'Create Mat_Online record for Outside PO
+	f.Intrinsic.String.Build("SELECT * FROM MAT_ONLINE WHERE JOB = '{0}' AND JOB_SUFFIX = '{1}' AND SEQUENCE = '{2}' ORDER BY KEY_SEQ DESC",v.Args.Job.Trim,v.Args.Suffix.Trim,v.Args.Seq.Trim,v.Local.sSQL)
+	f.ODBC.Connection!Con.OpenLocalRecordSetRW("rstPO",v.Local.sSQL)
+	f.Intrinsic.Control.If(v.ODBC.Con!rstPO.EOF,=,False)
+		'We have a record already so we need to incrament the SeqKey
+		f.Intrinsic.Math.Add(v.ODBC.Con!rstPO.FieldValLong!KEY_SEQ,1,v.Local.sKeySeq)
+		f.Intrinsic.String.LPad(v.Local.sKeySeq,"0",6,v.Local.sKeySeq)
+	f.Intrinsic.Control.Else
+		v.Local.sKeySeq.Set("000000")
+	f.Intrinsic.Control.EndIf
+	f.ODBC.Con!rstPO.AddNew
+	f.ODBC.Con!rstPO.Set!JOB(v.Args.Job.Trim)
+	f.ODBC.Con!rstPO.Set!JOB_SUFFIX(v.Args.Suffix.Trim)
+	f.ODBC.Con!rstPO.Set!SEQUENCE(v.Args.Seq.Trim)
+	f.ODBC.Con!rstPO.Set!KEY_SEQ(v.Local.sKeySeq)
+	f.ODBC.Con!rstPO.Set!PART(v.Args.Part.Trim)
+'	f.ODBC.Con!rstPO.Set!QUANTITY(v.Local.sInput.Float)
+	f.ODBC.Con!rstPO.Set!QUANTITY(v.Args.Qty.Float)
+	f.Intrinsic.String.Format(v.Ambient.Date,"MMDDYY",v.Local.sDate)
+	f.ODBC.Con!rstPO.Set!MOL_DATE(v.Local.sDate)
+	f.ODBC.Con!rstPO.Set!MOL_TYPE("O")
+	f.ODBC.Con!rstPO.Set!VENDOR(v.Args.Operation.Trim)
+	f.ODBC.Con!rstPO.Update
+	f.ODBC.Con!rstPO.Close
+'f.Intrinsic.Control.EndIf
+
+f.Intrinsic.Control.Catch
+	f.Intrinsic.Control.CallSub(TryCatch,"Sub",V.Ambient.CurrentSubroutine,"Error",V.Ambient.ErrorNumber,"Desc",V.Ambient.ErrorDescription)
+f.Intrinsic.Control.EndTry
+Program.Sub.OutsidePO.End
+
+Program.Sub.PrinterLocation.Start
+f.Intrinsic.Control.Try
+
+v.Local.sFileName.Declare(String)
+v.Local.bExist.Declare(Boolean)
+v.Local.sSQL.Declare(String)
+
+'We are going to read the printer location from a file and save it for later use.
+f.Intrinsic.String.Build("{0}\GCG_4442_Metal_Printer.dat",v.Caller.FilesDir,v.Local.sFileName)
+'Check to make sure the File exists.
+f.Intrinsic.File.Exists(v.Local.sFileName,v.Local.bExist)
+f.Intrinsic.Control.If(v.Local.bExist,=,True)
+	'File exists so grab the printer location and save it
+	f.Intrinsic.File.File2String(v.Local.sFileName,v.Global.sPrinter)
+	v.Global.sPrinter.Set(v.Global.sPrinter.Trim)
+	f.ODBC.Connection!Common.OpenCommonConnection
+	f.Intrinsic.String.Build("SELECT SENTINELALIAS FROM SERVER_PRINTERS WHERE UCASE(SENTINELALIAS) = '{0}' ",v.Global.sPrinter.UCase,v.Local.sSQL)
+	f.ODBC.Connection!Common.OpenLocalRecordsetRO("rstPritner",v.Local.sSQL)
+	f.Intrinsic.Control.If(v.ODBC.Common!rstPritner.EOF,=,True)
+		'Alias doesn't exist so let them know
+		f.Intrinsic.String.Build("Label Printer Alias {0} is not set up from:{1}{2}",v.Global.sPrinter,v.Ambient.NewLine,v.Local.sFileName,v.Local.sFileName)
+		f.Intrinsic.UI.Msgbox(v.Local.sFileName,"Attention")
+	f.Intrinsic.Control.EndIf
+	f.ODBC.Common!rstPritner.Close
+	f.ODBC.Connection!Common.Close
+	
+f.Intrinsic.Control.Else
+	'File doesn't exist
+	f.Intrinsic.String.Build("Label Printer is not set up in:{0}{1}",v.Ambient.NewLine,v.Local.sFileName,v.Local.sFileName)
+	f.Intrinsic.UI.Msgbox(v.Local.sFileName,"Attention")
+f.Intrinsic.Control.EndIf
+
+f.Intrinsic.Control.Catch
+	f.Intrinsic.Control.CallSub(TryCatch,"Sub",V.Ambient.CurrentSubroutine,"Error",V.Ambient.ErrorNumber,"Desc",V.Ambient.ErrorDescription)
+f.Intrinsic.Control.EndTry
+Program.Sub.PrinterLocation.End
+
+Program.Sub.FlexSchedule.Start
+F.Intrinsic.Control.Try
+
+v.Local.sScheduleNumber.Declare(String)
+v.Local.sSQL.Declare(String)
+v.Local.iCount.Declare(Long)
+v.Local.iIncrement.Declare(Long)
+v.Local.sIncrement.Declare(String)
+v.Local.sHold.Declare(String)
+v.Local.sFileName.Declare(String)
+v.Local.iBIRunID.Declare(Long)
+v.Local.iRptID.Declare(Long)
+v.Local.iLogID.Declare(Long)
+v.Local.fSched.Declare(Float)
+'Create a flex schedule for all of the jobs.
+
+'Get the Next Schedule Number
+'f.ODBC.Connection!Con.GetID("V_JOB_CT_FLX_SCHD","SCHEDULE",TRUE,v.Local.sScheduleNumber)
+'F.Intrinsic.String.Build("Select ID, Sequence, F_Numeric From Op_Header where ID = '400817' and Sequence = '0000'","",V.Local.sSql)
+'F.Data.DataTable.CreateFromSQL("Sched","con",V.Local.sSql,True)
+'F.Intrinsic.Control.If(V.DataTable.Sched.RowCount--,<>,-1)
+'	F.Intrinsic.Math.Add(V.DataTable.Sched(V.DataTable.Sched.RowCount--).F_Numeric!FieldVal,1,V.Local.fSched)
+'	F.Data.DataTable.SetValue("Sched",V.DataTable.Sched.RowCount--,"F_Numeric",V.Local.fSched)
+'	F.Data.DataTable.SaveToDB("Sched","con","Op_Header","ID*!*Sequence",7)
+'	V.Local.sScheduleNumber.Set(V.Local.fSched)
+'F.Intrinsic.Control.Else
+'	V.Local.sScheduleNumber.Set("0")
+'F.Intrinsic.Control.EndIf
+
+'F.Data.DataTable.Close("Sched")
+
+'F.Global.General.ReadOption(400817,2,0,V.Local.fSched)
+V.Local.sSQL.Set("Select Last_PO_Num From Last_PO Where Ass_Sys = 'SCH' and Ass_Sub_Sys = 'OPT'")
+F.ODBC.Connection!Con.ExecuteAndReturn(V.Local.sSQL,V.Local.sScheduleNumber)
+F.Intrinsic.String.Left(V.Local.sScheduleNumber,6,V.Local.sScheduleNumber)
+
+F.Intrinsic.Math.Add(V.Local.sScheduleNumber.Long,1,V.Local.fSched)
+F.Global.General.SaveOption(400817,"0000","","","","",V.Local.fSched,"")
+
+F.Intrinsic.String.Build("Update Op_Header Set F_Numeric = '{0}' Where ID = 400817",V.Local.fSched,V.Local.sSql)
+F.ODBC.Connection!Con.Execute(V.Local.sSql)
+
+V.Local.sScheduleNumber.Set(V.Local.fSched)
+
+f.Intrinsic.String.Format(v.Local.sScheduleNumber,"000000",v.Local.sScheduleNumber)
+
+F.Intrinsic.String.Build("Update Last_PO Set Last_PO_Num = '{0}' + substring(Last_PO_Num,7,1) Where Ass_Sys = 'SCH' and Ass_Sub_Sys = 'OPT'",V.Local.sScheduleNumber,V.Local.sSql)
+F.ODBC.Connection!Con.Execute(V.Local.sSql)
+
+f.Intrinsic.String.Build("SELECT  A.JOB, A.SUFFIX, A.SEQ, LEFT(A.PART,4) AS PART, RTRIM(' ') AS MPART, RTRIM(' ') AS MLOCATION, A.JOB + A.SUFFIX AS JS, RTRIM(' ') AS MSEQ FROM V_JOB_OPERATIONS AS A WHERE A.JOB IN (SELECT B.JOB FROM V_JOB_HEADER AS B WHERE B.SALES_ORDER = '{0}' or Job = '{0}') AND A.SUFFIX IN (SELECT C.SUFFIX FROM V_JOB_OPERATIONS AS C WHERE C.PART IN ('*PC0','PC01') AND C.JOB = A.JOB) AND A.SEQ < '995000' AND A.LMO = 'L' AND A.PART IN ('*PC0','PC01') ORDER BY JOB, SUFFIX, SEQ",v.Args.Order,v.Local.sSQL)
+f.Intrinsic.Control.If(v.DataTable.Flex.Exists,=,True)
+	f.Data.DataTable.Close("Flex")
+f.Intrinsic.Control.EndIf
+f.Data.DataTable.CreateFromSQL("Flex","Con",v.Local.sSQL,True)
+
+f.Data.Dictionary.CreateFromSQL("FPart","Con","SELECT JOB+SUFFIX AS JS, PART FROM V_JOB_HEADER")
+f.Data.Dictionary.SetDefaultReturn("FPart","")
+f.Data.DataTable.FillFromDictionary("Flex","FPart","JS","MPart")
+f.Data.Dictionary.Close("FPart")
+
+f.Data.Dictionary.CreateFromSQL("FLoc","Con","SELECT JOB+SUFFIX AS JS, LOCATION FROM V_JOB_HEADER")
+f.Data.Dictionary.SetDefaultReturn("FLoc","")
+f.Data.DataTable.FillFromDictionary("Flex","FLoc","JS","MLocation")
+f.Data.Dictionary.Close("FLoc")
+
+f.Data.Dictionary.CreateFromSQL("FSeq","Con","SELECT JOB+SUFFIX AS JS, SEQ FROM V_JOB_OPERATIONS WHERE LMO = 'M'AND SEQ < '995000' ORDER BY SEQ ASC")
+f.Data.Dictionary.SetDefaultReturn("FSeq","")
+f.Data.DataTable.FillFromDictionary("Flex","FSeq","JS","MSeq")
+f.Data.Dictionary.Close("FSeq")
+
+
+f.Intrinsic.StringBuilder.Create("Flex")
+
+f.Data.DataView.Create("Flex","PrintFlex",22,"MSeq <> ''","")
+
+'Loop through out DT to create all of the lines for the file
+f.Intrinsic.Control.For(v.Local.iCount,0,v.DataView.Flex!PrintFlex.RowCount--,1)
+	'Add increment
+	F.Intrinsic.Math.Add(V.Local.iIncrement,1,V.Local.iIncrement)
+	F.Intrinsic.String.Format(V.Local.iIncrement,"000000",V.Local.sIncrement)
+	v.Local.sHold.Set("")
+	f.Intrinsic.String.Build("{0}   {1}{2}{3}{4}     {5}{6}{7}000000999999                         {8}{9}{10}   000000999999",v.Local.sScheduleNumber.Format000000,v.Local.sIncrement.Format000000,v.DataView.Flex!PrintFlex(v.Local.iCount).Job!FieldVal,v.DataView.Flex!PrintFlex(v.Local.iCount).Suffix!FieldVal,v.DataView.Flex!PrintFlex(v.Local.iCount).MSeq!FieldVal,v.DataView.Flex!PrintFlex(v.Local.iCount).Job!FieldVal,v.DataView.Flex!PrintFlex(v.Local.iCount).Suffix!FieldVal,v.DataView.Flex!PrintFlex(v.Local.iCount).Seq!FieldVal,v.DataView.Flex!PrintFlex(v.Local.iCount).Part!FieldValTrim,v.DataView.Flex!PrintFlex(v.Local.iCount).MPart!FieldVal,v.DataView.Flex!PrintFlex(v.Local.iCount).MLocation!FieldVal,v.Local.sHold)
+	f.Intrinsic.StringBuilder.AppendLine("Flex",v.Local.sHold)
+	
+f.Intrinsic.Control.Next(v.Local.iCount)
+
+f.Intrinsic.String.Build("{0}\SCHED.TXT",v.Caller.FilesDir,v.Local.sFileName)
+f.Intrinsic.StringBuilder.ToString("Flex",v.Local.sHold)
+
+F.Intrinsic.StringBuilder.Dispose("Flex")
+
+F.Intrinsic.File.String2File(V.Local.sFileName,V.Local.sHold)
+'uploads schedule in append and screenless mode
+F.Intrinsic.UI.Sleep(2)
+F.Global.General.CallWrapperSync(6000,"NS!*!50")
+
+'Print flex schedule
+'F.Intrinsic.String.Build("000000!*!999999!*!{0}!*!000!*!{0}!*!000!*!Y!*!Y",V.Local.sScheduleNumber,V.Local.sPrint)
+'F.Global.General.CallWrapperSync(900300,V.Local.sPrint)
+
+f.Intrinsic.Control.If(v.DataTable.Label.Exists,=,True)
+	f.Data.DataTable.Close("Label")
+f.Intrinsic.Control.EndIf
+f.Data.DataTable.Create("Label",True)
+'f.Data.DataTable.AddColumn("Label","ScheduleNumber","String")
+'f.Data.DataTable.AddColumn("Label","ScheduleSuffix","String")
+F.Data.DataTable.AddColumn("Label","FlexID","String")
+F.Data.DataTable.AddColumn("Label","OrderNo","String")
+F.Intrinsic.String.LPad(V.Local.sScheduleNumber,"0",6,V.Local.sScheduleNumber)
+F.Intrinsic.String.RPad(V.Local.sScheduleNumber,"0",9,V.Local.sScheduleNumber)
+f.Data.DataTable.AddRow("Label","FlexID",v.Local.sScheduleNumber,"OrderNo",V.Args.Order)
+F.Global.BI.GetIDFromName("GCG_4442_FLEX.lab",V.Local.iRptID)
+F.Global.BI.GetRunID(V.Local.iBIRunID)
+F.Global.BI.StartLogging(V.Local.iBIRunID,V.Local.iRptID,0,"",V.Local.iLogID)
+F.Global.BI.StopLogging(V.Local.iLogID)
+F.Global.BI.PrintCodesoftLabelFromDataTable(V.Local.iBIRunID,V.Local.iLogID,"Label",V.Screen.F_MetalKit!ddlLablePrinter.Text,True)
+F.Data.DataTable.Close("Label")
+
+f.Data.DataTable.Close("Flex")
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(TryCatch,"Sub",V.Ambient.CurrentSubroutine,"Error",V.Ambient.ErrorNumber,"Desc",V.Ambient.ErrorDescription)
+F.Intrinsic.Control.EndTry
+Program.Sub.FlexSchedule.End
+
+Program.Sub.txtQtyOpen_Change.Start
+F.Intrinsic.Control.Try
+
+F.Intrinsic.Control.If(V.Screen.Form_QtyOverride!txtQtyOpen.Text,>,V.Screen.Form_QtyOverride!txtQtyNeeded.Text)
+	Gui.Form_QtyOverride.txtQtyOpen.Text(v.Screen.Form_QtyOverride!txtQtyNeeded.Text)
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(TryCatch,"Sub",V.Ambient.CurrentSubroutine,"Error",V.Ambient.ErrorNumber,"Desc",V.Ambient.ErrorDescription)
+F.Intrinsic.Control.EndTry
+Program.Sub.txtQtyOpen_Change.End
+
+Program.Sub.Form_QtyOverride_UnLoad.Start
+F.Intrinsic.Control.Try
+
+Gui.Form_QtyOverride..Visible(False)
+	
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(TryCatch,"Sub",V.Ambient.CurrentSubroutine,"Error",V.Ambient.ErrorNumber,"Desc",V.Ambient.ErrorDescription)
+F.Intrinsic.Control.EndTry
+Program.Sub.Form_QtyOverride_UnLoad.End
+
+Program.Sub.cmdSubmit_Click.Start
+F.Intrinsic.Control.Try
+
+F.Intrinsic.Control.CallSub(Form_QtyOverride_UnLoad)
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(TryCatch,"Sub",V.Ambient.CurrentSubroutine,"Error",V.Ambient.ErrorNumber,"Desc",V.Ambient.ErrorDescription)
+F.Intrinsic.Control.EndTry
+Program.Sub.cmdSubmit_Click.End
+
+Program.Sub.txtQtyOpen_KeyPressEnter.Start
+F.Intrinsic.Control.Try
+
+F.Intrinsic.Control.If(V.Screen.Form_QtyOverride!txtQtyOpen.Text,>,V.Screen.Form_QtyOverride!txtQtyNeeded.Text)
+	Gui.Form_QtyOverride.txtQtyOpen.Text(v.Screen.Form_QtyOverride!txtQtyNeeded.Text)
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.CallSub(Form_QtyOverride_UnLoad)
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(TryCatch,"Sub",V.Ambient.CurrentSubroutine,"Error",V.Ambient.ErrorNumber,"Desc",V.Ambient.ErrorDescription)
+F.Intrinsic.Control.EndTry
+Program.Sub.txtQtyOpen_KeyPressEnter.End
